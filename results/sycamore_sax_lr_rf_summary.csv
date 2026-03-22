@@ -1,0 +1,7 @@
+seed,model,mean_accuracy,std_accuracy,n_splits
+0,logistic_regression,0.36,0.110353,5
+0,random_forest,0.326667,0.152607,5
+123,logistic_regression,0.426667,0.261109,5
+123,random_forest,0.393333,0.280793,5
+999,logistic_regression,0.44,0.210185,5
+999,random_forest,0.366667,0.139841,5

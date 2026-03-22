@@ -1,0 +1,20 @@
+=== SINGLE-BIT READOUT CONTROL (SAX=7) ===
+Per file: signal[t] = (int(output[t]) >> k) & 1  (same pipeline as validation otherwise).
+output_bit_index k = 0 (0 = LSB)
+epochs=50, max_pts=10000, seeds=[0, 123, 999]
+
+--- seed=0 accuracy=50.00% ---
+  Cluster 1: 2D_Block (Purity: 57.1%)
+  Cluster 2: 2D_Block (Purity: 55.6%)
+  Cluster 3: 2D_Block (Purity: 41.7%)
+
+--- seed=123 accuracy=50.00% ---
+  Cluster 1: 2D_Block (Purity: 57.1%)
+  Cluster 2: 2D_Block (Purity: 55.6%)
+  Cluster 3: 2D_Block (Purity: 41.7%)
+
+--- seed=999 accuracy=50.00% ---
+  Cluster 1: 2D_Block (Purity: 57.1%)
+  Cluster 2: 2D_Block (Purity: 55.6%)
+  Cluster 3: 2D_Block (Purity: 41.7%)
+

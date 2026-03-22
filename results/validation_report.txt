@@ -1,0 +1,59 @@
+=== VALIDATION REPORT ===
+
+Loaded decision criteria from validation_criteria.json
+{
+  "minimum_accuracy_original": 75.0,
+  "maximum_seed_std": 5.0,
+  "maximum_shuffled_accuracy": 60.0,
+  "minimum_accuracy_difference_vs_shuffled": 20.0,
+  "seeds": [
+    0,
+    42,
+    123,
+    456,
+    999
+  ],
+  "note": "Criteria defined before seeing results. If original > 75% AND shuffled < 60% AND difference > 20%, signal is real."
+}
+
+Original robustness (SAX=7):
+  Accuracies: [82.14, 85.71, 85.71]
+  Mean accuracy: 84.52%
+  Std across seeds: 1.68
+
+Shuffled control (SAX=7, same pipeline):
+  Accuracies: [50.0, 50.0, 50.0]
+  Mean accuracy: 50.00%
+
+Parameter sweep summary:
+  Rows: 60
+  epochs=10, max_pts=3000: mean=50.00%, std=0.00
+  epochs=10, max_pts=5000: mean=50.00%, std=0.00
+  epochs=10, max_pts=8000: mean=92.86%, std=0.00
+  epochs=10, max_pts=10000: mean=89.29%, std=0.00
+  epochs=20, max_pts=3000: mean=50.00%, std=0.00
+  epochs=20, max_pts=5000: mean=50.00%, std=0.00
+  epochs=20, max_pts=8000: mean=92.86%, std=0.00
+  epochs=20, max_pts=10000: mean=89.29%, std=0.00
+  epochs=30, max_pts=3000: mean=50.00%, std=0.00
+  epochs=30, max_pts=5000: mean=50.00%, std=0.00
+  epochs=30, max_pts=8000: mean=92.86%, std=0.00
+  epochs=30, max_pts=10000: mean=82.14%, std=3.57
+  epochs=40, max_pts=3000: mean=50.00%, std=0.00
+  epochs=40, max_pts=5000: mean=50.00%, std=0.00
+  epochs=40, max_pts=8000: mean=92.86%, std=0.00
+  epochs=40, max_pts=10000: mean=84.52%, std=4.12
+  epochs=50, max_pts=3000: mean=50.00%, std=0.00
+  epochs=50, max_pts=5000: mean=50.00%, std=0.00
+  epochs=50, max_pts=8000: mean=92.86%, std=nan
+  epochs=50, max_pts=10000: mean=84.52%, std=2.06
+
+Criteria evaluation:
+  minimum_accuracy_original (75.0): PASS
+  maximum_seed_std (5.0): PASS
+  maximum_shuffled_accuracy (60.0): PASS
+  minimum_accuracy_difference_vs_shuffled (20.0): PASS
+
+Accuracy difference (original - shuffled): 34.52%
+
+VERDICT: SIGNAL IS REAL

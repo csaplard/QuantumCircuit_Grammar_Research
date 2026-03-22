@@ -1,0 +1,73 @@
+=== VALIDATION PIPELINE – RÉSZEREDMÉNYEK ÖSSZEFOGLALÓJA ===
+Dátum: 2025-03-20
+Állapot: sweep folyamatban (41/60 érvényes sor, 19 hiányzik), report függőben
+
+----------------------------------------------------------------------
+1. SHUFFLED CONTROL (KÉSZ)
+----------------------------------------------------------------------
+Pipeline: epochs=50, max_pts=10000, SAX=7, hidden_dim=32, seq_len=16
+Eltérés: input sorozat permutálva fájlonként.
+
+  Seed 0:   50.00%
+  Seed 123: 50.00%
+  Seed 999: 50.00%
+
+  Átlag: 50.00% | Std: 0.00
+
+Kritérium: shuffled < 60% → PASS (shuffled pont véletlen szinten)
+
+----------------------------------------------------------------------
+2. EREDETI ROBUSTNESS (robustness_audit_sax7.txt)
+----------------------------------------------------------------------
+Sycamore topológia klaszterezés, SAX=7, epochs=50, max_pts=10000:
+
+  Seed 0:   82.14%
+  Seed 123: 85.71%
+  Seed 999: 85.71%
+
+  Átlag: ~84.5% | Std: ~2.0
+
+Kritérium: original > 75% → PASS
+
+----------------------------------------------------------------------
+3. PARAMETER SWEEP (RÉSZLEGES – 44/60 kombináció)
+----------------------------------------------------------------------
+Epochs: [10, 20, 30, 40] (50 hiányzik)
+max_pts: [3000, 5000, 8000, 10000]
+Seeds: [0, 123, 999]
+
+Összefoglaló (mean accuracy per epochs×max_pts, csak nem-NaN sorok):
+
+  max_pts=3000:  50% minden epochson → véletlen
+  max_pts=5000:  50% minden epochson → véletlen
+  max_pts=8000:  ~93% (epochs 10–40) → erős határhatás
+  max_pts=10000: ~87–90% (epochs 10–30) → erős határhatás
+
+NaN sorok eltávolítva (újrafuttatásra kerülnek):
+  - (30, 5000, 999), (30, 10000, 0), (40, 8000, 0)
+
+Hiányzó kombinációk (folytatáshoz):
+  - (40, 8000, 999)
+  - (40, 10000, 0), (40, 10000, 123), (40, 10000, 999)
+  - epochs=50: mind a 12 kombináció
+
+Összesen: 19 kombináció maradt (3 NaN újra + 16 soha nem futott)
+
+----------------------------------------------------------------------
+4. VALIDÁCIÓS KRITÉRIUMOK (validation_criteria.json)
+----------------------------------------------------------------------
+  minimum_accuracy_original: 75%     → PASS (original ~84.5%)
+  maximum_seed_std: 5%               → PASS (~2%)
+  maximum_shuffled_accuracy: 60%     → PASS (shuffled 50%)
+  minimum_accuracy_difference: 20%   → PASS (84.5 − 50 ≈ 34.5%)
+
+Előzetes vélemény (report nélkül): minden kritérium teljesül.
+
+----------------------------------------------------------------------
+5. FOLYTATÁSHOZ
+----------------------------------------------------------------------
+Parancs (hálózatra kötve):
+  python code/run_validation_pipeline.py --tasks sweep,report --watchdog-timeout-sec 2400
+
+A sweep folytatja a hiányzó 19 kombinációt (duplikátumok tisztítva, NaN sorok eltávolítva).
+A report automatikusan generálódik, ha a sweep befejeződik.

@@ -1,0 +1,27 @@
+=== MULTI-SEED ROBUSTNESS AUDIT (SYCAMORE TOPOLOGY, SAX=7) ===
+
+Summary Over Seeds:
+ Seed Accuracy
+    0   82.14%
+  123   85.71%
+  999   85.71%
+
+Detailed Cluster Breakdown:
+
+Seed 0:
+  Cluster 1: 2D_Block (Purity: 100.0%)
+  Cluster 2: Bulk_Full (Purity: 62.5%)
+  Cluster 3: 1D_Snake (Purity: 75.0%)
+
+Seed 123:
+  Cluster 1: 1D_Snake (Purity: 100.0%)
+  Cluster 2: Bulk_Full (Purity: 66.7%)
+  Cluster 3: 2D_Block (Purity: 92.3%)
+
+Seed 999:
+  Cluster 1: 1D_Snake (Purity: 85.7%)
+  Cluster 2: Bulk_Full (Purity: 66.7%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+
+
+Conclusion: Consistency across seeds confirms the physical signal dominance.

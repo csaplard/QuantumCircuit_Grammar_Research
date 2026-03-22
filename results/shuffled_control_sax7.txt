@@ -1,0 +1,27 @@
+=== SHUFFLED CONTROL TEST (SAX=7) ===
+Pipeline: same as original (epochs=50, max_pts=10000, hidden_dim=32, seq_len=16, lr=0.01)
+Only difference: input sequence shuffled per file.
+
+Summary:
+  Seed 0: 50.00%
+  Seed 123: 50.00%
+  Seed 999: 50.00%
+
+Mean accuracy: 50.00%
+Std accuracy: 0.00
+
+Seed 0:
+  Cluster 1: 2D_Block (Purity: 48.0%)
+  Cluster 2: 1D_Snake (Purity: 50.0%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+
+Seed 123:
+  Cluster 1: 2D_Block (Purity: 48.0%)
+  Cluster 2: 1D_Snake (Purity: 50.0%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+
+Seed 999:
+  Cluster 1: 2D_Block (Purity: 48.0%)
+  Cluster 2: 1D_Snake (Purity: 50.0%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+

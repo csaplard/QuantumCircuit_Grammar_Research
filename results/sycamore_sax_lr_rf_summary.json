@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "alphabet_size": 7,
+    "max_pts": 10000,
+    "n_samples": 28,
+    "feature_dim": 56,
+    "feature_breakdown": {
+      "sax_frequency_dims": 7,
+      "transition_flat_dims": 49
+    },
+    "q_labels_order": [
+      "12q",
+      "14q",
+      "16q",
+      "18q",
+      "20q",
+      "22q",
+      "24q",
+      "26q",
+      "28q",
+      "30q",
+      "32q",
+      "34q",
+      "36q",
+      "38q",
+      "39q",
+      "40q",
+      "41q",
+      "42q",
+      "43q",
+      "44q",
+      "45q",
+      "46q",
+      "47q",
+      "48q",
+      "49q",
+      "50q",
+      "51q",
+      "53q"
+    ],
+    "classes": [
+      "1D_Snake",
+      "2D_Block",
+      "Bulk_Full"
+    ],
+    "seeds": [
+      0,
+      123,
+      999
+    ],
+    "cv_splits": 5,
+    "data_dir": "results/readout_raw_data"
+  },
+  "per_seed_fold_accuracies": {
+    "0": {
+      "logistic_regression": [
+        0.5,
+        0.3333333333333333,
+        0.16666666666666666,
+        0.4,
+        0.4
+      ],
+      "random_forest": [
+        0.3333333333333333,
+        0.16666666666666666,
+        0.3333333333333333,
+        0.6,
+        0.2
+      ]
+    },
+    "123": {
+      "logistic_regression": [
+        0.5,
+        0.5,
+        0.3333333333333333,
+        0.8,
+        0.0
+      ],
+      "random_forest": [
+        0.5,
+        0.5,
+        0.16666666666666666,
+        0.8,
+        0.0
+      ]
+    },
+    "999": {
+      "logistic_regression": [
+        0.16666666666666666,
+        0.3333333333333333,
+        0.5,
+        0.8,
+        0.4
+      ],
+      "random_forest": [
+        0.3333333333333333,
+        0.16666666666666666,
+        0.3333333333333333,
+        0.6,
+        0.4
+      ]
+    }
+  },
+  "summary_rows": [
+    {
+      "seed": 0,
+      "model": "logistic_regression",
+      "mean_accuracy": 0.36,
+      "std_accuracy": 0.110353,
+      "n_splits": 5
+    },
+    {
+      "seed": 0,
+      "model": "random_forest",
+      "mean_accuracy": 0.326667,
+      "std_accuracy": 0.152607,
+      "n_splits": 5
+    },
+    {
+      "seed": 123,
+      "model": "logistic_regression",
+      "mean_accuracy": 0.426667,
+      "std_accuracy": 0.261109,
+      "n_splits": 5
+    },
+    {
+      "seed": 123,
+      "model": "random_forest",
+      "mean_accuracy": 0.393333,
+      "std_accuracy": 0.280793,
+      "n_splits": 5
+    },
+    {
+      "seed": 999,
+      "model": "logistic_regression",
+      "mean_accuracy": 0.44,
+      "std_accuracy": 0.210185,
+      "n_splits": 5
+    },
+    {
+      "seed": 999,
+      "model": "random_forest",
+      "mean_accuracy": 0.366667,
+      "std_accuracy": 0.139841,
+      "n_splits": 5
+    }
+  ]
+}

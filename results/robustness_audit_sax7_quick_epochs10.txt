@@ -1,0 +1,29 @@
+=== MULTI-SEED QUICK ROBUSTNESS AUDIT (SYCAMORE TOPOLOGY, SAX=7) ===
+
+epochs=10, max_pts=5000, hidden_dim=32, seq_len=16, lr=0.01
+
+Summary Over Seeds:
+ Seed Accuracy
+    0   50.00%
+  123   50.00%
+  999   50.00%
+
+Detailed Cluster Breakdown:
+
+Seed 0:
+  Cluster 1: 2D_Block (Purity: 53.8%)
+  Cluster 2: 2D_Block (Purity: 42.9%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+
+Seed 123:
+  Cluster 1: 2D_Block (Purity: 53.8%)
+  Cluster 2: 2D_Block (Purity: 42.9%)
+  Cluster 3: 2D_Block (Purity: 100.0%)
+
+Seed 999:
+  Cluster 1: 2D_Block (Purity: 53.8%)
+  Cluster 2: 2D_Block (Purity: 36.4%)
+  Cluster 3: 2D_Block (Purity: 75.0%)
+
+
+Conclusion: Quick audit based on reduced LSTM training.

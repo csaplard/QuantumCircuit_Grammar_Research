@@ -1,0 +1,8 @@
+{
+  "minimum_accuracy_original": 75.0,
+  "maximum_seed_std": 5.0,
+  "maximum_shuffled_accuracy": 60.0,
+  "minimum_accuracy_difference_vs_shuffled": 20.0,
+  "seeds": [0, 42, 123, 456, 999],
+  "note": "Criteria defined before seeing results. If original > 75% AND shuffled < 60% AND difference > 20%, signal is real."
+}
