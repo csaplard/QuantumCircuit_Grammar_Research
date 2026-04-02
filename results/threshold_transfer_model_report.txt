@@ -1,0 +1,76 @@
+=== Threshold Transfer Model ===
+
+Sycamore: 28 Fisher N*; topologies 1D/2D/Bulk. IBM: fine circuits (ghz/hadamard/layers/identity) unless coarse mode.
+
+--- Improved: Ridge + winsor + stratified CV; target log(N*sqrt(Q)); no logQ term ---
+Ridge alpha (full data): 0.272833
+Intercept: 10.553330
+  backend:marrakesh: -0.207572
+  backend:torino: -0.146083
+  regime:ghz: 1.210998
+  regime:hadamard: -1.324179
+  regime:layers: -1.303237
+  regime:identity: 1.062763
+  regime:1D_Snake: -0.164885
+  regime:Bulk_Full: -0.148233
+
+Full fit vs raw N_star (log space): RMSE=0.6906, R2=0.6237
+
+Improved CV (RMSE on log raw N):
+ fold  n_train  n_test  rmse_logN  mae_logN  ridge_alpha
+    0       40      10   0.562939  0.476040     0.412463
+    1       40      10   0.775236  0.650147     0.180472
+    2       40      10   0.896961  0.589541     0.180472
+    3       40      10   0.735521  0.568252     0.272833
+    4       40      10   0.837685  0.645042     0.412463
+
+Baseline OLS CV (same folds; RMSE on log N OLS target):
+ fold  n_train  n_test  rmse_logN  mae_logN
+    0       40      10   0.517576  0.423187
+    1       40      10   0.809302  0.645976
+    2       40      10   0.928965  0.606569
+    3       40      10   0.803724  0.636443
+    4       40      10   0.833654  0.700838
+
+Leave-one-Sycamore-topology-out (train IBM + other two topologies; test held-out):
+held_out_topology  n_train  n_test  rmse_logN  mae_logN  ridge_alpha
+         1D_Snake       43       7   0.860093  0.557479     0.272833
+         2D_Block       36      14   0.879342  0.664567     0.180472
+        Bulk_Full       43       7   0.429771  0.405642     0.272833
+  mean RMSE log N: 0.7231 ± 0.2542
+
+
+Within-source CV — IBM only (Ridge, same target):
+source  fold  n_train  n_test  rmse_logN  mae_logN  ridge_alpha
+   IBM     0       17       5   0.745028  0.629255     0.119378
+   IBM     1       17       5   0.424055  0.378782     0.180472
+   IBM     2       18       4   0.538993  0.483272     0.119378
+   IBM     3       18       4   0.899514  0.676021     0.119378
+   IBM     4       18       4   0.820942  0.710393     0.272833
+  mean RMSE log N: 0.6857 ± 0.1984
+
+
+Within-source CV — Sycamore only:
+  source  fold  n_train  n_test  rmse_logN  mae_logN   ridge_alpha
+Sycamore     0       22       6   0.447924  0.406890 100000.000000
+Sycamore     1       22       6   0.561804  0.434806     17.012543
+Sycamore     2       22       6   0.956195  0.654904 100000.000000
+Sycamore     3       23       5   1.160409  0.839990 100000.000000
+Sycamore     4       23       5   0.801732  0.697074 100000.000000
+  mean RMSE log N: 0.7856 ± 0.2889
+
+
+=== Uncertainty (improved Ridge model) ===
+Permutation test (shuffle N*): R2_obs=0.6237, p≈0.0050 (199 reps)
+Bootstrap R2 (row resample): 95% CI [0.5111, 0.8357], mean=0.6722 (199 reps)
+
+
+Files:
+  predictions: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_predictions.csv
+  cv improved: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_folds.csv
+  cv baseline OLS: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_baseline_ols.csv
+  cv Sycamore LOO topology: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_sycamore_loo_topology.csv
+  cv IBM-only / Syc-only: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_ibm_only.csv, C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_sycamore_only.csv
+  uncertainty: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_uncertainty.txt
+  one-pager: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_onepager.txt
+  figure: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_pred_vs_obs.png

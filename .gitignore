@@ -25,3 +25,44 @@ Thumbs.db
 *.local
 secrets*
 *_secret*
+code/local_ibm_env.ps1
+
+# Large raw data (obtain from Dryad CC0 or local mirror)
+readout_raw_data/
+
+# IBM raw shot dumps (regenerate with collect_ibm_shots.py)
+results/ibm_raw_shots/
+
+# Run logs
+results/**/*.log
+
+# Console noise from long Fisher jobs
+results/fisher_stdout*.txt
+results/fisher_stderr*.txt
+
+# Exploratory IBM subset analyses (10–20q, no-5q, raw4 ablations)
+results/ibm_marrakesh_10_20_*
+results/ibm_torino_10_20_*
+results/ibm_marrakesh_no5q_*
+results/ibm_torino_no5q_*
+results/ibm_marrakesh_raw4_*
+results/ibm_torino_raw4_*
+
+# Large binary caches (regenerate from scripts)
+results/**/*.npz
+
+# Optional KL exploration console dumps
+results/grammar_pairwise_kl_*.txt
+
+# Extra Fisher diagnostic plots (publication figures: results/fisher_figures/)
+results/fisher_phase_transition_all_readouts*.png
+results/fisher_phase_transition_summary.png
+
+# LaTeX build artifacts (preprint in docs/)
+docs/*.aux
+docs/*.out
+docs/*.log
+docs/*.toc
+docs/*.synctex.gz
+docs/*.fdb_latexmk
+docs/*.fls

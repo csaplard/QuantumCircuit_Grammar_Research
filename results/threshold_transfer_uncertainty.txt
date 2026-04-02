@@ -1,0 +1,3 @@
+=== Uncertainty (improved Ridge model) ===
+Permutation test (shuffle N*): R2_obs=0.6237, p≈0.0050 (199 reps)
+Bootstrap R2 (row resample): 95% CI [0.5111, 0.8357], mean=0.6722 (199 reps)

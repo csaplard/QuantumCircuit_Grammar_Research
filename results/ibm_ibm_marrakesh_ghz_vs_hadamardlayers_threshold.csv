@@ -1,0 +1,4 @@
+backend_prefix,max_pts,n_files,purity_k2,within_mean,between_mean,within_to_between_ratio,cluster_counts
+ibm_marrakesh,4000,6,1.0,0.2871373825307058,0.9732113732708083,0.2950411292108957,"{1: {'hadamard_plus_layers': 4}, 2: {'ghz': 2}}"
+ibm_marrakesh,8000,6,1.0,0.23673912237277464,0.9697153457339327,0.2441325935639368,"{1: {'hadamard_plus_layers': 4}, 2: {'ghz': 2}}"
+ibm_marrakesh,16000,6,1.0,0.19280649853355197,1.0138434687684184,0.1901738330156297,"{1: {'hadamard_plus_layers': 4}, 2: {'ghz': 2}}"

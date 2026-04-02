@@ -1,0 +1,12 @@
+file,backend,circuit,n_qubits,threshold_estimate,max_rate_of_change,between_n_left,between_n_right
+ibm_marrakesh_ghz_10q_40960shots.txt,marrakesh,ghz,10,36000.0,47.967520944859125,32000,40000
+ibm_marrakesh_ghz_20q_40960shots.txt,marrakesh,ghz,20,36000.0,32.54945238769652,32000,40000
+ibm_marrakesh_ghz_5q_40960shots.txt,marrakesh,ghz,5,36000.0,103.68528222483945,32000,40000
+ibm_marrakesh_hadamard_10q_40960shots.txt,marrakesh,hadamard,10,1500.0,-0.0020673615781140243,1000,2000
+ibm_marrakesh_hadamard_1q_40960shots.txt,marrakesh,hadamard,1,24000.0,36.58698987128721,16000,32000
+ibm_marrakesh_hadamard_20q_40960shots.txt,marrakesh,hadamard,20,1500.0,-0.001129884624491055,1000,2000
+ibm_marrakesh_hadamard_5q_40960shots.txt,marrakesh,hadamard,5,1500.0,-0.0008108340669285497,1000,2000
+ibm_marrakesh_identity_10q_40960shots.txt,marrakesh,identity,10,36000.0,14986.10148961468,32000,40000
+ibm_marrakesh_identity_20q_40960shots.txt,marrakesh,identity,20,24000.0,108.40768063497727,16000,32000
+ibm_marrakesh_layers_10q_40960shots.txt,marrakesh,layers,10,1500.0,-0.0006264888470104708,1000,2000
+ibm_marrakesh_layers_20q_40960shots.txt,marrakesh,layers,20,3000.0,-0.00016095694907275514,2000,4000

@@ -1,0 +1,12 @@
+file,backend,circuit,n_qubits,threshold_estimate,max_rate_of_change,between_n_left,between_n_right
+ibm_torino_ghz_10q_40960shots.txt,torino,ghz,10,36000.0,38.6019071662559,32000,40000
+ibm_torino_ghz_20q_40960shots.txt,torino,ghz,20,36000.0,44.1076183254534,32000,40000
+ibm_torino_ghz_5q_40960shots.txt,torino,ghz,5,36000.0,132.31328288494097,32000,40000
+ibm_torino_hadamard_10q_40960shots.txt,torino,hadamard,10,1500.0,-0.0019034287236985605,1000,2000
+ibm_torino_hadamard_1q_40960shots.txt,torino,hadamard,1,36000.0,79.47416104656976,32000,40000
+ibm_torino_hadamard_20q_40960shots.txt,torino,hadamard,20,3000.0,-0.0004367677881441452,2000,4000
+ibm_torino_hadamard_5q_40960shots.txt,torino,hadamard,5,1500.0,-0.001149105024832039,1000,2000
+ibm_torino_identity_10q_40960shots.txt,torino,identity,10,24000.0,38.612206816069275,16000,32000
+ibm_torino_identity_20q_40960shots.txt,torino,identity,20,24000.0,66.86643872790738,16000,32000
+ibm_torino_layers_10q_40960shots.txt,torino,layers,10,1500.0,-0.0017958737895651283,1000,2000
+ibm_torino_layers_20q_40960shots.txt,torino,layers,20,3000.0,-0.0005513221465751563,2000,4000

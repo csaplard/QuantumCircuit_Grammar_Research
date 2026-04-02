@@ -1,0 +1,3 @@
+backend,mean_threshold,std_threshold,min_threshold,max_threshold
+marrakesh,18272.727272727272,16374.31469766542,1500.0,36000.0
+torino,18409.090909090908,16226.24137287835,1500.0,36000.0

@@ -1,0 +1,13 @@
+platform,regime_a,regime_b,mean_frobenius,n_pairs
+IBM_marrakesh_torino,GHZ,GHZ,1.003818416,15
+IBM_marrakesh_torino,GHZ,HadamardLayers,0.9929600642,72
+IBM_marrakesh_torino,GHZ,Identity,1.42802274,24
+IBM_marrakesh_torino,HadamardLayers,HadamardLayers,0.4475990368,66
+IBM_marrakesh_torino,HadamardLayers,Identity,1.309326975,48
+IBM_marrakesh_torino,Identity,Identity,1.207543804,6
+Sycamore_readout,1D_Snake,1D_Snake,1.619707999,21
+Sycamore_readout,1D_Snake,2D_Block,1.613769633,98
+Sycamore_readout,1D_Snake,Bulk_Full,1.672589168,49
+Sycamore_readout,2D_Block,2D_Block,1.543710967,91
+Sycamore_readout,2D_Block,Bulk_Full,1.487269697,98
+Sycamore_readout,Bulk_Full,Bulk_Full,1.43409333,21

@@ -1,0 +1,20 @@
+IBM Torino grammar fingerprint pairwise comparison
+reference_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
+current_dir:   C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+train: alphabet=7 hidden=32 seq_len=16 epochs=20 lr=0.01 seed=0
+
+                                  file  kl_ref_to_cur  kl_cur_to_ref   sym_kl  frob_diff  val_loss_ref  val_loss_cur  ppl_ref  ppl_cur  ok
+     ibm_torino_ghz_10q_40960shots.txt       0.032680       0.021080 0.026880   0.198546      1.335620      1.297193 3.802354 3.659012   1
+     ibm_torino_ghz_20q_40960shots.txt       0.007570       0.007656 0.007613   0.132922      1.759331      1.764479 5.808553 5.838531   1
+      ibm_torino_ghz_5q_40960shots.txt       0.001948       0.001859 0.001904   0.090021      0.842675      0.830280 2.322571 2.293960   1
+ibm_torino_hadamard_10q_40960shots.txt       0.004619       0.004662 0.004640   0.095806      1.961451      1.957560 7.109635 7.082029   1
+ ibm_torino_hadamard_1q_40960shots.txt       0.000902       0.000903 0.000903   0.079439      0.691646      0.692987 1.997000 1.999679   1
+ibm_torino_hadamard_20q_40960shots.txt       0.007260       0.007717 0.007489   0.120489      1.967184      1.954257 7.150510 7.058675   1
+ ibm_torino_hadamard_5q_40960shots.txt       0.014828       0.014698 0.014763   0.173975      1.945777      1.959508 6.999067 7.095836   1
+ibm_torino_identity_10q_40960shots.txt       0.009537       0.008474 0.009006   0.206006      0.587303      0.410039 1.799130 1.506876   1
+ibm_torino_identity_20q_40960shots.txt       0.002733       0.002711 0.002722   0.084804      0.913105      0.906066 2.492048 2.474569   1
+  ibm_torino_layers_10q_40960shots.txt       0.004174       0.004179 0.004176   0.091552      1.976003      1.987341 7.213849 7.296105   1
+  ibm_torino_layers_20q_40960shots.txt       0.007754       0.007785 0.007770   0.123372      1.963577      1.961347 7.124769 7.108896   1
+
+mean sym_kl (ok rows): 0.007988
+mean frob_diff:       0.126994

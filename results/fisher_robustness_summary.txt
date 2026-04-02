@@ -1,0 +1,12 @@
+=== Fisher robustness summary ===
+
+Estimated N threshold (from discrete |d(trace)/dN| max), by topology:
+
+1D_Snake: n=7, min=750, Q1=5000, median=6500, Q3=9000, max=17500, mean=7535.7, std=5236.9
+2D_Block: n=14, min=750, Q1=4000, median=8000, Q3=11750, max=17500, mean=8375.0, std=5187.6
+Bulk_Full: n=7, min=3500, Q1=3500, median=4500, Q3=7000, max=9500, mean=5500.0, std=2380.5
+
+log10(Fisher trace): per-file rolling mean window = 3 (by sorted N grid).
+Aggregate plots: median and IQR across readouts at each N.
+
+N grid: [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 15000, 20000, 30000, 40000]

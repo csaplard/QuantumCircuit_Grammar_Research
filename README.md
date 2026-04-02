@@ -1,152 +1,226 @@
-# Grammar Fingerprinting: Blind Topology Classification of Quantum Processors from Raw Measurement Noise
+# Grammar Fingerprinting Research Archive
+
+**Blind topology classification, Fisher-threshold analysis, IBM cross-platform data, and transfer modelling from raw quantum readouts.**
 
 **Author:** Dániel Csaplár — Independent Researcher, Kazincbarcika, Hungary  
 **ORCID:** [0009-0000-7362-7232](https://orcid.org/0009-0000-7362-7232)  
-**Date:** March 2026  
+**Archive date:** March 2026  
 
 ---
 
-## Summary
+## What this repository contains
 
-This repository demonstrates that the temporal dynamics of raw quantum processor measurement noise encode the physical hardware topology. Using a method called **Grammar Fingerprinting** — Symbolic Aggregate Approximation (SAX) combined with a character-level LSTM — we extract learned transition matrices ("grammar fingerprints") from raw readout sequences and cluster them via Frobenius distance and Ward linkage.
+1. **Sycamore (Dryad):** Grammar fingerprints from raw readout sequences; blind Ward clustering vs. hardware topology; strong controls (shuffle, LSB, baselines); **data-length threshold near ~8k samples** for classification signal.
+2. **Fisher information geometry:** Per-readout sweeps over data length; scalar Fisher metrics and **estimated transition thresholds** (N*); **multi-seed** runs with **median + IQR** reporting.
+3. **IBM Quantum:** Raw shot collection (`collect_ibm_shots.py`), grammar learning, IBM-specific Fisher sweeps, optional Marrakesh vs. Torino comparisons.
+4. **Temporal drift (IBM):** Distribution-level and **grammar-matrix KL** comparisons between archived and refreshed shot files; marginal / Hamming summaries for high-q regimes.
+5. **Transfer / universality:** Ridge-style models linking IBM and Sycamore threshold estimates; clustering / purity reports; optional DOCX report builders.
 
-**Key result:** Blind classification of 28 Google Sycamore quantum supremacy circuit configurations into three topology classes (1D Snake, 2D Block, Full Chip) achieves **84.5% mean accuracy** across three random seeds, while six independent controls confirm the signal is real.
-
----
-
-## Data Sources
-
-| Platform | Source | License | DOI |
-|----------|--------|---------|-----|
-| Google Sycamore (53 qubits) | Arute et al., *Nature* 574, 505–510 (2019) — Dryad | CC0 | [10.5061/dryad.k6t1rj8](https://doi.org/10.5061/dryad.k6t1rj8) |
+**Not tracked in Git** (see `.gitignore`): Dryad-scale `readout_raw_data/`; IBM `results/ibm_raw_shots/`; run logs; large `*.npz` caches; exploratory IBM subset analyses (`10_20`, `no5q`, `raw4` filename patterns); extra Fisher phase-transition PNGs (publication figures remain under `results/fisher_figures/`).
 
 ---
 
-## Validation Results
+## Data sources
 
-### Primary Result
-- **Mean accuracy:** 84.52% (seeds 0, 123, 999)
-- **Seed std:** 1.68%
+| Platform | Role | Notes |
+|----------|------|--------|
+| **Google Sycamore** | Primary readouts for validation & Fisher | Arute et al., *Nature* 574, 505–510 (2019) — Dryad **CC0**, [10.5061/dryad.k6t1rj8](https://doi.org/10.5061/dryad.k6t1rj8). Files: `readout_raw_data/*_readout_raw_data.txt` or `results/readout_raw_data/`. |
+| **IBM Quantum** | Cross-platform shots & thresholds | Collected via `qiskit-ibm-runtime` (not in minimal `requirements.txt`). Use **`QISKIT_IBM_TOKEN`** (see `code/local_ibm_env.ps1.example` then copy to `local_ibm_env.ps1`, gitignored). |
 
-### Control Tests (all PASS)
+---
 
-| Control | Purpose | Result |
-|---------|---------|--------|
-| **Shuffled control** | Destroy temporal order, preserve distribution | 50.00% (3 seeds, std 0) |
-| **LSB single-bit control** | Use only 1 bit per readout (0/1 series) | 50.00% (3 seeds, std 0) |
-| **Logistic Regression baseline** | Static SAX features, no sequence | ~36–44% (chance level) |
-| **Random Forest baseline** | Static SAX features, no sequence | ~33–39% (chance level) |
-| **Quick epochs (10 ep, 5k pts)** | Reduced training | 50.00% (3 seeds, std 0) |
+## Core pipeline (all platforms)
 
-### Parameter Sweep (60 combinations)
-Epochs [10, 20, 30, 40, 50] × max_pts [3000, 5000, 8000, 10000] × seeds [0, 123, 999]
+1. Load integer **readout / shot** column (`output`).
+2. Z-normalize then **SAX** (default alphabet 7, quantile breakpoints; `signal_processing.py`).
+3. Train **character LSTM** (`grammar_learner.py`: hidden, seq_len, epochs as per script).
+4. **Extract grammar:** row-normalized transition matrix T (next SAX symbol given current).
+5. Downstream: clustering (Frobenius + Ward), Fisher metric on T, KL between successive N, or comparison across runs.
 
-| max_pts | Accuracy (all epochs) | Std |
-|---------|----------------------|-----|
-| 3,000 | 50.00% | 0.00 |
-| 5,000 | 50.00% | 0.00 |
-| 8,000 | **92.86%** | 0.00 |
-| 10,000 | 82–89% | 0–4% |
+Ground-truth topology labels are used **only for evaluation**, not for training.
 
-**Sharp threshold at ~8,000 data points:** below it, the model is blind; above it, classification accuracy jumps to 85–93%. This threshold is independent of training epochs, confirming the signal emerges from data quantity, not training duration.
+---
 
-### Decision Criteria (defined before experiments)
-```json
-{
-  "minimum_accuracy_original": 75.0,
-  "maximum_seed_std": 5.0,
-  "maximum_shuffled_accuracy": 60.0,
-  "minimum_accuracy_difference_vs_shuffled": 20.0
-}
+## Sycamore: blind topology validation (summary)
+
+- **Claim:** Temporal structure in raw noise encodes **1D Snake / 2D Block / Bulk** topology; **~84.5%** mean Ward purity (multiple seeds) vs. chance and strong controls.
+- **Controls:** Shuffled time order to chance; LSB-only bitstream to chance; static SAX + LR/RF to chance; short training / low max_pts to no signal.
+- **Data-length sweep:** Sharp emergence of signal around **~8,000** samples (see `results/parameter_sweep_sax7.csv`, `validation_report.txt`).
+
+**Main driver:** `code/run_validation_pipeline.py`  
+**Criteria:** `validation_criteria.json`
+
+---
+
+## Fisher information analysis (Sycamore, 28 readouts)
+
+**Script:** `code/fisher_information_analysis.py`
+
+- Trains the grammar learner at fixed **N** grid: 500 to 40000 (see script for exact steps).
+- Builds Fisher information matrix from T; traces Fisher trace / det / max eigenvalue, KL between successive T(N), entropy, Frobenius distance from uniform.
+- Estimates per-file **N*** (phase-transition-style heuristic; see script and `fisher_information_analysis_*.txt` reports).
+- **Multi-seed:** `--tag-with-seed --seed 0|1|2` gives output suffix `_seed{k}`.
+- **Queue helper:** `code/run_fisher_seeds_1_2_after_seed0.ps1` waits for seed 0, then runs 1 and 2.
+- **Aggregate:** `code/aggregate_fisher_threshold_seeds.py` gives **median + q25/q75** of N* across seeds.
+- **Publication table:** `code/build_fisher_median_iqr_publication_table.py` writes `results/fisher_threshold_median_iqr_publication.csv` and `.md`.
+
+**Typical outputs:**  
+`results/fisher_metric_vs_datalength_all_readouts_seed*.csv`,  
+`results/fisher_estimated_thresholds_per_readout_all_readouts_seed*.csv`,  
+`results/fisher_phase_transition_all_readouts_seed*.png`,  
+`results/fisher_estimated_thresholds_median_seeds012.csv`.
+
+**Quick test:** `python code/fisher_information_analysis.py --quick`
+
+---
+
+## IBM Quantum workflows
+
+| Script | Purpose |
+|--------|---------|
+| `code/collect_ibm_shots.py` | SamplerV2 jobs; saves `results/ibm_raw_shots/ibm_<backend>_*.txt` + metadata. `--resume` skips complete files. |
+| `code/run_ibm_grammar_learning.py` | Fingerprints for all shot files to CSV + NPZ. |
+| `code/run_ibm_fisher_threshold_sweep.py` | Per-circuit Fisher-style sweep on IBM shots. |
+| `code/run_ibm_ghz_vs_hadamardlayers_threshold.py` | GHZ vs Hadamard/layers threshold comparison. |
+| `code/run_ibm_sycamore_protocol.py` | Protocol-style report from IBM filenames. |
+| `code/analyze_ibm_fingerprint_clustering.py` | IBM fingerprint clustering analyses. |
+
+**Drift / two-run comparison (same backend, two dates):**
+
+| Script | Purpose |
+|--------|---------|
+| `code/compare_ibm_shot_runs.py` | Raw outcome histogram: TV, Jensen-Shannon, sym-KL (sparse at high q). |
+| `code/compare_ibm_shot_marginals.py` | Per-qubit P(1) drift + Hamming-weight TV/JS (interpretable at 20q). |
+| `code/compare_ibm_grammar_pairwise_kl.py` | Train grammar on archive vs current; KL between T matrices. |
+
+---
+
+## Cross-platform and transfer modelling
+
+- `code/cross_platform_universality_report.py` — combined IBM + Sycamore fingerprint summaries (Ward purity, regime tables).
+- `code/fit_threshold_transfer_model.py` — OLS/Ridge-style transfer of threshold estimates across sources.
+- `code/fisher_robustness_visualization.py` — Boxplots / curves for Fisher robustness.
+- `code/drift_monitor_kl.py` — KL vs a reference grammar matrix from NPZ + rolling windows (prototype).
+- `code/build_ibm_threshold_report_docx.py`, `code/build_transfer_threshold_docx.py` — Word reports from CSVs (optional python-docx).
+
+---
+
+## Key results (headline numbers; full tables in results/)
+
+The README lists **summary numbers** only. **Authoritative rows** are in `results/*.csv` and `results/*.txt`.
+
+*(Magyarul: a README-ben **fő számok** és **fájlnevek** vannak; a **teljes táblázatok** a `results/` mappában — nem másoljuk be ide mind a 28 readout sort.)*
+
+### Sycamore blind topology
+
+| Result | Value / note | File |
+|--------|----------------|------|
+| Mean Ward purity (3 seeds) | **~84.5%** | `results/robustness_audit_sax7.txt`, `results/validation_report.txt` |
+| Shuffled control | **50%** | `results/shuffled_control_sax7.txt` |
+| LSB single-bit control | **50%** | `results/readout_lsb_bit_control_sax7.txt` |
+| Data-length sweep | Signal near **8k** (e.g. **92.86%** at max_pts 8000 in 60-combo sweep) | `results/parameter_sweep_sax7.csv` |
+| Pre-registered criteria | **PASS** | `validation_criteria.json`, `results/validation_report.txt` |
+
+### Fisher (28 readouts, seeds 0, 1, 2)
+
+| Result | Note | File |
+|--------|------|------|
+| Median N* + IQR | Many readouts in **~6k-10k** band (aligned with ~8k regime); spread by readout | `results/fisher_threshold_median_iqr_publication.csv`, `.md` |
+| Stable example | **46q Bulk:** N* = **750** all three seeds | same (`stable_3seeds` column) |
+| Seed-sensitive | Large IQR e.g. 28q, 30q, 32q, 36q, 53q | `results/fisher_estimated_thresholds_median_seeds012.csv` |
+| Curves | Fisher vs data length | `results/fisher_metric_vs_datalength_all_readouts_seed*.csv`, `results/fisher_phase_transition_all_readouts_seed*.png` |
+
+### IBM Torino (archive vs refreshed shots, example)
+
+| Result | Representative value | File |
+|--------|---------------------|------|
+| Grammar sym-KL (11 circuits) | Mean **~0.008**; mean Frobenius **~0.13** | `results/ibm_torino_grammar_pairwise_kl.csv` |
+| 20q Hamming-weight TV | Mean **~0.031** | `results/ibm_torino_marginals_hamming_compare.csv` |
+| Raw joint histogram | Inflated TV/KL at 20q; use marginals + grammar | `results/ibm_torino_run_compare_distributions.csv` |
+
+### IBM Fisher and transfer
+
+| Topic | File |
+|-------|------|
+| Backend sweeps | `results/ibm_fisher_sweep_marrakesh40960.csv`, `results/ibm_fisher_sweep_torino40960.csv` |
+| Normalized thresholds | `results/ibm_fisher_thresholds_normalized.csv`, `results/ibm_fisher_threshold_backend_summary.csv` |
+| Transfer model | `results/threshold_transfer_model_report.txt`, `results/threshold_transfer_predictions.csv` |
+
+---
+
+## Repository layout (high level)
+
 ```
-**VERDICT: SIGNAL IS REAL** (all criteria PASS, accuracy difference = 34.52%)
-
----
-
-## What the Controls Rule Out
-
-- **Shuffled = 50%** → Signal is in the temporal order, not the value distribution
-- **LSB = 50%** → Signal is in multi-qubit correlations, not single-qubit statistics
-- **LR/RF = chance** → Signal requires sequential modeling (LSTM), not static features
-- **Quick training = 50%** → Signal is non-trivial, requires sufficient learning
-- **Threshold at 8k** → Signal is a long-range temporal structure, not short-range pattern
-
----
-
-## Repository Structure
-
-```
-├── code/
-│   ├── grammar_learner.py          # SAX + LSTM pipeline, grammar extraction
-│   ├── signal_processing.py        # SAX encoding (quantile-based)
-│   ├── run_validation_pipeline.py  # Full validation: shuffled, sweep, report
-│   └── run_readout_lsb_bit_experiment.py  # LSB single-bit control
-├── results/
-│   ├── readout_raw_data/           # Sycamore raw readout files (28 configs)
-│   ├── parameter_sweep_sax7.csv    # Full 60-combination sweep
-│   ├── validation_report.txt       # Automated PASS/FAIL report
-│   ├── shuffled_control_sax7.txt   # Shuffled control results
-│   ├── readout_lsb_bit_control_sax7.txt  # LSB control results
-│   ├── robustness_audit_sax7.txt   # Original 3-seed audit
-│   └── sycamore_sax_lr_rf_summary.* # Baseline classifier results
-├── validation_criteria.json        # Pre-defined decision thresholds
-├── requirements.txt
-└── README.md
+code/                  # All Python tooling
+readout_raw_data/      # Preferred: Sycamore *_readout_raw_data.txt
+results/               # All outputs: validation, Fisher, IBM, plots, DOCX, logs
+  ibm_raw_shots/       # IBM shots; archive_* folders for drift baselines
+validation_criteria.json
+requirements.txt
+code/local_ibm_env.ps1.example
+README.md
 ```
 
+**Other `code/` utilities:** `run_validation_pipeline.py`, `run_readout_lsb_bit_experiment.py`, `build_sycamore_readout_fingerprints.py`, `aggregate_fisher_threshold_seeds.py`, `test_threshold_transfer_cv.py`, ...
+
 ---
 
-## Reproduction
+## Reproduction (cheat sheet)
 
-### Requirements
 ```bash
 pip install -r requirements.txt
+# IBM: pip install qiskit-ibm-runtime qiskit  (and account / token)
 ```
 
-### Run Full Validation
+**Sycamore validation**
+
 ```bash
-# Original robustness audit (3 seeds)
 python code/run_validation_pipeline.py --tasks sweep,report
-
-# Shuffled temporal-order control
 python code/run_validation_pipeline.py --tasks shuffled
-
-# LSB single-bit control
-python code/run_readout_lsb_bit_experiment.py \
-  --output-bit-index 0 --epochs 50 --max-pts 10000 \
-  --seeds 0 123 999
+python code/run_readout_lsb_bit_experiment.py --output-bit-index 0 --epochs 50 --max-pts 10000 --seeds 0 123 999
 ```
 
-### Pipeline Overview
-1. Load raw readout `output` column (integer multi-qubit state per shot)
-2. Z-normalize → SAX encoding (alphabet=7, quantile breakpoints)
-3. Train character-level LSTM (hidden=32, seq_len=16) on next-symbol prediction
-4. Extract learned transition matrix (grammar fingerprint)
-5. Compute pairwise Frobenius distances between fingerprints
-6. Ward hierarchical clustering into 3 groups
-7. Evaluate cluster purity against ground-truth topology labels
+**Fisher (full 28 files, one seed)**
 
-**Note:** Ground-truth labels are used **only** for evaluation, never during training. The model receives only the raw signal — no labels, no file names, no hardware metadata.
+```bash
+python code/fisher_information_analysis.py --tag-with-seed --seed 0
+```
+
+**Fisher seeds 0-2 + median table**
+
+```bash
+powershell -NoProfile -ExecutionPolicy Bypass -File code/run_fisher_seed_sweep.ps1 -Seeds 0,1,2
+python code/aggregate_fisher_threshold_seeds.py results/fisher_estimated_thresholds_per_readout_all_readouts_seed0.csv results/fisher_estimated_thresholds_per_readout_all_readouts_seed1.csv results/fisher_estimated_thresholds_per_readout_all_readouts_seed2.csv --out results/fisher_estimated_thresholds_median_seeds012.csv
+python code/build_fisher_median_iqr_publication_table.py
+```
+
+**IBM shots (after local_ibm_env.ps1 or env)**
+
+```bash
+. ./code/local_ibm_env.ps1   # PowerShell
+python code/collect_ibm_shots.py --backend ibm_torino --resume
+python code/run_ibm_grammar_learning.py
+```
 
 ---
 
-## Negative Results (reported for completeness)
+## Negative / null results (reported)
 
-- **IBM daily calibration data:** Grammar Fingerprinting did not achieve above-chance accuracy on pre-processed daily calibration summaries (33–60%). The method requires dense raw measurement data, not aggregated metrics.
-- **Cosmological parameter encoding hypothesis (Beck):** Tested and rejected (p = 0.76, not significant).
+- **IBM daily calibration summaries:** No above-chance grammar topology signal from pre-aggregated calibration tables; dense raw shots are needed.
+- **Cosmological parameter encoding (Beck hypothesis):** Tested; not supported.
 
 ---
 
-## Method Origin
+## Method note
 
-Grammar Fingerprinting applies industrial vibration diagnostics logic to quantum processor noise: the same principle by which a machine's acoustic signature reveals mechanical faults can identify quantum hardware structure from measurement noise. The method was developed independently; AI tools (Claude, Cursor) were used for code development and validation design. All experimental decisions, execution, and interpretation are the author's own work.
+Grammar Fingerprinting adapts industrial **condition monitoring** (SAX + sequence learning) to quantum readout streams. Development used AI-assisted coding (e.g. Cursor); **design, runs, and interpretation** remain the author's responsibility.
 
 ---
 
 ## License
 
-Code: MIT  
-Results and documentation: CC-BY 4.0  
+**Code:** MIT  
+**Results / documentation:** CC-BY 4.0  
 
 ---
 

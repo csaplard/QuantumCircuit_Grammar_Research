@@ -1,0 +1,12 @@
+circuit,n_qubits,threshold_estimate_marrakesh,threshold_estimate_torino,abs_diff
+ghz,5,36000.0,36000.0,0.0
+ghz,10,36000.0,36000.0,0.0
+ghz,20,36000.0,36000.0,0.0
+hadamard,1,24000.0,36000.0,12000.0
+hadamard,5,1500.0,1500.0,0.0
+hadamard,10,1500.0,1500.0,0.0
+hadamard,20,1500.0,3000.0,1500.0
+identity,10,36000.0,24000.0,12000.0
+identity,20,24000.0,24000.0,0.0
+layers,10,1500.0,1500.0,0.0
+layers,20,3000.0,3000.0,0.0

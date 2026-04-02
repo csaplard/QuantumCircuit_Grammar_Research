@@ -1,0 +1,20 @@
+=== IBM FISHER THRESHOLD SWEEP REPORT ===
+
+detail_csv: results/ibm_fisher_sweep_marrakesh40960.csv
+files analyzed: 11
+
+--- Per-file thresholds ---
+ibm_marrakesh_ghz_5q_40960shots.txt: threshold~36000 (between 32000-40000)
+ibm_marrakesh_ghz_10q_40960shots.txt: threshold~36000 (between 32000-40000)
+ibm_marrakesh_ghz_20q_40960shots.txt: threshold~36000 (between 32000-40000)
+ibm_marrakesh_hadamard_1q_40960shots.txt: threshold~24000 (between 16000-32000)
+ibm_marrakesh_hadamard_5q_40960shots.txt: threshold~1500 (between 1000-2000)
+ibm_marrakesh_hadamard_10q_40960shots.txt: threshold~1500 (between 1000-2000)
+ibm_marrakesh_hadamard_20q_40960shots.txt: threshold~1500 (between 1000-2000)
+ibm_marrakesh_identity_10q_40960shots.txt: threshold~36000 (between 32000-40000)
+ibm_marrakesh_identity_20q_40960shots.txt: threshold~24000 (between 16000-32000)
+ibm_marrakesh_layers_10q_40960shots.txt: threshold~1500 (between 1000-2000)
+ibm_marrakesh_layers_20q_40960shots.txt: threshold~3000 (between 2000-4000)
+
+--- Backend aggregates ---
+marrakesh: mean=18272.7, std=16374.3, min=1500, max=36000, n=11

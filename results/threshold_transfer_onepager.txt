@@ -1,0 +1,38 @@
+=== Threshold transfer model — improved pipeline ===
+
+Improvements vs plain OLS on log(N):
+  - Stratified K-fold (IBM vs Sycamore balance in each fold).
+  - Winsorize N* on training fold (default 5–95% quantiles) to cut spike leverage.
+  - Ridge regression with CV-chosen alpha (less overfit on small IBM set).
+  - Default target: log(N*sqrt(Q)) with only backend+regime features (theory: N* ~ 1/sqrt(Q));
+    predictions mapped back to N; metrics in log(N_raw) vs log(N_pred).
+
+Data: IBM rows (dedup): 22; Sycamore: 28. Legacy mode: False.
+IBM regimes: separate ghz / hadamard / layers / identity unless --coarse-ibm-regimes.
+
+Improved — full-sample fit on raw N (reported in log-space):
+  RMSE log N: 0.6906
+  R^2 log: 0.6237
+  chosen ridge alpha (full fit): 0.2728
+  RMSE_log_IBM: 0.5859
+  RMSE_log_Sycamore: 0.7629
+
+Baseline OLS — full-sample fit (same design matrix; target log(N*) linear regression):
+  R^2 log: 0.6284
+  RMSE log: 0.6863
+
+Improved — CV mean RMSE (log N_raw):
+  0.7617 ± 0.1269
+
+Baseline OLS — CV mean RMSE (same folds, log N in training space):
+  0.7786 ± 0.1544
+
+Leave-one-Sycamore-topology-out (IBM always in train):
+  mean RMSE log N: 0.7231 ± 0.2542
+
+Caveat: regimes differ across platforms; this is still a phenomenological fit.
+
+Outputs: threshold_transfer_predictions.csv, threshold_transfer_cv_folds.csv,
+threshold_transfer_cv_baseline_ols.csv, threshold_transfer_cv_sycamore_loo_topology.csv,
+threshold_transfer_cv_ibm_only.csv, threshold_transfer_cv_sycamore_only.csv,
+threshold_transfer_uncertainty.txt, threshold_transfer_model_report.txt

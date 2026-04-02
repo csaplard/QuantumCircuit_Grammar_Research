@@ -1,0 +1,4 @@
+backend_prefix,max_pts,n_files,purity_k2,within_mean,between_mean,within_to_between_ratio,cluster_counts
+ibm_torino,4000,6,0.8333333333333334,0.3000196715680357,0.8389679008044179,0.3576056620049126,"{1: {'ghz': 1, 'hadamard_plus_layers': 4}, 2: {'ghz': 1}}"
+ibm_torino,8000,6,0.8333333333333334,0.27801077810776026,0.8402845827719768,0.33085312262976796,"{1: {'ghz': 1, 'hadamard_plus_layers': 4}, 2: {'ghz': 1}}"
+ibm_torino,16000,6,0.8333333333333334,0.23810582912987105,0.7966664846893061,0.2988776780571239,"{1: {'ghz': 1, 'hadamard_plus_layers': 4}, 2: {'ghz': 1}}"

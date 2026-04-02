@@ -1,0 +1,49 @@
+=== Cross-platform universality (Grammar Fingerprint) ===
+
+Protocol: LSTM + SAX (grammar_learner), alphabet_size=7, hidden_dim=32, seq_len=16, lr=0.01.
+  IBM fingerprints: epochs=20 (run_ibm_grammar_learning.py).
+  Sycamore fingerprints: epochs=50 (original validation / build_sycamore_readout_fingerprints.py default).
+
+IBM (combined): n=22 fingerprints
+  Ward k=3 purity vs physics3: 0.6818
+  Frobenius: mean same-regime=0.595909 (pairs=87) mean diff-regime=1.17093 (pairs=144)
+
+--- Regime breakdown: IBM (physics3) ---
+  Within-regime mean Frobenius (same label pairs):
+    GHZ: mean=1.00382 (pairs=15)
+    HadamardLayers: mean=0.447599 (pairs=66)
+    Identity: mean=1.20754 (pairs=6)
+  Unordered regime-pair mean Frobenius (all contributing pairs):
+    GHZ | GHZ: mean=1.00382 (pairs=15)
+    GHZ | HadamardLayers: mean=0.99296 (pairs=72)
+    GHZ | Identity: mean=1.42802 (pairs=24)
+    HadamardLayers | HadamardLayers: mean=0.447599 (pairs=66)
+    HadamardLayers | Identity: mean=1.30933 (pairs=48)
+    Identity | Identity: mean=1.20754 (pairs=6)
+
+Sycamore readout: n=28 fingerprints
+  Ward k=3 purity vs topology family: 0.5357
+  Frobenius: mean same-regime=1.5384 (pairs=133) mean diff-regime=1.57493 (pairs=245)
+
+--- Regime breakdown: Sycamore (topology labels) ---
+  Within-regime mean Frobenius (same label pairs):
+    1D_Snake: mean=1.61971 (pairs=21)
+    2D_Block: mean=1.54371 (pairs=91)
+    Bulk_Full: mean=1.43409 (pairs=21)
+  Unordered regime-pair mean Frobenius (all contributing pairs):
+    1D_Snake | 1D_Snake: mean=1.61971 (pairs=21)
+    1D_Snake | 2D_Block: mean=1.61377 (pairs=98)
+    1D_Snake | Bulk_Full: mean=1.67259 (pairs=49)
+    2D_Block | 2D_Block: mean=1.54371 (pairs=91)
+    2D_Block | Bulk_Full: mean=1.48727 (pairs=98)
+    Bulk_Full | Bulk_Full: mean=1.43409 (pairs=21)
+
+--- Sycamore subset Ward purity (sanity: where does global purity come from?) ---
+  1D_Snake + 2D_Block only: n=21 Ward k=2 purity=0.6667
+  2D_Block + Bulk_Full only: n=21 Ward k=2 purity=0.7619
+  1D_Snake + Bulk_Full only: n=14 Ward k=2 purity=0.5714
+
+Interpretation (evidence-linked):
+  - Compare regime-pair Frobenius means above: IBM circuit families are disjoint; Sycamore topology labels can show small Bulk<->2D_Block distances if configurations overlap.
+  - If 1D+2D subset purity >> full k=3 purity while 2D+Bulk is weaker, global mixing is driven by boundary physics, not a broken pipeline.
+  - Cross-platform: same code path; different ground-truth geometry (discrete circuits vs overlapping topology classes).

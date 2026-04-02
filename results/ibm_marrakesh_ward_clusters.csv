@@ -1,0 +1,12 @@
+label,circuit_type,cluster
+ibm_marrakesh_ghz_10q_40960shots,ghz,2
+ibm_marrakesh_ghz_20q_40960shots,ghz,2
+ibm_marrakesh_ghz_5q_40960shots,ghz,3
+ibm_marrakesh_hadamard_10q_40960shots,hadamard,1
+ibm_marrakesh_hadamard_1q_40960shots,hadamard,3
+ibm_marrakesh_hadamard_20q_40960shots,hadamard,1
+ibm_marrakesh_hadamard_5q_40960shots,hadamard,1
+ibm_marrakesh_identity_10q_40960shots,identity,3
+ibm_marrakesh_identity_20q_40960shots,identity,4
+ibm_marrakesh_layers_10q_40960shots,layers,1
+ibm_marrakesh_layers_20q_40960shots,layers,1

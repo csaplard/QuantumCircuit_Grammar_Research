@@ -1,0 +1,9 @@
+Input: results/ibm_grammar_fingerprints_torino.npz
+Items: 11
+Grouping mode: identity2
+Clusters (Ward maxclust): 2
+Overall type-separation purity: 0.8182
+
+Cluster composition by circuit type:
+  Cluster 1: size=2, majority=non_identity, purity=1.0000, counts={'non_identity': 2}
+  Cluster 2: size=9, majority=non_identity, purity=0.7778, counts={'non_identity': 7, 'identity': 2}

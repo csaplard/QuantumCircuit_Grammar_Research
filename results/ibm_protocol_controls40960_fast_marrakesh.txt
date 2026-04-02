@@ -1,0 +1,45 @@
+=== IBM QUANTUM — SYCAMORE-STYLE PROTOCOL (physics3 regimes) ===
+
+shots_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+files (11):
+  ibm_marrakesh_ghz_5q_40960shots.txt
+  ibm_marrakesh_ghz_10q_40960shots.txt
+  ibm_marrakesh_ghz_20q_40960shots.txt
+  ibm_marrakesh_hadamard_1q_40960shots.txt
+  ibm_marrakesh_hadamard_5q_40960shots.txt
+  ibm_marrakesh_hadamard_10q_40960shots.txt
+  ibm_marrakesh_hadamard_20q_40960shots.txt
+  ibm_marrakesh_identity_10q_40960shots.txt
+  ibm_marrakesh_identity_20q_40960shots.txt
+  ibm_marrakesh_layers_10q_40960shots.txt
+  ibm_marrakesh_layers_20q_40960shots.txt
+
+epochs=10, max_pts=100000, seeds=[0, 42]
+modes=['baseline', 'lsb', 'shuffled']
+Regimes: HadamardLayers (hadamard+layers), GHZ, Identity
+
+--- SHUFFLED CONTROL (per-file permutation destroys temporal order) ---
+seed=0 accuracy=63.64%
+  Cluster 1: HadamardLayers (Purity: 71.4%)
+  Cluster 2: GHZ (Purity: 33.3%)
+  Cluster 3: Identity (Purity: 100.0%)
+
+seed=42 accuracy=63.64%
+  Cluster 1: HadamardLayers (Purity: 71.4%)
+  Cluster 2: GHZ (Purity: 33.3%)
+  Cluster 3: Identity (Purity: 100.0%)
+
+--- LSB CONTROL (single-bit time series: (output>>0)&1) ---
+seed=0 accuracy=81.82%
+  Cluster 1: Identity (Purity: 100.0%)
+  Cluster 2: HadamardLayers (Purity: 83.3%)
+  Cluster 3: GHZ (Purity: 66.7%)
+
+seed=42 accuracy=81.82%
+  Cluster 1: Identity (Purity: 100.0%)
+  Cluster 2: HadamardLayers (Purity: 83.3%)
+  Cluster 3: GHZ (Purity: 66.7%)
+
+--- BASELINE: Logistic Regression + Random Forest (LOOCV, hand-crafted features) ---
+LR LOOCV: mean=0.8182 std=0.0000
+RF LOOCV: mean=1.0000 std=0.0000

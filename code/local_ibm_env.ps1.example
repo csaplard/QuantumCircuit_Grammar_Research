@@ -1,0 +1,8 @@
+# IBM Quantum — copy to local_ibm_env.ps1 and fill the token (local_ibm_env.ps1 is gitignored).
+#
+#   Copy-Item code\local_ibm_env.ps1.example code\local_ibm_env.ps1
+#   # edit local_ibm_env.ps1, paste token between quotes
+#   . .\code\local_ibm_env.ps1
+#   python code\collect_ibm_shots.py --backend ibm_torino --shots 8192 --reps 5
+
+$env:QISKIT_IBM_TOKEN = "PASTE_IBM_QUANTUM_API_TOKEN_HERE"

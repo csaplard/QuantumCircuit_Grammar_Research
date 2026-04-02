@@ -1,0 +1,10 @@
+Input: results/ibm_grammar_fingerprints_torino.npz
+Items: 11
+Clusters (Ward maxclust): 4
+Overall type-separation purity: 0.5455
+
+Cluster composition by circuit type:
+  Cluster 1: size=2, majority=ghz, purity=0.5000, counts={'ghz': 1, 'hadamard': 1}
+  Cluster 2: size=7, majority=hadamard, purity=0.4286, counts={'ghz': 2, 'hadamard': 3, 'layers': 2}
+  Cluster 3: size=1, majority=identity, purity=1.0000, counts={'identity': 1}
+  Cluster 4: size=1, majority=identity, purity=1.0000, counts={'identity': 1}

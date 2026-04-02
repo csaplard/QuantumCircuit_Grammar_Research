@@ -1,0 +1,23 @@
+IBM Torino run comparison (empirical outcome distributions)
+reference_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
+current_dir:   C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+
+tv = total variation; js_distance = sqrt(JS divergence), base e;
+sym_kl = mean of KL(ref||cur) and KL(cur||ref) on smoothed union support.
+
+                                  file  n_shots_ref  n_shots_cur  n_unique_ref  n_unique_cur       tv  js_distance    sym_kl     kl_pq     kl_qp
+     ibm_torino_ghz_10q_40960shots.txt        40960        40960           621           574 0.144556     0.210832  0.456066  0.562953  0.349179
+     ibm_torino_ghz_20q_40960shots.txt        40960        40960          4809          6427 0.356567     0.382030  3.873777  3.086446  4.661108
+      ibm_torino_ghz_5q_40960shots.txt        40960        40960            32            32 0.057593     0.116719  0.061671  0.061546  0.061797
+ibm_torino_hadamard_10q_40960shots.txt        40960        40960          1024          1024 0.090332     0.080984  0.026406  0.026324  0.026488
+ ibm_torino_hadamard_1q_40960shots.txt        40960        40960             2             2 0.036963     0.026140  0.002734  0.002734  0.002734
+ibm_torino_hadamard_20q_40960shots.txt        40960        40960         40134         40159 0.960205     0.815535 26.533554 26.527483 26.539624
+ ibm_torino_hadamard_5q_40960shots.txt        40960        40960            32            32 0.036743     0.028913  0.003345  0.003354  0.003337
+ibm_torino_identity_10q_40960shots.txt        40960        40960            73            96 0.062378     0.090119  0.051077  0.036855  0.065300
+ibm_torino_identity_20q_40960shots.txt        40960        40960           320           405 0.084473     0.115474  0.158908  0.122405  0.195411
+  ibm_torino_layers_10q_40960shots.txt        40960        40960          1024          1024 0.095093     0.084406  0.028698  0.028584  0.028811
+  ibm_torino_layers_20q_40960shots.txt        40960        40960         40131         40118 0.961450     0.816080 26.570409 26.568569 26.572250
+
+mean TV: 0.262396
+mean JS distance: 0.251566
+mean sym KL: 5.251513

@@ -1,0 +1,12 @@
+label,circuit_type,cluster
+ibm_torino_ghz_10q_40960shots,ghz,2
+ibm_torino_ghz_20q_40960shots,ghz,2
+ibm_torino_ghz_5q_40960shots,ghz,1
+ibm_torino_hadamard_10q_40960shots,hadamard,2
+ibm_torino_hadamard_1q_40960shots,hadamard,1
+ibm_torino_hadamard_20q_40960shots,hadamard,2
+ibm_torino_hadamard_5q_40960shots,hadamard,2
+ibm_torino_identity_10q_40960shots,identity,3
+ibm_torino_identity_20q_40960shots,identity,4
+ibm_torino_layers_10q_40960shots,layers,2
+ibm_torino_layers_20q_40960shots,layers,2

@@ -1,0 +1,4 @@
+file,key,n_samples,val_loss,perplexity
+12q_readout_raw_data.txt,sycamore_12q,40960,2.1537932779431426,8.617484992932045
+14q_readout_raw_data.txt,sycamore_14q,40960,3.2183920619899298,24.98790885290309
+16q_readout_raw_data.txt,sycamore_16q,40960,1.2859708141172177,3.6181788318269423

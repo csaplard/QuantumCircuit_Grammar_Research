@@ -1,0 +1,10 @@
+Input: results/ibm_grammar_fingerprints.npz
+Items: 11
+Grouping mode: physics3
+Clusters (Ward maxclust): 3
+Overall type-separation purity: 0.6364
+
+Cluster composition by circuit type:
+  Cluster 1: size=7, majority=hadamard_plus_layers, purity=0.7143, counts={'ghz': 2, 'hadamard_plus_layers': 5}
+  Cluster 2: size=3, majority=ghz, purity=0.3333, counts={'ghz': 1, 'hadamard_plus_layers': 1, 'identity': 1}
+  Cluster 3: size=1, majority=identity, purity=1.0000, counts={'identity': 1}

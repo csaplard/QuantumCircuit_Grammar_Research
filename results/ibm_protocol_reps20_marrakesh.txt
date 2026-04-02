@@ -1,0 +1,23 @@
+=== IBM QUANTUM — SYCAMORE-STYLE PROTOCOL (physics3 regimes) ===
+
+shots_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+files (11):
+  ibm_marrakesh_ghz_5q_40960shots.txt
+  ibm_marrakesh_ghz_10q_40960shots.txt
+  ibm_marrakesh_ghz_20q_40960shots.txt
+  ibm_marrakesh_hadamard_1q_40960shots.txt
+  ibm_marrakesh_hadamard_5q_40960shots.txt
+  ibm_marrakesh_hadamard_10q_40960shots.txt
+  ibm_marrakesh_hadamard_20q_40960shots.txt
+  ibm_marrakesh_identity_10q_40960shots.txt
+  ibm_marrakesh_identity_20q_40960shots.txt
+  ibm_marrakesh_layers_10q_40960shots.txt
+  ibm_marrakesh_layers_20q_40960shots.txt
+
+epochs=5, max_pts=10000, seeds=[0, 42]
+modes=['baseline']
+Regimes: HadamardLayers (hadamard+layers), GHZ, Identity
+
+--- BASELINE: Logistic Regression + Random Forest (LOOCV, hand-crafted features) ---
+LR LOOCV: mean=0.8182 std=0.0000
+RF LOOCV: mean=1.0000 std=0.0000

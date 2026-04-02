@@ -1,0 +1,23 @@
+=== Threshold transfer model - cross-validation ===
+
+Design: n=21, p=6, rank(X)=6 (if rank<p, design is collinear; interpret with care)
+features: ['intercept', 'logQ', 'backend:marrakesh', 'backend:torino', 'regime:GHZ', 'regime:HadamardLayers']
+
+--- Leave-one-out (all points) ---
+RMSE (log): 0.7291
+MAPE (linear %, mean): 61.15
+MAPE (linear %, median): 53.82
+
+--- Hold out all Sycamore (3 pts), train on IBM ---
+  RMSE (log) on held-out: 3.0043
+  MAPE (%) on held-out: 95.01
+
+--- Hold out Marrakesh, train on rest ---
+  RMSE (log) on held-out: 1.0353
+  MAPE (%) on held-out: 55.45
+
+--- Hold out Torino, train on rest ---
+  RMSE (log) on held-out: 1.4109
+  MAPE (%) on held-out: 65.82
+
+Note: 'Hold out Sycamore' removes the reference-regime anchor; errors are expected to be large unless IBM alone identifies the intercept.
