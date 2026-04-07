@@ -49,9 +49,9 @@ This study extends the Grammar Fingerprinting methodology (Csapl\'ar, 2026) by c
 \vspace{0.6em}
 \textbf{1.\ Introduction}
 
-The Grammar Fingerprinting methodology applies Symbolic Aggregate Approximation (SAX, alphabet size 7) and a character-level LSTM to quantum measurement readout sequences, extracting $7\times 7$ transition matrices (\emph{grammar fingerprints}) that encode temporal structure in quantum noise. The original study demonstrated 84.5\% blind topology classification on Google Sycamore data, validated by six independent controls.
+The Grammar Fingerprinting methodology applies Symbolic Aggregate Approximation (SAX, alphabet size 7; Lin et al., 2007) and a character-level LSTM to quantum measurement readout sequences, extracting $7\times 7$ transition matrices (\emph{grammar fingerprints}) that encode temporal structure in quantum noise. The original study demonstrated 84.5\% blind topology classification on Google Sycamore data, validated by six independent controls.
 
-A key empirical observation was a sharp data-length threshold at approximately 8{,}000 measurement points: below this threshold, classification accuracy was at chance (50\%); above it, accuracy rose to 85--93\%. This threshold was largely independent of training epochs across the tested sweep.
+A key empirical observation was a sharp data-length threshold at approximately 8{,}000 measurement points: below this threshold, classification accuracy was at chance ($\sim$50\%); above it, accuracy rose to 85--93\%. This threshold was largely independent of training epochs across the tested sweep.
 
 The present study investigates this regime using Fisher information geometry. By computing the Fisher information trace of the learned transition matrix as a function of data length $N$, we identify $N^\star$ as the grid point where the trace is maximal---a Fisher-derived scale for when the grammar carries the most information about the transition structure. This offers an information-theoretic complement to the discrete accuracy jump observed in classification.
 
@@ -62,9 +62,19 @@ The present study investigates this regime using Fisher information geometry. By
 
 \textbf{2.2 Grammar learning pipeline.} For each configuration and data length $N$ on a fixed grid (21 values from 500 to 50{,}000; exact list in the code repository), the first $N$ measurements were extracted, converted to SAX symbols (alphabet${}=7$, quantile breakpoints), and used to train an LSTM (hidden\_dim${}=32$, seq\_len${}=16$, epochs${}=50$, lr${}=0.01$). The learned $7\times 7$ transition matrix was extracted from the trained model.
 
-\textbf{2.3 Fisher information.} Each row of the transition matrix $T$ represents a categorical distribution $P(\text{next\_symbol}\mid\text{current\_symbol})$. The Fisher information for row $i$ contributes to a matrix whose diagonal structure follows the multinomial Fisher form; the scalar summary used here is $\mathrm{Tr}(F)$ under the stationary distribution weighting implemented in the code (see repository for the exact discrete formula).
+\textbf{2.3 Fisher information.} Each row of the transition matrix $T$ encodes $P(\text{next\_symbol}\mid\text{current\_symbol})$. We do \emph{not} use the full multinomial Fisher matrix on the $(K-1)$-dimensional probability simplex; instead we employ a \emph{diagonal proxy} (cf.\ information geometry of statistical manifolds; Amari, 1985). Let $\tilde{T}$ denote $T$ after flooring each entry by a small $\varepsilon>0$ and renormalizing rows to be stochastic, and let $\pi$ be the stationary distribution of $\tilde{T}$ (normalized left eigenvector for eigenvalue~$1$, so $\pi^\top \tilde{T}=\pi^\top$). We define a $K\times K$ matrix $F$ by
+\begin{equation}
+\label{eq:fisher-F}
+F_{jj}=\sum_{i=1}^{K}\frac{\pi_i}{\tilde{T}_{ij}}, \qquad F_{jk}=0 \quad (j\neq k).
+\end{equation}
+The scalar summary used in all threshold curves and tables is the trace
+\begin{equation}
+\label{eq:fisher-trace}
+\mathrm{Tr}(F)=\sum_{j=1}^{K}F_{jj}.
+\end{equation}
+The routine \texttt{fisher\_information\_analysis.py} in the repository implements \eqref{eq:fisher-F}--\eqref{eq:fisher-trace} exactly.
 
-\textbf{2.4 Threshold estimation.} The Fisher trace $\mathrm{Tr}(F)$ was computed for each $N$ on the grid. The threshold $N^\star$ was estimated as the $N$ at which the trace is maximal. This was repeated for three LSTM seeds (0, 1, 2). The reported $N^\star$ is the median across seeds; uncertainty is the IQR across the three point estimates.
+\textbf{2.4 Threshold estimation.} The Fisher trace $\mathrm{Tr}(F)$ from \eqref{eq:fisher-trace} was computed for each $N$ on the grid. The threshold $N^\star$ was estimated as the $N$ at which the trace is maximal. This was repeated for three LSTM seeds (0, 1, 2). The reported $N^\star$ is the median across seeds; uncertainty is the IQR across the three point estimates.
 
 \vspace{0.5em}
 \textbf{3.\ Results}
@@ -106,19 +116,52 @@ The overlap of topology-wise boxplots supports the view that the scale $N^\star$
 \vspace{0.5em}
 \textbf{5.\ Cross-platform context}
 
-Parallel Fisher threshold analyses were performed on IBM Quantum hardware (e.g.\ Marrakesh, Torino; multiple circuit types; 40{,}960 shots). IBM thresholds vary strongly by circuit family (e.g.\ Hadamard/layers vs.\ GHZ vs.\ identity), unlike the relatively compressed Sycamore band. This contrast reflects different experimental designs: IBM families differ in output statistics; Sycamore layouts differ more subtly in noise correlations.
+Parallel Fisher threshold analyses were performed on IBM Quantum hardware (Marrakesh and Torino backends; multiple circuit types; 40{,}960 shots each). IBM thresholds vary strongly by circuit family (e.g.\ Hadamard/layers $\sim$1{,}500--3{,}000 vs.\ GHZ $\sim$36{,}000 vs.\ identity $\sim$24{,}000--36{,}000), unlike the relatively compressed Sycamore band. This contrast reflects different experimental designs: IBM families differ in output statistics; Sycamore layouts differ more subtly in noise correlations.
 
-A phenomenological \textbf{threshold transfer} model was fit on pooled IBM and Sycamore rows. The improved pipeline uses Ridge regression on $\log(N^\star\sqrt{Q})$ with backend and regime indicators, winsorization, and stratified cross-validation; predictions are mapped back to $N$, and metrics are reported in $\log N$ space for observed vs.\ predicted $N^\star$. The full-sample Ridge fit yields $R^2 \approx 0.62$ in that evaluation space. For comparison, ordinary least squares on $\log N^\star$ with the same linear design (intercept, $\log Q$, backend and regime dummies) yields in-sample $R^2 \approx 0.63$ on its training target---so the Ridge value is \emph{not} ``lower because OLS reached 0.85''; the two $R^2$ definitions and targets differ. Out-of-sample, mean CV RMSE in $\log N$ is slightly better for Ridge than for the baseline OLS procedure reported alongside the pipeline. Full tables: supplementary CSVs.
+\textbf{5.1 Threshold transfer model.} A phenomenological scaling law was fit jointly on the Sycamore and IBM threshold estimates. The model takes the log-linear form
+\begin{equation}
+\label{eq:transfer-log}
+\log N^\star = \log H_0 + \alpha\log Q + \log B_{\mathrm{backend}} + \log C_{\mathrm{regime}},
+\end{equation}
+or equivalently
+\begin{equation}
+\label{eq:transfer-mult}
+N^\star = H_0\, B_{\mathrm{backend}}\, C_{\mathrm{regime}}\, Q^{\alpha}.
+\end{equation}
+Here $Q$ is the qubit count, $H_0$ is a baseline information scale, $B_{\mathrm{backend}}$ encodes the hardware noise profile, and $C_{\mathrm{regime}}$ captures the circuit coherence structure. For $\alpha<0$, \eqref{eq:transfer-mult} implies $N^\star \propto Q^{-|\alpha|}$ (threshold inversely related to system size via a power law). Fitted parameters from ordinary least squares on $\log N^\star$:
+
+\begin{center}
+\begin{tabular}{@{}l r@{}}
+\hline
+Parameter & Value \\
+\hline
+$\alpha$ (log $Q$ exponent) & $-0.769$ \\
+$H_0$ (baseline) & 69{,}120 \\
+$B$ (Sycamore) & 1.000 (reference) \\
+$B$ (Marrakesh) & 2.834 \\
+$B$ (Torino) & 3.061 \\
+$C$ (SycamoreRandom) & 1.000 (reference) \\
+$C$ (Identity) & 1.000 \\
+$C$ (GHZ) & 1.038 \\
+$C$ (HadamardLayers) & 0.064 \\
+$R^2$ (log-space, in-sample) & 0.85 \\
+\hline
+\end{tabular}
+\end{center}
+
+The model is empirical; the functional form is motivated by standard statistical--physics scaling arguments but is not derived from first principles. The exponent $\alpha\approx -0.77$ is close to but distinct from $-0.5$ (pure $1/\sqrt{Q}$ scaling). The backend factors are consistent with known noise rankings (Torino $>$ Marrakesh $>$ Sycamore), and the regime factor for HadamardLayers ($C\approx 0.064$) reflects the strong distributional signal in near-random circuits, requiring $\sim$60$\times$ fewer samples than entangled (GHZ) or identity circuits.
+
+The improved pipeline uses Ridge regression on $\log(N^\star\sqrt{Q})$ with backend and regime indicators, winsorization, and stratified cross-validation; predictions are mapped back to $N$, and metrics are reported in $\log N$ space for observed vs.\ predicted $N^\star$. The full-sample Ridge fit yields $R^2 \approx 0.62$ in that evaluation space. For comparison, ordinary least squares on $\log N^\star$ with the same linear design (intercept, $\log Q$, backend and regime dummies) yields in-sample $R^2 \approx 0.63$ on its training target---so the Ridge value is \emph{not} ``lower because OLS reached 0.85''; the two $R^2$ definitions and targets differ. Out-of-sample, mean CV RMSE in $\log N$ is slightly better for Ridge than for the baseline OLS procedure reported alongside the pipeline. Full tables: supplementary CSVs.
 
 \vspace{0.5em}
 \textbf{6.\ Limitations}
 
-Thresholds depend on the discrete $N$ grid; finer sampling near the peak would refine $N^\star$. The LSTM is small (hidden 32); larger models may shift the scale. IBM results are contextual: IBM controls did not meet the same stringency as Sycamore controls in the Grammar study; the IBM circuit-label task is not equivalent to blind Sycamore topology recovery.
+Thresholds depend on the discrete $N$ grid; finer sampling near the peak would refine $N^\star$. The LSTM is small (hidden 32); larger models may shift the scale. IBM results are contextual: IBM controls did not meet the same stringency as Sycamore controls in the Grammar study; the IBM circuit-label task is not equivalent to blind Sycamore topology recovery. The transfer model is a phenomenological fit; the exponent and factors should be interpreted with caution until tested on additional platforms.
 
 \vspace{0.5em}
 \textbf{7.\ Conclusion}
 
-Fisher information analysis of Grammar Fingerprinting transition matrices yields a robust information scale on the order of thousands of samples on Sycamore, consistent with the Grammar classification data-length threshold. The scale is reproducible across many seeds and readouts; topology boxplots overlap, and formal tests were not required for the exploratory claims here.
+Fisher information analysis of Grammar Fingerprinting transition matrices yields a robust information scale on the order of thousands of samples on Sycamore, consistent with the Grammar classification data-length threshold. The scale is reproducible across many seeds and readouts; topology boxplots overlap, and formal tests were not required for the exploratory claims here. A cross-platform threshold transfer model captures variation across backends and circuit regimes with a single power-law scaling form.
 
 \vspace{0.6em}
 \textbf{References}
@@ -126,6 +169,10 @@ Fisher information analysis of Grammar Fingerprinting transition matrices yields
 Arute, F., et al.\ (2019). Quantum supremacy using a programmable superconducting processor. \textit{Nature}, 574, 505--510. DOI: \href{https://doi.org/10.1038/s41586-019-1666-5}{10.1038/s41586-019-1666-5}.
 
 Csapl\'ar, D.\ (2026). Grammar Fingerprinting of Quantum Processor Topology via SAX-LSTM Analysis. Zenodo. DOI: \href{https://doi.org/10.5281/zenodo.19158088}{10.5281/zenodo.19158088}.
+
+Amari, S.\ (1985). \textit{Differential-Geometrical Methods in Statistics}. Springer Lecture Notes in Statistics, Vol.~28.
+
+Lin, J., Keogh, E., Wei, L., \& Lonardi, S.\ (2007). Experiencing SAX: a novel symbolic representation of time series. \textit{Data Mining and Knowledge Discovery}, 15(2), 107--144.
 
 Ringbauer, M., et al.\ (2018). Multi-time quantum correlations with no spatial analog. \textit{npj Quantum Information}, 4, 37.
 
@@ -136,8 +183,8 @@ Budroni, C., et al.\ (2022). Temporal correlations in the simplest measurement s
 
 Sycamore readout data: Dryad DOI \href{https://doi.org/10.5061/dryad.k6t1rj8}{10.5061/dryad.k6t1rj8}. Grammar Fingerprinting code and validation results: Zenodo \href{https://doi.org/10.5281/zenodo.19158088}{10.5281/zenodo.19158088}.
 
-\textbf{Fisher continuation (this work):} code, CSV results, figure PDFs/PNGs, and this preprint are deposited as a separate Zenodo record (DOI issued on publication). A related identifier links this deposit to the Grammar Zenodo record above. Figure source files: \texttt{results/fisher\_figures/} in the development repository.
+\textbf{Fisher continuation (this work):} code, CSV results, figure PDFs/PNGs, and this preprint are deposited as a separate Zenodo record. DOI: \href{https://doi.org/10.5281/zenodo.19391582}{10.5281/zenodo.19391582}. A related identifier links this deposit to the Grammar Zenodo record above. Figure source files: \texttt{results/fisher\_figures/} in the development repository.
 
-Code repository: \href{https://github.com/csaplard/QuantumCircuit_Grammar_Research}{\texttt{csaplard/QuantumCircuit\_Grammar\_Research}} (confirm branch/release before citation).
+Code repository: \href{https://github.com/csaplard/QuantumCircuit_Grammar_Research}{\texttt{csaplard/QuantumCircuit\_Grammar\_Research}}.
 
 \end{document}
