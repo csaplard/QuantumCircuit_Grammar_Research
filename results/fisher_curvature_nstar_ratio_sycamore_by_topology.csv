@@ -1,0 +1,4 @@
+topology,n_readouts,median_n_star_over_n_curv_all,mean_n_star_over_n_curv_all,median_n_star_over_n_curv_reliable,mean_n_star_over_n_curv_reliable
+1D_Snake,7,1.0,1.1944444444444444,1.0,1.0222222222222221
+2D_Block,14,1.0,1.0238095238095237,1.0,1.0222222222222221
+Bulk_Full,7,1.0,1.6281179138321995,1.0,1.037037037037037

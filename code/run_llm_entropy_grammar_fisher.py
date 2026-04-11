@@ -6,6 +6,7 @@ Reads CSVs from results/llm_entropy/runs/ (step, entropy) produced by collect_ll
 Examples:
   python code/run_llm_entropy_grammar_fisher.py --smoke
   python code/run_llm_entropy_grammar_fisher.py --grammar-seed 0 --glob "results/llm_entropy/runs/*_none.csv"
+  python code/run_llm_entropy_grammar_fisher.py --transition-npz results/llm_entropy/fisher_runs/transition_matrices_llm_seed42.npz
 """
 
 from __future__ import annotations
@@ -28,6 +29,7 @@ from fisher_information_analysis import (  # noqa: E402
     compute_fisher_matrix,
     compute_kl_divergence,
     fisher_scalar,
+    save_transition_matrices_npz,
 )
 from grammar_learner import extract_grammar, train_model  # noqa: E402
 
@@ -100,6 +102,12 @@ def main() -> None:
         metavar="NAME",
         help="Summary filename inside fisher_runs/ (default: llm_entropy_fisher_summary.csv).",
     )
+    ap.add_argument(
+        "--transition-npz",
+        default=None,
+        metavar="PATH",
+        help="If set, stack all T(N) from this run into one .npz + *_index.csv (same convention as Sycamore).",
+    )
     args = ap.parse_args()
 
     params = {
@@ -131,6 +139,8 @@ def main() -> None:
     out_dir = os.path.join(REPO_ROOT, "results", "llm_entropy", "fisher_runs")
     os.makedirs(out_dir, exist_ok=True)
     summary_rows = []
+    bundle_results: list[dict] = []
+    bundle_matrices: dict[tuple[str, int], np.ndarray] = {}
 
     for path in files:
         full = np.asarray(_load_entropy_csv(path), dtype=np.float64)
@@ -168,6 +178,15 @@ def main() -> None:
                 print("FAIL")
                 continue
             T = extract_grammar(model, val_data, seq_len=seq_len)
+            bundle_matrices[(label, int(n_pts))] = T
+            bundle_results.append(
+                {
+                    "file": label,
+                    "q_label": regime,
+                    "topology": control,
+                    "n_points": int(n_pts),
+                }
+            )
             F = compute_fisher_matrix(T)
             tr = fisher_scalar(F)
             kl = 0.0
@@ -219,6 +238,12 @@ def main() -> None:
         s_path = os.path.join(out_dir, os.path.basename(args.summary_csv))
         pd.DataFrame(summary_rows).to_csv(s_path, index=False)
         print(f"\nSummary: {s_path}")
+
+    if args.transition_npz and bundle_matrices:
+        idx_path = os.path.splitext(args.transition_npz)[0] + "_index.csv"
+        k = save_transition_matrices_npz(bundle_results, bundle_matrices, args.transition_npz, idx_path)
+        print(f"Saved transition matrices: {args.transition_npz} ({k} matrices)")
+        print(f"Index: {idx_path}")
 
 
 if __name__ == "__main__":

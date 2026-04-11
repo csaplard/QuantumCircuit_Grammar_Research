@@ -1,0 +1,58 @@
+LLM entropy -> SAX -> LSTM -> Fisher
+=====================================
+
+Design principle (same as Sycamore readouts): every regime uses the **same fixed number of
+generated tokens** so Fisher N* comparisons are not confounded by different sequence lengths.
+
+Backends (collect_llm_entropy_series.py)
+----------------------------------------
+
+A) --backend llama-server  (recommended for exact length)
+   - Requires **llama.cpp** `llama-server` running separately (NOT Ollama's port).
+   - Uses POST /completion with `ignore_eos: true`, `n_predict: fixed-tokens`, `n_probs: top_logprobs`.
+   - Start server with context **-c** large enough: prompt_tokens + fixed_tokens + headroom.
+   - Example script (edit paths): code/run_llama_server_example.ps1
+   - Env: LLAMA_SERVER_URL (default http://127.0.0.1:8080)
+   - Collect:
+     python code/collect_llm_entropy_series.py --backend llama-server --quick --fixed-tokens 1024
+     python code/collect_llm_entropy_series.py --backend llama-server --fixed-tokens 20000 --llama-timeout 14400
+
+B) --backend ollama  (default)
+   - Chunked /api/generate + `context` continuation; `options.stop: []`.
+   - `--ollama-raw` — Ollama `raw: true` (no chat template).
+   - `--max-empty-chunk-retries` — if a chunk returns empty logprobs, nudge prompt and retry.
+   - `--num-ctx` — optional Ollama num_ctx (e.g. 32768).
+   - EOS may still stall continuation; prefer llama-server for long fixed runs.
+
+Collection options (both backends)
+----------------------------------
+  --fixed-tokens N     target generated-token steps (entropy rows), same for all regimes
+  --chunk-tokens K     Ollama only: max tokens per HTTP call
+  --top-logprobs       top-K alternatives for entropy (keep fixed across runs)
+  --min-repeat-run     flag consecutive identical tokens in CSV/meta (does not truncate)
+
+Outputs: results/llm_entropy/runs/*.csv, manifest.csv
+Controls: *_none.csv, *_shuffled.csv, *_random_uniform.csv
+
+Prerequisites
+-------------
+- llama-server: GGUF model + llama-server binary; see llama.cpp README tools/server
+- Ollama: OLLAMA_HOST if not http://127.0.0.1:11434
+
+From repo root (QuantumCircuit_Grammar_Research_Archive):
+
+1) Collect
+   Smoke:
+   python code/collect_llm_entropy_series.py --quick --smoke
+
+2) Grammar + Fisher
+   python code/run_llm_entropy_grammar_fisher.py --glob "results/llm_entropy/runs/*_p0_seed42_none.csv"
+   python code/run_llm_entropy_grammar_fisher.py --smoke --include-controls
+
+   Outputs: results/llm_entropy/fisher_runs/
+
+Notes
+-----
+- n_star_trace_max = N where Fisher trace is maximal on the grid.
+- Entropy is top-K approximated; keep top_logprobs constant across conditions.
+- Legacy: --num-predict overrides --fixed-tokens.

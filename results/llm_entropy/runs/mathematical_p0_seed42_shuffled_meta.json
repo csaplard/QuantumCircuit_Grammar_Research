@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "mathematical",
+  "prompt_index": 0,
+  "prompt": "Prove that the square root of 2 is irrational. Show each logical step clearly.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 42,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " To prove that the square root of 2 is irrational, we will use a proof by contradiction. This means we will assume the opposite of what we want to prove and then show that this assumption leads to a contradiction.\n\nLet's assume that the square root of 2 is rational. By definition, a rational number can be expressed as a fraction of two integers, say \\( \\sqrt{2} = \\frac{a}{b} \\), where \\( a \\) and \\( b \\) are integers with no common factors other than 1 (i.e., \\( a \\) and \\( b \\) are coprime), and \\( b \\neq 0 \\).\n\nNow, we will square both sides of the equation \\( \\sqrt{2} = \\frac{a}{b} \\):\n\\[\n2 = \\left( \\frac{a}{b} \\right)^2 = \\frac{a^2}{b^2}\n\\]\nThis equation tells us that \\( a^2 = 2b^2 \\). Since \\( a^2 \\) is an even number (because it is equal to 2 times an integer), \\( a \\) must also be a",
+  "control": "shuffled",
+  "n_steps": 10000
+}

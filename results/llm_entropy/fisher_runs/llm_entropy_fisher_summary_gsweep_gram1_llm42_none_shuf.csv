@@ -1,0 +1,9 @@
+source_csv,regime,control,max_len,n_star_trace_max,fisher_at_n_star
+results\llm_entropy\runs\creative_p0_seed42_none.csv,creative,none,10000,48.0,202454.4435193299
+results\llm_entropy\runs\creative_p0_seed42_shuffled.csv,creative,shuffled,10000,32.0,294049.46706786676
+results\llm_entropy\runs\factual_p0_seed42_none.csv,factual,none,10000,384.0,461224.4876783631
+results\llm_entropy\runs\factual_p0_seed42_shuffled.csv,factual,shuffled,10000,64.0,47289.16005461408
+results\llm_entropy\runs\mathematical_p0_seed42_none.csv,mathematical,none,10000,224.0,10207867.599602563
+results\llm_entropy\runs\mathematical_p0_seed42_shuffled.csv,mathematical,shuffled,10000,112.0,102136.46073673625
+results\llm_entropy\runs\philosophical_p0_seed42_none.csv,philosophical,none,10000,64.0,126048.46580620467
+results\llm_entropy\runs\philosophical_p0_seed42_shuffled.csv,philosophical,shuffled,10000,48.0,331586.3271308354

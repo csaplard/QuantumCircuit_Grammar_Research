@@ -1,0 +1,4 @@
+file,q_label,topology,estimated_N_threshold
+14q_readout_raw_data.txt,14q,1D_Snake,6500.0
+12q_readout_raw_data.txt,12q,2D_Block,7500.0
+26q_readout_raw_data.txt,26q,Bulk_Full,3500.0

@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "philosophical",
+  "prompt_index": 0,
+  "prompt": "Explore the nature of time. Follow your reasoning wherever it leads.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 99,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " Time is a dimension that allows for the progression of events. It is often described as linear, moving forward at a constant rate. However, the nature of time remains a subject of much debate and speculation. Some theories suggest that time may be multidimensional, with the possibility of time travel. Others propose that time is an illusion, with events occurring simultaneously.\nTo explore the nature of time, we can consider the concept of causality. Causality states that every event has a cause, and that events progress in a linear fashion. This concept is often used to explain the flow of time, as events occur in a specific order, with each event leading to the next.\nHowever, the concept of causality is not without its critics. Some argue that causality is an illusion, and that events o",
+  "control": "random_uniform",
+  "n_steps": 10000
+}

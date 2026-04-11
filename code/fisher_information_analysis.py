@@ -30,6 +30,8 @@ Output (full run):
   results/fisher_metric_vs_datalength_all_readouts.csv
   results/fisher_information_analysis_all_readouts.txt
   results/fisher_phase_transition_all_readouts.png
+  results/transition_matrices_sycamore_all_readouts.npz  (7×7 row-stochastic T(N) per grid row; see index CSV)
+  results/transition_matrices_index_all_readouts.csv
 
 Output (--quick):
   results/fisher_metric_vs_datalength.csv
@@ -195,6 +197,46 @@ def _resolve_output_suffix(base_suffix: str, seed: int, output_tag: str | None, 
     return base_suffix
 
 
+def save_transition_matrices_npz(
+    all_results: list[dict],
+    all_matrices: dict[tuple[str, int], np.ndarray],
+    npz_path: str,
+    index_csv_path: str,
+) -> int:
+    """
+    Persist stacked transition matrices T(N) in row-major sync with all_results.
+    NPZ contains array ``T`` of shape (K, 7, 7); index CSV lists file, topology, n_points, row_index.
+    """
+    Ts: list[np.ndarray] = []
+    idx_rows: list[dict] = []
+    for row_index, r in enumerate(all_results):
+        key = (r["file"], int(r["n_points"]))
+        T = all_matrices.get(key)
+        if T is None:
+            continue
+        Ts.append(np.asarray(T, dtype=np.float64))
+        idx_rows.append(
+            {
+                "row_index": len(Ts) - 1,
+                "file": r["file"],
+                "q_label": r.get("q_label", ""),
+                "topology": r.get("topology", ""),
+                "n_points": int(r["n_points"]),
+            }
+        )
+    if not Ts:
+        return 0
+    stack = np.stack(Ts, axis=0)
+    if stack.ndim != 3 or stack.shape[1] != stack.shape[2]:
+        raise ValueError(f"Expected transition matrices (K, d, d); got {stack.shape}")
+    out_dir = os.path.dirname(os.path.abspath(npz_path))
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
+    np.savez_compressed(npz_path, T=stack, alphabet_size=np.int32(stack.shape[-1]))
+    pd.DataFrame(idx_rows).to_csv(index_csv_path, index=False)
+    return len(Ts)
+
+
 def _estimated_threshold_n(topo_df: pd.DataFrame) -> float:
     topo_df = topo_df.sort_values("n_points")
     lengths = topo_df["n_points"].values.astype(float)
@@ -241,6 +283,30 @@ def main():
         metavar="TAG",
         help="Append _TAG to output filenames (overrides --tag-with-seed). Example: run_a.",
     )
+    ap.add_argument(
+        "--no-save-transition-matrices",
+        action="store_true",
+        help="Skip writing transition_matrices_sycamore*.npz and index CSV (default: save).",
+    )
+    ap.add_argument(
+        "--transition-matrices-npz",
+        default=None,
+        metavar="PATH",
+        help="Override path for stacked T(N) arrays (.npz). Default: results/transition_matrices_sycamore<SUFFIX>.npz",
+    )
+    ap.add_argument(
+        "--epochs",
+        type=int,
+        default=50,
+        help="LSTM epochs per (file, N) run. Default 50 (publication); use 3–5 for smoke tests only.",
+    )
+    ap.add_argument(
+        "--alphabet-size",
+        type=int,
+        default=7,
+        metavar="K",
+        help="SAX alphabet size (transition matrix is K×K). Default 7; use 5 or 9 for alphabet sweeps.",
+    )
     args = ap.parse_args()
 
     from run_validation_pipeline import GROUND_TRUTH
@@ -253,6 +319,8 @@ def main():
         jobs = _all_readout_jobs(data_dir, GROUND_TRUTH, args.max_files)
         base_suffix = "_all_readouts"
     suffix = _resolve_output_suffix(base_suffix, args.seed, args.output_tag, args.tag_with_seed)
+    if args.alphabet_size != 7:
+        suffix = f"{suffix}_alphabet{args.alphabet_size}"
 
     if not jobs:
         print(f"No readout files found in {data_dir!r} (expected *_readout_raw_data.txt with known q-labels).")
@@ -263,15 +331,19 @@ def main():
                     8000, 9000, 10000, 15000, 20000, 30000, 40000]
 
     print(f"Input directory: {data_dir}")
+    print(f"Alphabet size (SAX K): {args.alphabet_size}")
     print(f"Seed: {args.seed}  |  Output file suffix: {suffix!r}")
     print(f"Mode: {'quick (3 files)' if args.quick else 'all readouts'} — {len(jobs)} file(s)")
     for fname, topo, lab in jobs:
         print(f"  {lab} ({topo}): {fname}")
 
     n_train_total = len(jobs) * sum(1 for n in data_lengths if n <= 110_000)
-    print(f"Approx training runs: {n_train_total} (each ~50 epochs); full 28-file run can take many hours.")
+    print(
+        f"Approx training runs: {n_train_total} (each {args.epochs} epochs); "
+        "full 28-file run can take many hours."
+    )
 
-    params = {"hidden_dim": 32, "seq_len": 16, "epochs": 50, "lr": 0.01}
+    params = {"hidden_dim": 32, "seq_len": 16, "epochs": args.epochs, "lr": 0.01}
 
     all_results = []
     all_matrices = {}  # {(file, length): matrix}
@@ -299,7 +371,7 @@ def main():
             
             _, _, model, val_data = train_model(
                 signal, f"{fname}_{n_pts}",
-                alphabet_size=7,
+                alphabet_size=args.alphabet_size,
                 data_is_array=True,
                 seed=args.seed,
                 **params,
@@ -361,6 +433,18 @@ def main():
     csv_path = os.path.join(RESULTS_DIR, csv_name)
     df.to_csv(csv_path, index=False)
     print(f"\nSaved: {csv_path}")
+
+    if not args.no_save_transition_matrices and all_matrices:
+        if args.transition_matrices_npz:
+            npz_path = args.transition_matrices_npz
+            index_csv = os.path.splitext(npz_path)[0] + "_index.csv"
+        else:
+            npz_path = os.path.join(RESULTS_DIR, f"transition_matrices_sycamore{suffix}.npz")
+            index_csv = os.path.join(RESULTS_DIR, f"transition_matrices_index{suffix}.csv")
+        k_saved = save_transition_matrices_npz(all_results, all_matrices, npz_path, index_csv)
+        if k_saved:
+            print(f"Saved: {npz_path}  ({k_saved} matrices, shape (K,7,7) in array 'T')")
+            print(f"Saved: {index_csv}")
 
     # Per-file estimated threshold (from Fisher trace slope)
     thresh_rows = []

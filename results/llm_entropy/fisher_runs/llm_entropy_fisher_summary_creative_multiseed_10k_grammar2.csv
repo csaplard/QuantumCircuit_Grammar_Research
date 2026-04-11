@@ -1,0 +1,10 @@
+source_csv,regime,control,max_len,n_star_trace_max,fisher_at_n_star,llm_seed
+results\llm_entropy\runs\creative_p0_seed42_none.csv,creative,none,10000,192.0,261496.184557577,42
+results\llm_entropy\runs\creative_p0_seed42_random_uniform.csv,creative,random_uniform,10000,80.0,1751339.1647453282,42
+results\llm_entropy\runs\creative_p0_seed42_shuffled.csv,creative,shuffled,10000,64.0,549997.5959119169,42
+results\llm_entropy\runs\creative_p0_seed7_none.csv,creative,none,10000,48.0,1147867.733721678,7
+results\llm_entropy\runs\creative_p0_seed7_random_uniform.csv,creative,random_uniform,10000,32.0,10585480.867897592,7
+results\llm_entropy\runs\creative_p0_seed7_shuffled.csv,creative,shuffled,10000,48.0,3342969.81197434,7
+results\llm_entropy\runs\creative_p0_seed99_none.csv,creative,none,10000,112.0,80163.87509043445,99
+results\llm_entropy\runs\creative_p0_seed99_random_uniform.csv,creative,random_uniform,10000,128.0,47516.96665803052,99
+results\llm_entropy\runs\creative_p0_seed99_shuffled.csv,creative,shuffled,10000,96.0,2842117.669860685,99

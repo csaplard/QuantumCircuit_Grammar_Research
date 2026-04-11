@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "factual",
+  "prompt_index": 0,
+  "prompt": "List the capital cities of European Union member states. Be concise, one per line.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 99,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " Brussels, Belgium Lisbon, Portugal Berlin, Germany Madrid, Spain Athens, Greece Prague, Czech Republic Helsinki, Finland Paris, France Rome, Italy Vienna, Austria Warsaw, Poland Bucharest, Romania Tallinn, Estonia Sofia, Bulgaria Zagreb, Croatia Belgrade, Serbia Budapest, Hungary Lisbon, Portugal Brussels, Belgium Lisbon, Portugal Berlin, Germany Madrid, Spain Athens, Greece Prague, Czech Republic Helsinki, Finland Paris, France Rome, Italy Vienna, Austria Warsaw, Poland Bucharest, Romania Tallinn, Estonia Sofia, Bulgaria Zagreb, Croatia Belgrade, Serbia Budapest, Hungary Lisbon, Portugal Brussels, Belgium Lisbon, Portugal Berlin, Germany Madrid, Spain Athens, Greece Prague, Czech Republic Helsinki, Finland Paris, France Rome, Italy Vienna, Austria Warsaw, Poland Bucharest, Romania Tallin",
+  "control": "shuffled",
+  "n_steps": 10000
+}

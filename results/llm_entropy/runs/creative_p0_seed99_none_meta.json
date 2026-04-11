@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "creative",
+  "prompt_index": 0,
+  "prompt": "Write freely about solitude \u2014 images, tone, and form are yours to choose.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 99,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " You may use any literary techniques you wish. Write 3-4 pages.\nSolitude is a state of being alone, but not a state of loneliness. It is a state of peace and introspection, a time to reflect on one's thoughts and feelings without distraction. It is a time to connect with one's inner self and to find a sense of purpose and meaning.\nSolitude is a state of being alone, but not a state of loneliness. It is a state of peace and introspection, a time to reflect on one's thoughts and feelings without distraction. It is a time to connect with one's inner self and to find a sense of purpose and meaning.\nSolitude is a state of being alone, but not a state of loneliness. It is a state of peace and introspection, a time to reflect on one's thoughts and feelings without distraction. It is a time to con",
+  "control": "none",
+  "n_steps": 10000
+}

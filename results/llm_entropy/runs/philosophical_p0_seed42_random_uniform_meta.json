@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "philosophical",
+  "prompt_index": 0,
+  "prompt": "Explore the nature of time. Follow your reasoning wherever it leads.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 42,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " I'm ready to explore this intriguing topic with you. Let's begin!\nSure, let's explore the nature of time! Time is a fundamental concept that has fascinated humans for centuries. It is often described as the fourth dimension of space-time, along with length, width, and height. However, the nature of time is still a subject of much debate and research in the fields of physics and philosophy.\n\nOne of the most well-known theories about the nature of time is Einstein's theory of relativity. According to this theory, time is not a fixed, absolute quantity, but rather it is relative to the observer and the gravitational field they are in. This means that time can pass at different rates depending on the observer's speed and proximity to a gravitational field.\n\nAnother important aspect of the nat",
+  "control": "random_uniform",
+  "n_steps": 10000
+}

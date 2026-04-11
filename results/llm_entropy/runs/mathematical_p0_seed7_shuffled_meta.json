@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "mathematical",
+  "prompt_index": 0,
+  "prompt": "Prove that the square root of 2 is irrational. Show each logical step clearly.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 7,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " To prove that the square root of 2 is irrational, we will use a proof by contradiction. This means we will assume the opposite of what we want to prove and show that this assumption leads to a contradiction.\n\n### Step 1: Assume the opposite\nAssume that the square root of 2 is rational. By definition, a rational number can be expressed as a fraction of two integers, \\( p \\) and \\( q \\), where \\( q \\neq 0 \\) and \\( p \\) and \\( q \\) have no common factors other than 1 (i.e., they are coprime).\n\nSo, we can write:\n\\[\n\\sqrt{2} = \\frac{p}{q}\n\\]\nwhere \\( p \\) and \\( q \\) are coprime integers.\n\n### Step 2: Square both sides\nTo eliminate the square root, we square both sides of the equation:\n\\[\n\\left(\\sqrt{2}\\right)^2 = \\left(\\frac{p}{q}\\right)^2\n\\]\nThis simplifies to:\n\\[\n2 = \\frac{p^2}{q^2}\n\\]\n\n##",
+  "control": "shuffled",
+  "n_steps": 10000
+}

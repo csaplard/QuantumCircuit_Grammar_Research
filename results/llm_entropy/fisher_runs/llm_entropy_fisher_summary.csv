@@ -1,0 +1,13 @@
+source_csv,regime,control,max_len,n_star_trace_max,fisher_at_n_star
+results\llm_entropy\runs\factual_p0_seed42_none.csv,factual,none,10000,192.0,2208437.445219324
+results\llm_entropy\runs\factual_p0_seed42_shuffled.csv,factual,shuffled,10000,96.0,342263.42017869186
+results\llm_entropy\runs\factual_p0_seed42_random_uniform.csv,factual,random_uniform,10000,32.0,713648.4129607604
+results\llm_entropy\runs\mathematical_p0_seed42_none.csv,mathematical,none,10000,224.0,297120.34839042905
+results\llm_entropy\runs\mathematical_p0_seed42_shuffled.csv,mathematical,shuffled,10000,96.0,53802.039340056304
+results\llm_entropy\runs\mathematical_p0_seed42_random_uniform.csv,mathematical,random_uniform,10000,64.0,2024884.6055928476
+results\llm_entropy\runs\creative_p0_seed42_none.csv,creative,none,10000,192.0,261496.184557577
+results\llm_entropy\runs\creative_p0_seed42_shuffled.csv,creative,shuffled,10000,64.0,549997.5959119169
+results\llm_entropy\runs\creative_p0_seed42_random_uniform.csv,creative,random_uniform,10000,80.0,1751339.1647453282
+results\llm_entropy\runs\philosophical_p0_seed42_none.csv,philosophical,none,10000,112.0,70296.80851368385
+results\llm_entropy\runs\philosophical_p0_seed42_shuffled.csv,philosophical,shuffled,10000,32.0,141301.45347673382
+results\llm_entropy\runs\philosophical_p0_seed42_random_uniform.csv,philosophical,random_uniform,10000,64.0,2024884.6055928476

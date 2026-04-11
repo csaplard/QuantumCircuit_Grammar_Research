@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "philosophical",
+  "prompt_index": 0,
+  "prompt": "Explore the nature of time. Follow your reasoning wherever it leads.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 7,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " What is time? Is it a dimension? Is it a concept? Is it real? Is it just an illusion? Is it subjective or objective? Is it finite or infinite? Is it continuous or discrete? Is it linear or non-linear? Is it absolute or relative? Is it measurable? Is it a part of space? Is it a part of reality? Is it a part of the universe? Is it a part of everything? Is it a part of nothing? Is it a part of everything and nothing? Is it a part of everything and nothing and everything? Is it a part of everything and nothing and everything and nothing? Is it a part of everything and nothing and everything and nothing and everything? Is it a part of everything and nothing and everything and nothing and everything and nothing? Is it a part of everything and nothing and everything and nothing and everything an",
+  "control": "random_uniform",
+  "n_steps": 10000
+}

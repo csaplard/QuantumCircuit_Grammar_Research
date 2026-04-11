@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "creative",
+  "prompt_index": 0,
+  "prompt": "Write freely about solitude \u2014 images, tone, and form are yours to choose.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 42,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " I am looking for a poem that speaks to the experience of being alone in a way that resonates with many readers.\n. \nI have been alone for a long time now. \nThe silence fills my ears and my heart. \nI wonder if anyone else is feeling the same way. \nIs it just me? \n\nThe world outside is alive with noise and activity. \nBut I am trapped in my own thoughts and feelings. \nI feel like I am drowning in a sea of my own emotions. \nI don't know how to escape. \n\nI am scared to open up and let others in. \nI fear being judged or rejected. \nBut I also know that I need company and connection. \nI need to feel like I am not alone. \n\nSo I sit here, alone, and try to find peace. \nI try to let go of my worries and fears. \nI try to connect with my inner self. \nAnd I hope that maybe, just maybe, I can find a way ",
+  "control": "random_uniform",
+  "n_steps": 10000
+}

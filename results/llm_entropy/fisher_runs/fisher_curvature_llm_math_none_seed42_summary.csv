@@ -1,0 +1,2 @@
+source_csv,curve_id,regime,control,llm_seed,n_star_trace_max,n_peak_abs_d2,max_abs_d2_tr_dn2,n_peak_max_d2,max_d2_tr_dn2,n_peak_min_d2,min_d2_tr_dn2,abs_delta_peak_abs_to_nstar,method,smooth_sg
+results\llm_entropy\fisher_runs\fisher_metric_mathematical_p0_seed42_none.csv,fisher_metric_mathematical_p0_seed42_none,mathematical,none,42,1536.0,112.0,-476.2074269090564,128.0,307.71114317125847,112.0,-476.2074269090564,1424.0,spline,

@@ -1,0 +1,13 @@
+source,substrate_detail,topology,q_label,regime,control,llm_seed,backend,n_star_trace_max,n_curv_abs_d2_peak,max_abs_d2_tr_dn2,n_star_over_n_curv,reliable_curvature,file
+llm,results\llm_entropy\fisher_runs\fisher_metric_mathematical_p0_seed42_none.csv,,,mathematical,none,42,,1536.0,112.0,476.2074269090564,13.714285714285714,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_mathematical_p0_seed42_shuffled.csv,,,mathematical,shuffled,42,,48.0,48.0,2706.4703017678466,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_mathematical_p0_seed42_random_uniform.csv,,,mathematical,random_uniform,42,,64.0,64.0,29105.70504373205,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_philosophical_p0_seed42_none.csv,,,philosophical,none,42,,80.0,80.0,3372.9878294353266,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_philosophical_p0_seed42_shuffled.csv,,,philosophical,shuffled,42,,128.0,128.0,2563.8258192676108,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_philosophical_p0_seed42_random_uniform.csv,,,philosophical,random_uniform,42,,64.0,64.0,29105.70504373205,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_creative_p0_seed42_none.csv,,,creative,none,42,,192.0,192.0,1107.1548227455037,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_creative_p0_seed42_shuffled.csv,,,creative,shuffled,42,,64.0,64.0,9110.731768516642,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_creative_p0_seed42_random_uniform.csv,,,creative,random_uniform,42,,80.0,80.0,28311.38909748364,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_factual_p0_seed42_none.csv,,,factual,none,42,,384.0,384.0,15719.972725316025,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_factual_p0_seed42_shuffled.csv,,,factual,shuffled,42,,224.0,224.0,407.0300484608276,1.0,True,
+llm,results\llm_entropy\fisher_runs\fisher_metric_factual_p0_seed42_random_uniform.csv,,,factual,random_uniform,42,,32.0,48.0,5046.46777576333,0.6666666666666666,True,

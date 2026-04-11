@@ -48,8 +48,8 @@ results/ibm_torino_no5q_*
 results/ibm_marrakesh_raw4_*
 results/ibm_torino_raw4_*
 
-# Large binary caches (regenerate from scripts)
-results/**/*.npz
+# Large binary caches: ignore only if you place multi-GB exports here.
+# Small transition-matrix bundles (Sycamore / LLM) are tracked for reproducibility.
 
 # Optional KL exploration console dumps
 results/grammar_pairwise_kl_*.txt
@@ -58,8 +58,10 @@ results/grammar_pairwise_kl_*.txt
 results/fisher_phase_transition_all_readouts*.png
 results/fisher_phase_transition_summary.png
 
-# LaTeX build artifacts (preprint in docs/)
+# LaTeX build artifacts (preprint in docs/ or stray builds under results/)
 docs/*.aux
+results/*.aux
+results/*.out
 docs/*.out
 docs/*.log
 docs/*.toc

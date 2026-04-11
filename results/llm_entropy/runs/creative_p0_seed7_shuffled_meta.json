@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "creative",
+  "prompt_index": 0,
+  "prompt": "Write freely about solitude \u2014 images, tone, and form are yours to choose.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 7,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " \n\nSolitude is a quiet place, a sanctuary of sorts, where one can retreat from the bustle of the world. It is a peaceful respite, a moment of stillness and quiet contemplation. In solitude, the mind can wander freely, exploring new ideas and perspectives.\n\nThe tone of solitude is one of peace and tranquility. It is a state of being that allows one to connect with oneself and the world around them in a deeper way. It is a moment of stillness and quiet reflection, where one can find a sense of peace and contentment.\n\nIn form, solitude can take many different shapes and forms. It can be a physical space, such as a quiet room or a peaceful garden. It can also be a state of mind, a moment of stillness and quiet contemplation. In solitude, one can find a sense of peace and contentment, a moment ",
+  "control": "shuffled",
+  "n_steps": 10000
+}

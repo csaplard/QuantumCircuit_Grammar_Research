@@ -1,0 +1,13 @@
+file,q_label,topology,qubits,n_min_filter,status,n_points_used,preferred_model,delta_aic,N_star_grammar,ratio_tau_over_N_star,ratio_tau_over_N_foti_anchor,N_foti_anchor,A_times_tau,alphabet_k,invariant_k_kminus1_pi_half,ratio_A_tau_over_invariant
+creative_p0_seed42_none,creative,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+creative_p0_seed7_none,creative,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+creative_p0_seed99_none,creative,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+factual_p0_seed42_none,factual,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+factual_p0_seed7_none,factual,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+factual_p0_seed99_none,factual,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+mathematical_p0_seed42_none,mathematical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+mathematical_p0_seed7_none,mathematical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+mathematical_p0_seed99_none,mathematical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+philosophical_p0_seed42_none,philosophical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+philosophical_p0_seed7_none,philosophical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,
+philosophical_p0_seed99_none,philosophical,none,,500.0,too_few_points,1,none,,,,,8000.0,,7,65.97344572538566,

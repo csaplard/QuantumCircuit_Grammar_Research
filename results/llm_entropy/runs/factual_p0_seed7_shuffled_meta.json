@@ -1,0 +1,32 @@
+{
+  "backend": "llama-server",
+  "regime": "factual",
+  "prompt_index": 0,
+  "prompt": "List the capital cities of European Union member states. Be concise, one per line.",
+  "model": "qwen2.5-coder:7b",
+  "llama_server_url": "http://127.0.0.1:8080",
+  "temperature": 0.5,
+  "fixed_tokens": 10000,
+  "chunk_tokens": null,
+  "top_logprobs": 15,
+  "seed": 7,
+  "continuation_rounds": 1,
+  "round_meta": [
+    {
+      "round": 1,
+      "n_logprobs": 10000,
+      "stop_type": "limit",
+      "truncated": false
+    }
+  ],
+  "actual_tokens": 10000,
+  "truncated_before_target": false,
+  "clear_stop_sequences": null,
+  "ollama_raw": null,
+  "num_ctx": null,
+  "stop_type": "limit",
+  "repetition_events": [],
+  "response_excerpt": " Amsterdam, Antwerp, Athens, Barcelona, Berlin, Bratislava, Brussels, Bucharest, Copenhagen, Dublin, Florence, Helsinki, Lisbon, Madrid, Milan, Paris, Prague, Riga, Rome, Stockholm, Tallinn, Vienna, Warsaw, Zagreb. \n\nNote: This list includes all 27 member states as of 2023. Some member states have had capital changes since the EU's founding in 1957, but they are not included in this list. For example, Athens became the capital of Greece in 1832, and Vienna was the capital of Austria from 1918 to 1945. However, these changes are not reflected in this list of current EU member states' capitals. \n\nAdditionally, this list excludes non-EU member states that are part of the European Economic Area (EEA) or have applied for EU membership. For example, Norway and Switzerland are not included in thi",
+  "control": "shuffled",
+  "n_steps": 10000
+}

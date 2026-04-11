@@ -1,0 +1,36 @@
+Fisher path speed + embedding pipeline (Sycamore K=5,7,9; LLM K=7)
+================================================================
+
+Prerequisites
+--------------
+- Python 3 with numpy, pandas, scipy, torch (see project requirements if any).
+- Sycamore readouts: place `*_readout_raw_data.txt` under `readout_raw_data/` (Dryad DOI 10.5061/dryad.k6t1rj8; folder is gitignored by default).
+- For LLM branch: Ollama or the client expected by `code/run_llm_entropy_grammar_fisher.py` (see that script and `results/llm_entropy/REPRODUCTION.txt`).
+- Git on Windows: long paths under `results/llm_entropy/` can exceed the legacy MAX_PATH limit. If `git clone` / `git add` fails with "Filename too long", run once in this repo: `git config core.longpaths true` (or enable long paths in Windows).
+
+One-shot orchestrator (recommended)
+------------------------------------
+From repo root:
+
+  python code/run_all_embedding_tests.py
+
+Quick validation (smoke, 3 Sycamore readouts + LLM smoke):
+
+  python code/run_all_embedding_tests.py
+
+Full production (28 Sycamore readouts per K; full LLM grid; long runtime):
+
+  python code/run_all_embedding_tests.py --full
+
+Manual Sycamore slice (example, alphabet 7 default outputs in results/)
+-----------------------------------------------------------------------
+  python code/fisher_information_analysis.py
+  python code/compute_fisher_ricci_curve.py --skip-ricci
+  python code/fit_fisher_speed_foti_scale.py
+
+Key committed outputs (this repo)
+---------------------------------
+- `results/fisher_metric_vs_datalength_all_readouts_alphabet*.csv`
+- `results/transition_matrices_sycamore_all_readouts_alphabet*.npz` (+ matching `*_index.csv`)
+- `results/fisher_ricci_and_embedding_vs_n_alphabet*.csv`, `fisher_speed_foti_scale_fit_alphabet*.csv`
+- `results/llm_entropy/fisher_runs/transition_matrices_llm_full.npz` (and smoke variant), embeddings + fits
