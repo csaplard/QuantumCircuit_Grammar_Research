@@ -1,0 +1,2 @@
+step,epoch,loss,gate_weight,gate_bias,mean_gate,mean_fisher,elapsed_min
+1,1,2.9229159355163574,1.0,0.0,0.5,0.0,0.06

@@ -1,0 +1,23 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: creative
+PROMPT_IDX: 2
+SEED: 42
+PROMPT:
+Describe an alien civilization that communicates through colors.
+
+--- GENERATED ---
+
+
+**The Chromatics of Xylos**
+
+The Xylosians are a silicon-based lifeform native to the planet Xylos, a world perpetually bathed in the violet glow of a binary star system. Their physiology is inherently tied to color. Their bodies aren't composed of flesh and bone, but rather a complex network of crystalline structures that respond to light, absorbing, refracting, and emitting colors with astonishing precision. They appear as shimmering, vaguely humanoid forms, their shapes constantly shifting and flowing as they manipulate their internal coloration.
+
+**Communication: A Symphony of Hue**
+
+Traditional sound is utterly foreign to the Xylosians. They don't possess vocal cords or ears as we understand them. Instead, they communicate through a language of color – a dynamic, layered system called ‘Chromalance’. 
+
+* **Primary Colors as Emotions:** Each fundamental color represents a core emotion:
+    * **Crimson:**  Intense passion, rage, urgency, danger.  A rapid pulsing crimson indicates immediate threat.
+    * **Azure:** Calm, serenity, acceptance, understanding.  A slow, undulating azure signals a willingness to listen.
+    * **Veridian:** Curiosity, inquiry, seeking knowledge.  A spiraling ver

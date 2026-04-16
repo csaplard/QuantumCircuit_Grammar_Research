@@ -1,0 +1,35 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: mathematical
+PROMPT_IDX: 3
+PROMPT:
+Prove that the sum of the first n positive integers equals n(n+1)/2.
+
+--- GENERATED ---
+
+
+**Proof:**
+
+We want to prove that the sum of the first n positive integers, denoted as S_n, is equal to n(n+1)/2. That is, we want to prove:
+
+S_n = 1 + 2 + 3 + ... + n = n(n+1)/2
+
+We can prove this using mathematical induction.
+
+**Base Case (n=1):**
+
+For n=1, the sum is simply 1.  The formula gives n(n+1)/2 = 1(1+1)/2 = 1(2)/2 = 1.  So the formula holds for n=1.
+
+**Inductive Hypothesis:**
+
+Assume that the formula holds for some integer k ≥ 1.  That is, assume:
+
+1 + 2 + 3 + ... + k = k(k+1)/2
+
+**Inductive Step:**
+
+We need to show that the formula also holds for n=k+1.  That is, we need to show that:
+
+1 + 2 + 3 + ... + (k+1) = (k+1)(k+2)/2
+
+Starting with the left-hand side

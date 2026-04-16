@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Create a myth explaining why the moon changes shape.
+
+--- GENERATED ---
+
+
+**The Tale of Lyra and the Shifting Silks**
+
+Long ago, before time measured itself in hours and days, the moon was a single, perfect pearl, radiating a constant, unwavering light. It was the heart of Lyra, a goddess of beauty and dreams, and her light brought peace and serenity to the world.  
+
+Lyra wasn't alone. She had a husband, Boreas, the God of the North Wind, a creature of raw power and restless energy. He loved Lyra deeply, but his nature was wild and unpredictable, delighting in storms and the shifting of landscapes.  
+
+Lyra, however, loved stillness and the quiet beauty of her dreams. She treasured the consistency of her light, the calm she brought to the land. Boreas, in his enthusiasm for the world, often tried to ‘stir’ her, to introduce excitement and change. He would whisper tales of distant lands, of roaring rivers and towering mountains, and try to coax her into sharing her serene light with them.
+
+Lyra, resistant to the chaos, would try to hold onto her pearl-like form, fiercely guarding the steady glow within.  But Boreas’s winds were persistent. They danced around her, swirling with his

@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: creative
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Create a myth explaining why the moon changes shape.
+
+--- GENERATED ---
+
+
+**The Myth of Lyra and the Shifting Weaver**
+
+Long ago, before time was measured in sunrises and sunsets, the sky was a single, unbroken sheet of deep indigo. There was no moon, no stars, only a vast, comforting darkness. In this darkness lived Lyra, the Weaver of Dreams. She wasn't a goddess, not really. She was a spirit of creation, tasked with collecting the purest thoughts and desires of all living things and weaving them into tapestries of light. These tapestries weren't visible to the waking world, only to those who slumbered, providing them with the most beautiful and potent dreams.
+
+Lyra lived in a magnificent chamber, spun from twilight and stardust, and her loom was an enormous, iridescent spiderweb that stretched across the heavens. She used threads of silver, gold, and sapphire, plucked from the very essence of joy, sorrow, courage, and love.  
+
+But Lyra wasn't alone. Beside her always was Corvus, the Shifting Weaver. He wasn't a weaver at all, but a guardian – a being of pure, restless energy. His job was to ensure the threads weren't tangled, that the rhythm of the loom never faltered

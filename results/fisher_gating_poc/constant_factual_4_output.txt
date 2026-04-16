@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: factual
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Describe the water cycle and its importance for Earth's climate.
+
+--- GENERATED ---
+
+
+The water cycle, also known as the hydrologic cycle, is a continuous process that describes the movement of water on, above, and below the Earth's surface. It’s a fundamental process that sustains life and plays a crucial role in regulating Earth's climate. Here's a breakdown of the cycle and its significance:
+
+**1. Stages of the Water Cycle:**
+
+* **Evaporation:** This is the process where liquid water changes into water vapor (a gas) and rises into the atmosphere.  It’s primarily driven by the sun's heat, but can also occur through transpiration (see below).
+* **Transpiration:** This is the process where plants release water vapor into the atmosphere through tiny pores in their leaves.  It's essentially a biological form of evaporation.
+* **Condensation:** As water vapor rises in the atmosphere, it cools and condenses, forming clouds.  This happens when water vapor turns back into liquid water or ice crystals.
+* **Precipitation:** When clouds become saturated with water droplets or ice crystals, they release water back to Earth in the form of rain, snow, sleet, or hail.
+* **Infiltration:**  Some of the precipitation that reaches the ground so

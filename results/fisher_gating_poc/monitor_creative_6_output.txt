@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: monitor
+REGIME: creative
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Describe a city that exists entirely underwater.
+
+--- GENERATED ---
+
+
+**The City of Aethel**
+
+Aethel doesn't rise from the ocean; it *is* the ocean. Constructed over centuries, using a bio-luminescent coral and a complex system of reinforced, pressure-resistant kelp forests, Aethel is a city nestled within the deep trenches of the Pacific, 8,000 feet below the surface. It's not a single structure, but a sprawling network of interconnected domes, tunnels, and floating platforms, all sculpted into the natural contours of the seabed.
+
+**Architecture & Design:**
+
+*   **Living Buildings:** The structures are primarily grown, not built. Specialized "Kelp-weavers" – genetically modified cephalopods – manipulate the growth of massive, reinforced kelp forests, weaving them into the shapes of homes, workshops, and public spaces. The kelp provides both structural support and a mesmerizing, constantly shifting aesthetic.
+*   **Bio-luminescence:** Aethel is perpetually bathed in a soft, ethereal glow. The city’s structures are laced with genetically engineered bioluminescent algae and fungi, creating a symphony of blues, greens, and purples that shift with the currents and the moods of the city.
+*   **Hydro-Gard

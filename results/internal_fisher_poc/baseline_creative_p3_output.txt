@@ -1,0 +1,19 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 3
+PROMPT:
+Write a short story about a child who finds a hidden door at the base of a tree.
+
+--- GENERATED ---
+
+
+The rain hammered against the attic window, a relentless drumming that made Leo feel small and lonely. He’d been banished to the dusty, forgotten space above his grandmother’s house for “being a handful,” which, in his opinion, meant he’d tried to build a miniature castle out of mashed potatoes.
+
+He shuffled through boxes filled with moth-eaten blankets, chipped porcelain dolls, and the lingering scent of lavender and regret. Boredom gnawed at him, sharp and insistent. He kicked a loose floorboard, more out of frustration than anything else.
+
+Suddenly, the board shifted with a surprising give. Leo knelt, pushing at the wood with his fingers. It moved a little further, revealing a dark, square patch beneath. He pulled, and with a groan of old wood, a small, wooden door swung inward.
+
+It wasn’t just a hole in the floor. It was a door, perfectly fitted into the base of the ancient oak tree that dominated the backyard. The door was barely big enough for him to squeeze through, covered in moss and lichen, almost invisible against the dark wood of the tree.
+
+A musty, earthy smell wafted out, laced with something sweet and unknown. Leo hesitated. His grandmother had warned

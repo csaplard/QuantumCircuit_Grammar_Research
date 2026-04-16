@@ -1,0 +1,30 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: mathematical
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Derive the quadratic formula from ax^2 + bx + c = 0.
+
+--- GENERATED ---
+
+
+To derive the quadratic formula, we start with the general quadratic equation:
+
+ax^2 + bx + c = 0, where a, b, and c are constants and a ≠ 0.
+
+We want to solve for x.  We can divide the entire equation by 'a' to make the coefficient of x^2 equal to 1:
+
+x^2 + (b/a)x + (c/a) = 0
+
+Now, we will use the method of completing the square.  We want to manipulate the equation to get a perfect square trinomial on the left side.
+
+1. Move the constant term to the right side:
+
+x^2 + (b/a)x = -c/a
+
+2. Complete the square on the left side.  Take half of the coefficient of the x term (which is b/a), square it, and add it to both sides:
+
+(b/2a)^2 = (b/a)^2 / 4 = b^2 / 4a^2
+
+x^2 + (b/a)x + (b^2 / 4a^2) = -c/a + (b^2 / 4

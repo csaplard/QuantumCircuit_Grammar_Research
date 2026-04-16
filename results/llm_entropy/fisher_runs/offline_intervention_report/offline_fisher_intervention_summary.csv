@@ -1,0 +1,3 @@
+regime,n_tokens,n_valid_trace,window_size,fisher_epsilon,check_every,mean_trace,std_trace,low_threshold,high_threshold,n_checkpoints,n_interventions,n_down,n_up
+factual,512,481,32,0.01,16,372.1073434663124,29.256292367936634,342.85105109837576,401.363635834249,32,10,6,4
+mathematical,512,481,32,0.01,16,379.3850173133104,28.042681641692916,351.3423356716175,407.42769895500334,32,12,5,7

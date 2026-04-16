@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: creative
+PROMPT_IDX: 2
+SEED: 42
+PROMPT:
+Describe an alien civilization that communicates through colors.
+
+--- GENERATED ---
+
+
+**The Chromatics of Xylos**
+
+On the planet Xylos, orbiting a binary star system in the Andromeda Galaxy, resides the Xylan civilization. They are not beings of sound or gesture, but of light – quite literally. The Xylans, known as the Lumin, are a species evolved to perceive and manipulate color as their primary form of communication, expression, and even thought.
+
+**Biology & Perception:**
+
+*   **Photoreceptive Skin:** The Lumin’s skin is not pigmented in the way humans understand it. Instead, it's a complex network of microscopic, bioluminescent cells called “chroma-nodes.” These nodes react to light, shifting and blending in intricate patterns, creating a dynamic, ever-changing display on their bodies.
+*   **Color-Sensing Organs:** They lack traditional eyes. Instead, they possess “color-cones” – specialized organs embedded beneath their skin that detect the wavelength, intensity, and movement of light. These cones are incredibly sensitive, allowing them to perceive far more color variations than humans.
+*   **Internal Luminescence:**  Each Lumin also possesses an internal core of concentrated light, a "heart-glow," that dictates the general emotional state and intent of their communication

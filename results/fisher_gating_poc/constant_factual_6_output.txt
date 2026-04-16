@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: factual
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Explain how vaccines work to protect against diseases.
+
+--- GENERATED ---
+
+
+Vaccines work by mimicking an infection in the body, without actually causing the disease. This exposure to a weakened or inactive form of a pathogen (like a virus or bacteria) or a part of the pathogen, prompts the immune system to recognize and remember it. If the real pathogen ever enters the body, the immune system is prepared to fight it off quickly and effectively.
+
+Here's a breakdown of the process:
+
+1.  **Antigen Presentation:** When a vaccine is administered, the antigens (specific molecules on the surface of the pathogen) are introduced into the body.
+
+2.  **Immune Response - Initial Activation:** Immune cells, particularly macrophages and dendritic cells, engulf these antigens and present them to other immune cells, specifically T cells and B cells.
+
+3.  **B Cell Activation and Antibody Production:** B cells recognize the antigen and differentiate into plasma cells. These plasma cells produce antibodies – proteins designed to specifically bind to the pathogen.  Antibodies neutralize the pathogen, marking it for destruction, or prevent it from infecting cells.
+
+4.  **T Cell Activation and Memory:** T cells recognize the antigen and either directly kill infected cells (cytotoxic T cells) or help coordinate the immune response (helper T cells). Importantly, some

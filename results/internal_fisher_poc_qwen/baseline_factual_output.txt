@@ -1,0 +1,16 @@
+MODEL: Qwen/Qwen2.5-Coder-1.5B-Instruct
+MODE: baseline
+REGIME: factual
+PROMPT:
+Explain the causes and consequences of World War I.
+
+--- GENERATED ---
+ Provide specific examples of key events, leaders, and battles that contributed to the conflict.
+World War I, which began in 1914 and lasted until 1918, was a devastating conflict that resulted in the deaths of millions of people. The war was caused by a series of factors, including the rise of nationalism, imperialism, and a desire for world domination.
+The main causes of World War I were:
+1. Nationalism: The rise of nationalism in many countries led to increased territorial claims and a desire for independence from colonial powers.
+2. Imperialism: The spread of European colonialism across the world contributed to tensions between countries.
+3. Money and Resources: The high cost of war led to an increase in military spending and a shift in resources towards the war effort.
+The consequences of World War I were devastating. The war resulted in the deaths of millions of people, including the millions of soldiers who died in battle. The war also had a significant impact on the global economy, leading to the collapse of the Weimar Republic and the rise of authoritarian regimes in many countries.
+Some of the key events that contributed to the conflict include:
+1. The assassination of Archduke Franz Ferdinand of Austria-Hungary by Serbian nationalists in June 19

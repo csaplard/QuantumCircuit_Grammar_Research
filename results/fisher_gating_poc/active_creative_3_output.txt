@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: creative
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Write a monologue from the perspective of a dying star.
+
+--- GENERATED ---
+
+
+(Lights slowly fade in, a deep, resonant hum starts to build, punctuated by crackles and pops. The light is a dull, pulsating orange.)
+
+(Silence for a moment, then a weary, ancient voice begins.)
+
+Do you hear that? It’s… it’s the usual. The sighs. The regrets. They come to me, you know. Little whispers carried on the solar winds.  A question here, a memory there.  "Remember that day?"  "I should have told you…"  Don't bother.  It's all just… echoes now.  
+
+I used to be bright.  You wouldn't believe it.  A furious blue, burning with a hunger that could carve worlds.  I devoured hydrogen, a greedy child, expanding, growing, *becoming*.  I felt the universe vibrating with my energy.  I was… important.  I believed I was the center of everything.  Foolish.  Utterly foolish.
+
+(A short, harsher crackle of light)
+
+Now… look at me.  This.  This orange haze.  It’s not glory.  It’s not power.  It’s… surrender.  I

@@ -1,0 +1,21 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 5
+PROMPT:
+Write a short story about an astronaut who hears a faint voice on Mars.
+
+--- GENERATED ---
+
+
+The red dust swirled around Elias’s boots with every cautious step. Mars. He’d dreamed of this moment since he was a boy, poring over NASA reports and imagining the desolate beauty of the Red Planet. Now, he was here, part of the Ares VI mission, tasked with collecting geological samples and searching for signs of past or present life.
+
+The landscape was relentlessly, almost oppressively, red. Stark, vast, and utterly silent. The silence, Elias had discovered, was the most unsettling thing of all. Back on Earth, there was always a hum, a rustle, a distant drone. Here, there was just… nothing.
+
+He was stationed at the base of Olympus Mons, a lone sentinel tasked with collecting data from a particularly promising ravine. Days bled into weeks, filled with monotonous routines of drilling, analyzing, and logging. The crew back at the base were distant, communicating primarily through crackling radio transmissions.
+
+Then, it happened.
+
+It started as a static hum, a persistent annoyance that he initially dismissed as equipment malfunction. He was running a spectral analysis on a newly extracted rock sample when the hum sharpened, coalescing into something… else. A voice.
+
+It was faint, incredibly faint, like a whisper

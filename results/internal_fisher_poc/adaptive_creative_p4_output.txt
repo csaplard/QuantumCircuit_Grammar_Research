@@ -1,0 +1,21 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: creative
+PROMPT_IDX: 4
+PROMPT:
+Write a short story about a stranger arriving in a village snowed in for the winter.
+
+--- GENERATED ---
+
+
+The snow fell with a deliberate, heavy insistence, each flake a tiny, icy fist hammering against the windows of Oakhaven. By midday, the village was a muffled white, the only sound the sigh of the wind and the rhythmic scrape of shovels against frozen earth. Oakhaven was, as it was every winter, utterly isolated.
+
+Then, he arrived.
+
+He wasn’t a welcome sight. He was tall, dressed in worn, dark clothing that looked like it had seen a thousand winters, and carried a weathered walking stick. He simply appeared at the edge of the village, a solitary figure silhouetted against the swirling snow, and announced, in a voice roughened by the cold, “I’m looking for shelter.”
+
+Mayor Silas, a man whose belly preceded him in every room, grunted. “We’re full, friend. No room for visitors.”
+
+The stranger didn’t argue. He just stood there, patiently watching the villagers bustle with their preparations – hauling firewood, securing windows, and tending to the few animals left out in the biting wind.
+
+Elara, the village baker, a woman known for her warmth and even warmer bread, stepped forward. “Let me see,” she said, approaching him

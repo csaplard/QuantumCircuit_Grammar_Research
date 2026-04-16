@@ -1,0 +1,25 @@
+MODEL: google/gemma-3-4b-it
+MODE: monitor
+REGIME: mathematical
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Prove that e is irrational using its series expansion.
+
+--- GENERATED ---
+
+
+The series expansion of e is given by:
+$$e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \dots = \sum_{n=0}^{\infty} \frac{1}{n!}$$
+
+Assume that e is rational, so e can be expressed as a fraction $\frac{p}{q}$, where $p$ and $q$ are integers.
+Let $e = \frac{p}{q}$.
+
+Consider the difference between $e$ and the integer part of $e$.
+$$e - \lfloor e \rfloor = \sum_{n=0}^{\infty} \frac{1}{n!} - \lfloor \sum_{n=0}^{\infty} \frac{1}{n!} \rfloor$$
+Since $e$ is rational, $\lfloor e \rfloor$ is an integer.
+We know that $e \approx 2.718281828\dots$
+$\lfloor e \rfloor = 2$.
+So, $e - 2 = 0.718281828\dots$
+
+We can write $e = \frac{p

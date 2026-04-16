@@ -1,0 +1,37 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+adaptive,mathematical,mathematical_r3,0,Certainly,1.65689848,,0.7000
+adaptive,mathematical,mathematical_r3,1,!,0.00490498,,0.7000
+adaptive,mathematical,mathematical_r3,2, The,1.33180970,,0.7000
+adaptive,mathematical,mathematical_r3,3, quadratic,0.10025699,,0.7000
+adaptive,mathematical,mathematical_r3,4, equation,0.11885847,,0.7000
+adaptive,mathematical,mathematical_r3,5, is,0.69720988,,0.7000
+adaptive,mathematical,mathematical_r3,6, given,1.43339502,,0.7000
+adaptive,mathematical,mathematical_r3,7, by,0.23822393,,0.7000
+adaptive,mathematical,mathematical_r3,8,":
+
+",0.82806484,,0.7000
+adaptive,mathematical,mathematical_r3,9,\[,0.43434403,,0.7000
+adaptive,mathematical,mathematical_r3,10, ax,0.11007344,,0.7000
+adaptive,mathematical,mathematical_r3,11,^,0.00100328,,0.7000
+adaptive,mathematical,mathematical_r3,12,2,0.00002795,,0.7000
+adaptive,mathematical,mathematical_r3,13, +,0.00060458,,0.7000
+adaptive,mathematical,mathematical_r3,14, bx,0.00017624,,0.7000
+adaptive,mathematical,mathematical_r3,15, +,0.00037581,,0.7000
+adaptive,mathematical,mathematical_r3,16, c,0.00010721,,0.7000
+adaptive,mathematical,mathematical_r3,17, =,0.00024806,,0.7000
+adaptive,mathematical,mathematical_r3,18, ,0.00002981,,0.7000
+adaptive,mathematical,mathematical_r3,19,0,0.00000651,,0.7000
+adaptive,mathematical,mathematical_r3,20, \,0.01152414,,0.7000
+adaptive,mathematical,mathematical_r3,21,"]
+
+",0.01198256,,0.7000
+adaptive,mathematical,mathematical_r3,22,where,1.18875562,,0.7000
+adaptive,mathematical,mathematical_r3,23, \(,0.01739598,,0.7000
+adaptive,mathematical,mathematical_r3,24,a,0.51341778,,0.7000
+adaptive,mathematical,mathematical_r3,25,\,0.50975181,,0.7000
+adaptive,mathematical,mathematical_r3,26,"),",0.00519702,,0.7000
+adaptive,mathematical,mathematical_r3,27, \(,0.00043171,,0.7000
+adaptive,mathematical,mathematical_r3,28,b,0.00079638,,0.7000
+adaptive,mathematical,mathematical_r3,29,\,0.00060690,,0.7000
+adaptive,mathematical,mathematical_r3,30,"),",0.00012085,,0.7000
+adaptive,mathematical,mathematical_r3,31, and,0.00054113,384.36096355,0.7000

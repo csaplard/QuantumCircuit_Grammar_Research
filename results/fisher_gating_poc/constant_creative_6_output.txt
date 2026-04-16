@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: creative
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Describe a city that exists entirely underwater.
+
+--- GENERATED ---
+
+
+**The City of Aethel**
+
+Aethel doesn't rise from the ocean; it *is* the ocean. Constructed over centuries, using a bio-luminescent coral-based concrete and intricate networks of reinforced kelp forests, Aethel is a sprawling metropolis nestled within the perpetually twilight depths of the Sargasso Sea. It’s not a single structure, but a collection of interconnected biodomes, cavernous districts, and naturally-formed tunnels, all woven together with shimmering, translucent tubes that transport its inhabitants.
+
+**Structure & Layout:**
+
+*   **The Core - ‘The Hearth’:** The oldest and largest dome, it houses the central government, the Grand Archives (a repository of knowledge painstakingly recorded and preserved over generations), and the ‘Sunstone’ – a massive, artificially-created bioluminescent crystal that mimics sunlight and sustains the city’s primary food source - cultivated algae and deep-sea fungi.
+*   **The Kelpways:**  A series of naturally-occurring, vast caverns carved through dense kelp forests. These are the main thoroughfares, illuminated by genetically engineered, singing bioluminescent jellyfish.  Homes are built directly into the kelp, blending seamlessly with the environment.
+*   **The

@@ -1,0 +1,39 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: creative
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Write a poem about the last tree on Earth.
+
+--- GENERATED ---
+
+
+The dust remembers, a gritty, gray plea,
+Of green, of sunlight, a forgotten glee.
+The wind whispers tales of forests vast and deep,
+A memory clinging, secrets it does keep.
+
+And here it stands, alone, a weathered soul,
+The last tree breathing, beyond all control.
+Its bark is etched with centuries untold,
+A silent witness, brave and stark and old.
+
+Roots claw the earth, a desperate, clinging hold,
+Against the silence, the story to unfold.
+Each fiber remembers the rain and the light,
+A yearning for balance, a passionate fight.
+
+The leaves, a few, like emeralds, dim and slow,
+Reach for a phantom sun, a long-lost glow.
+They rustle and sigh, a lament soft and low,
+For all that was lost, for all that couldn't grow.
+
+No birdsong graces its branches now,
+Just the drone of the wind, a solemn vow.
+No creatures seek shelter, no shade to find,
+Just solitude's weight, a burden for the mind.
+
+It feels the heat rise, a constant, burning plea,
+Of cracked earth and shadows, eternally free.
+A single, stubborn

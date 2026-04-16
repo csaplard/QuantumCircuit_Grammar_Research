@@ -1,0 +1,17 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,factual,factual_r1,0,Mer,0.71478402,
+baseline,factual,factual_r1,1,cury,0.00002809,
+baseline,factual,factual_r1,2,",",0.11068349,
+baseline,factual,factual_r1,3, Venus,0.00072180,
+baseline,factual,factual_r1,4,",",0.00003444,
+baseline,factual,factual_r1,5, Earth,0.00039731,
+baseline,factual,factual_r1,6,",",0.00010972,
+baseline,factual,factual_r1,7, Mars,0.00180221,5187553.13661033
+baseline,factual,factual_r1,8,",",0.00122318,6111151.19138803
+baseline,factual,factual_r1,9, Jupiter,0.00056922,5962303.73980257
+baseline,factual,factual_r1,10,",",0.00006897,9500013.43768777
+baseline,factual,factual_r1,11, Saturn,0.00009706,5925978.00672648
+baseline,factual,factual_r1,12,",",0.00007345,5280055.45746300
+baseline,factual,factual_r1,13, Uran,0.00057853,5931080.84773786
+baseline,factual,factual_r1,14,us,0.00000625,5642906.73205420
+baseline,factual,factual_r1,15,",",0.00059823,6000043.00000600

@@ -1,0 +1,2 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,factual,smoke2,0, Smoke,2.16427292,

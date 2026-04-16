@@ -1,0 +1,28 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: factual
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Explain how a combustion engine works step by step.
+
+--- GENERATED ---
+
+
+A combustion engine, particularly the internal combustion engine (ICE) found in most cars, is a remarkable machine that converts chemical energy into mechanical energy. Here's a breakdown of how it works, step by step:
+
+**1. The Basics - The Four Strokes:**
+
+Most gasoline engines operate on a four-stroke cycle, meaning it takes four strokes (movements of a piston) to complete one full cycle of converting fuel to motion.  Let's break down these strokes:
+
+**2. The Components (Simplified):**
+
+* **Cylinder:** The chamber where the magic happens – a cylindrical space.
+* **Piston:** A movable part that slides up and down inside the cylinder. It's connected to the crankshaft.
+* **Crankshaft:** A rotating shaft that converts the up-and-down motion of the piston into circular motion, which ultimately drives the wheels.
+* **Valves:**  Control the flow of air and fuel into the cylinder and exhaust gases out of the cylinder. (Intake valve and Exhaust valve)
+* **Spark Plug:** (Gasoline engines only) Provides the spark to ignite the air-fuel mixture.
+
+**3. The Four Strokes – Detailed Breakdown:**
+
+* **Stroke 

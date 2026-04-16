@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: factual
+PROMPT_IDX: 5
+PROMPT:
+Explain the theory of plate tectonics.
+
+--- GENERATED ---
+
+
+The theory of plate tectonics is a scientific theory that explains how the Earth's outer shell, called the lithosphere, is divided into large and small pieces called tectonic plates. These plates are constantly moving—albeit very slowly—over a partially molten layer beneath them called the asthenosphere. Here's a breakdown of the key concepts:
+
+**1. Earth's Structure:**
+
+*   **Lithosphere:** This is the rigid outer layer of the Earth, comprising the crust (oceanic and continental) and the uppermost part of the mantle. It's broken into several major and minor plates.
+*   **Asthenosphere:** This is a semi-molten, ductile layer within the upper mantle. It's hot and pliable, allowing the lithospheric plates to move over it. Think of it like a thick, slow-moving plastic.
+
+**2. Types of Plate Boundaries:**
+
+The interactions between these plates primarily occur at their boundaries, creating different types of geological features:
+
+*   **Convergent Boundaries:**  Where plates collide. There are three main types:
+    *   **Oceanic-Continental:**  Denser oceanic plate subducts (slides) beneath the continental plate. This often leads to:
+        

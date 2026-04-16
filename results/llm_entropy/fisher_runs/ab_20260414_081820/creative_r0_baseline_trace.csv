@@ -1,0 +1,17 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,creative,creative_r0,0,In,1.25733370,
+baseline,creative,creative_r0,1, the,0.42940480,
+baseline,creative,creative_r0,2, quiet,1.30684278,
+baseline,creative,creative_r0,3, embrace,2.13956054,
+baseline,creative,creative_r0,4, of,0.00132902,
+baseline,creative,creative_r0,5, dawn,1.66123207,
+baseline,creative,creative_r0,6,'s,0.67944601,
+baseline,creative,creative_r0,7, first,1.05424322,8285735.00016829
+baseline,creative,creative_r0,8, blush,1.60788187,7951243.13818372
+baseline,creative,creative_r0,9,",",0.23193352,8000020.46685276
+baseline,creative,creative_r0,10, a,1.96605666,8285735.00016828
+baseline,creative,creative_r0,11, lone,1.21757578,8222241.96810895
+baseline,creative,creative_r0,12, figure,0.63218522,7846176.27828099
+baseline,creative,creative_r0,13, stands,1.67245104,7846176.27828099
+baseline,creative,creative_r0,14, at,2.27288909,8857162.71446200
+baseline,creative,creative_r0,15, the,0.02239889,8181837.75720659

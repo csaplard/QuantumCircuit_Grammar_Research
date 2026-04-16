@@ -1,0 +1,256 @@
+idx,gold,pred,correct,gate_mean,fisher_mean,generated
+0,18,9,0,0.4377720806078287,115.06788619805052,"Let $e$ be the number of eggs Janet lays per day.
+Janet lays 16 eggs per day, so $e = 16$.
+She eats 3 eggs for breakfast every morning, so she has $16 - 3 = 13$ eggs remaining.
+She bakes muffins for her friends every day with 4 eggs, so she uses 4 eggs for muffins.
+Thus, she has $13$ eggs remaining,"
+1,3,2,0,0.4137301832670346,124.38401719349359,"Let $b$ be the number of bolts of blue fiber.
+The robe takes 2 bolts of blue fiber, so $b = 2$.
+The robe takes half that much white fiber, so the robe takes $\frac{1}{2} \times 2 = 1$ bolt of white fiber.
+The total number of bolts of fiber is the sum of the blue fiber and the white fiber.
+Total bolt"
+2,70000,500,0,0.4063765175815206,96.14722752847818,"Let the initial value of the house be $H = 80000$.
+Josh puts in $R = $50000$ in repairs.
+The total value of the house after repairs is $H + 50000 = 80000 + 50000 = 130000$.
+The value of the house increased by 150%, which means the new value is $1.50 \times (80000 + 50000) = 1.50 \times 130000 = 1950"
+3,540,3,0,0.4180324791232124,118.46673768928505,"Let $m$ be the distance of each sprint in meters.
+Given that James runs 60 meters each sprint, so $m = 60$ meters.
+He runs 3 sprints per week.
+So, the distance of each sprint is 60 meters.
+The distance of 3 sprints is $3 \times 60 = 180$ meters.
+The total distance he runs in one week is the distance"
+4,20,75,0,0.4191847269248683,116.58880175247833,"Let $F_1$ be the amount of feed given in the morning, and $F_2$ be the amount of feed given in the afternoon.
+We are given that Wendi feeds each chicken three cups of mixed chicken feed, containing seeds, mealworms, and vegetables.
+In the morning, she gives her flock of chickens 15 cups of feed. So "
+5,64,5,0,0.4146173350454774,112.99276848320156,"Let the cost of one glass be $c$.
+Given that one glass costs $5, so $c = 5$.
+Every second glass costs 60% of the price of the previous glass.
+So, the cost of the second glass is $0.60 \times 5 = 3$.
+The cost of the third glass is $0.60 \times 3 = 1.8$.
+However, we need to consider the cost of the fi"
+6,260,260,1,0.43959734911913984,125.90552709463394,"Let $T$ be the number of sheep Toulouse has.
+Let $C$ be the number of sheep Charleston has.
+Let $S$ be the number of sheep Seattle has.
+We are given that Toulouse has twice as many sheep as Charleston, so $T = 2C$.
+Charleston has 4 times as many sheep as Seattle, so $C = 4S$.
+We are given that Seatt"
+7,160,60,0,0.42594824463594705,115.95006830773134,"Let $F$ be the fraction of the file downloaded before the restart, which is 40% = 0.4.
+Normally, Carla downloads 2 GB/minute, so the rate of download is $2 \text{ GB/minute}$.
+The file size is 200 GB, so the time it takes to download the entire file is $\frac{200 \text{ GB}}{2 \text{ GB/minute}} = 1"
+8,45,120,0,0.4379349538940005,128.83238057887658,"Let's break down John's journey step-by-step:
+
+**1. Initial Distance Driven:**
+
+* **First 2 hours at 60 mph:**
+   * Distance covered: 2 hours * 60 mph = 120 miles
+* **Remaining time:** 4 hours - 2 hours = 2 hours
+* **Distance covered in the next 2 hours:** 2 hours * 60 mph = 120 miles
+* **Total dist"
+9,460,40,0,0.41531490003399085,103.89606829781408,"Let $R$ be Eliza's rate per hour.
+When Eliza works for the first 40 hours, her rate per hour is $R$.
+So, her rate for the first 40 hours is $40R$.
+She receives overtime pay of 1.2 times her regular hourly rate for the first 40 hours.
+So, her overtime pay for the first 40 hours is $1.2 \times 40R = 4"
+10,366,126,0,0.447594800760271,105.2751224119067,"Let $d_1$ be the number of downloads in the first month.
+Let $d_2$ be the number of downloads in the second month.
+Let $d_3$ be the number of downloads in the third month.
+We are given that the program had 60 downloads in the first month, so $d_1 = 60$.
+The number of downloads in the second month wa"
+11,694,55,0,0.4362200562900398,112.73221408787934,"Let $d$ be the number of dozens of donuts Toula bought.
+The cost per dozen of donuts is $68.
+Toula bought 3 dozen donuts, so the cost of the donuts is $3 \times 68 = 208$.
+The cost of 3 dozen donuts is $3 \times 68 = 208$.
+The cost of 3 dozen donuts is $3 \times 68 = 208$.
+Toula bought 2 dozen mini "
+12,13,3,0,0.41023395654337946,139.82124239368753,"Let $n$ be the number of years.
+The cost to plant the tree is $90.
+The tree grows 7 lemons per year, so it produces $7n$ lemons.
+The tree sells each lemon for $1.5, so the total revenue from selling the lemons is $1.5(7n)$ for $n$ years.
+The tree needs to water and feed the tree for 1 year, so the c"
+13,18,0,0,0.4590822803438641,195.016764687464,"Let $x$ be the number of vacuum cleaners Melanie started with.
+
+Melanie sold a third of her vacuum cleaners at the green house, so she had $x - \frac{3}{3}x = x - 1$ vacuum cleaners left.
+She then sold 2 more vacuum cleaners to the red house, so she had $(x - 1) - 2 = x - 3$ vacuum cleaners left.
+Fi"
+14,60,4,0,0.42267623089719564,112.86805599288371,"Let the total number of students in the dance class be $N = 20$.
+The number of students who enrolled in contemporary dance is $20\%$ of 20, which is $0.20 \times 20 = 4$ students.
+The number of students remaining after the contemporary dance is $20 - 4 = 16$.
+Of these remaining students, 25% of the "
+15,125,0,0,0.43540870829019696,121.80307478312079,"Let $J$ be the amount of money the merchant has available for the jewelry purchase.
+Let $E$ be the amount of money the merchant has available for the electronic gadgets.
+The merchant wants to make a choice between jewelry worth $5,000 and electronic gadgets worth $8,000.
+The jewelry market will go u"
+16,230,80,0,0.44376251730136573,114.04569517110428,"Let's denote the distance covered by the first train as $d_1$ and the distance covered by the second train as $d_2$.
+The first train leaves San Rafael and travels westward for 80 miles. So, the distance covered by the first train is $d_1 = 80$ miles.
+The second train leaves San Rafael and travels we"
+17,57500,3600,0,0.38877518600202166,108.18906692771078,"Let $w_t$ be the hourly rate for teaching, and $w_c$ be the hourly rate for cheerleading coaching.
+We are given that $w_t = $20$ per hour and $w_c = $30$ per hour.
+Jill works 50 weeks a year.
+She works 35 hours a week as a teacher.
+She works 15 hours a week as a coach.
+The total number of hours she "
+18,7,4,0,0.4238822561892448,118.04504618820809,"Let $e$ be the number of eggs Claire makes every morning.
+Claire makes 3 eggs every morning, so $e = 3$.
+Let $w$ be the number of weeks, which is 4 weeks.
+The number of eggs she makes in 4 weeks is $3 \times 4 = 12$ eggs.
+So, she has 12 eggs in total.
+We want to find out how many dozens of eggs she "
+19,6,6,1,0.43004163686418906,113.12781191556022,"Let $d$ be the total distance of the trail, which is 12 miles.
+Marissa took 1 hour to walk the first 4 miles, so the distance covered in the first part is 4 miles.
+Then she took another hour to walk the next two miles, so the distance covered in the second part is 2 miles.
+The total distance she has"
+20,15,1,0,0.40691251315001864,114.88897525702053,"Let $O$ be the amount of orange drink in liters.
+Let $P$ be the amount of pineapple drink in liters.
+Let $W$ be the amount of water in the orange drink.
+Let $R$ be the amount of pineapple drink in the pineapple drink.
+We are given that we have 10 liters of orange drink, so $O = 10$.
+We are given tha"
+21,14,25,0,0.4171627442265162,186.07138393449284,"Let $y$ be the number of years since Raymond was born.
+Raymond was born 6 years before Samantha, so Raymond's age is $y$ years since Raymond's birth.
+Samantha is now 31 years old, so Samantha's current age is 31.
+Since Raymond was born $y$ years before Samantha, we have $y = 31 - 6 = 25$ years since"
+22,7,2,0,0.442571378138382,118.34825452934007,"Let $x$ be the number of DVDs Billy sold on Tuesday.
+On Tuesday, Billy has 8 customers.
+The first 3 customers buy 1 DVD each, so they buy $3 \times 1 = 3$ DVDs.
+The next 2 customers buy 2 DVDs each, so they buy $2 \times 2 = 4$ DVDs.
+The last 3 customers don't buy any DVDs, so they buy 0 DVDs each.
+"
+23,8,2,0,0.45267174900800455,118.79335762580843,"Let $C$ be the amount the candle melts in centimeters.
+The candle melts by 2 centimeters every hour that it burns.
+At 1:00 PM, the candle is at 0 centimeters.
+From 1:00 PM to 5:00 PM, the number of hours is $5 - 1 = 4$ hours.
+The amount melted in these 4 hours is $2 \times 4 = 8$ centimeters.
+So, th"
+24,26,26,1,0.45557481465220917,113.17001463697696,"Let $x$ be the original price of the book.
+Kyle bought the book for $19.50 last year, and this is with a 25% discount from the original price.
+So the discount amount is 25% of $x$, which is $0.25x$.
+The price of the book after the discount is $x - 0.25x = (1 - 0.25)x = 0.75x$.
+We are given that the "
+25,2,8,0,0.46736152516677976,138.4064722221533,"Let's denote the number of boxes of pizza as $p$.
+The cost of one chicken meal is $12.
+The cost of one pack of milk is $3.
+The cost of one apple is $1.50.
+The cost of one box of pizza is $8.50.
+
+Marie ordered one chicken meal, which costs $12.
+The number of chicken meals she ordered is $\frac{12}{1}"
+26,243,6,0,0.42500509409001097,120.86858767280637,"Let $S$ be the number of pairs of shorts Mishka bought.
+Let $P$ be the number of pairs of pants Mishka bought.
+Let $H$ be the number of pairs of shoes Mishka bought.
+Mishka bought 3 pairs of shorts, so $S = 3$.
+The cost of one pair of shorts is $16.50.
+The cost of 3 pairs of shorts is $3 \times 16.5"
+27,16,4,0,0.4300840254290961,114.78609277354361,"Let $S$ be the number of servings of ice cream Cynthia eats per night. We are given that $S = 1$ serving per night.
+Let $C$ be the number of servings in a carton of ice cream. We are given that $C = 15$ servings per carton.
+Let $P$ be the cost per carton of ice cream. We are given that $P = $4.00 pe"
+28,25,15,0,0.37267566518858075,108.29134389319444,"Let $M$ be the number of miles Henry traveled during his 60-mile bike trip.
+We are given that Henry made two stops during his 60-mile bike trip.
+The first stop was after 20 miles, so the distance he stopped after 20 miles is 10 miles.
+The second stop was 15 miles before the end of the trip.
+Let $x$ "
+29,104,25,0,0.44763681570475455,118.32725780760026,"Let $x$ be the cost of a pair of boots.
+The cost of one pair of high heels is $\frac{5}{x}$ dollars.
+The cost of two pairs of high heels is $2 \times \frac{5}{x} = \frac{10}{x}$ dollars.
+We are given that the cost of one pair of heels is five dollars less than the cost of the boots. So,
+$$ \frac{5}{"
+30,109,2,0,0.4415360472339671,115.3134469140994,"Let Darrell's age be $d$ and Allen's age be $a$.
+We are given that the ratio of their ages is 7:11, so we can write this as:
+$$\frac{d}{a} = \frac{7}{11}$$
+This means $d = \frac{7}{11} a$.
+The total age of Darrell and Allen now is 162, so we have $d + a = 162$.
+Substituting $d = \frac{7}{11} a$ into"
+31,80,4,0,0.4474081845401088,111.94252085946908,"Let $x$ be the number of jelly beans in the jar.
+The first person says 80. So, $x = 80$.
+The second person says 20 more than half the first one. So, the second person says $\frac{x}{2} + 20 = \frac{x}{2} + 20$.
+The second person says $\frac{x}{2} + 20$.
+The third person says 25% more than the first "
+32,35,35,1,0.4262189092405606,114.43403195291395,"Let $h$ be the number of hours a day John spends taking care of dogs.
+John takes care of 10 dogs, and each dog takes 0.5 hours a day to walk and take care of their business. So, each dog takes 0.5 hours per day.
+The total number of dogs is 10.
+The number of hours a day spent taking care of the dogs "
+33,70,40,0,0.4438620914152125,121.76475678558144,"Let $g$ be the number of gold coins Gretchen has and $s$ be the number of silver coins Gretchen has.
+We are given that Gretchen has a total of 110 coins, so we have the equation:
+$$g + s = 110 \quad (1)$$
+We are also given that there are 30 more gold coins than silver coins, so we have:
+$$g = s + 30"
+34,23,23,1,0.46179081199807115,124.73708760181587,"Let $S$ be the number of jewels Siobhan has.
+Let $A$ be the number of jewels Aaron has.
+Let $R$ be the number of jewels Raymond has.
+We are given that Siobhan has 2 fewer jewels than Aaron, so $S = A - 2$.
+Aaron has 5 more jewels than half of Raymond's jewels, so $A = \frac{1}{2} R + 5$.
+Raymond has"
+35,9,2,0,0.4378293949412182,108.53056610890447,"Let $P_1$ be the number of points Mike scores in the first 20 minutes.
+Let $P_2$ be the number of points Mike scores in the second 20 minutes.
+We are given that Mike plays ping pong for 40 minutes.
+In the first 20 minutes, he scores 4 points per minute. So, in the first 20 minutes, he scores $20 \ti"
+36,75,8,0,0.39709099690662697,114.07829535107182,"Let the price of one yogurt be $p$.
+Terry eats 2 yogurts a day, so he eats $2 \times p$ yogurts per day.
+The cost of 4 yogurts is $5.00, so 1 yogurt costs $5.00/4 = $1.25$.
+Thus, $p = 5$ for 4 yogurts.
+The cost of 1 yogurt is $p = 5$ for 4 yogurts.
+The cost of 1 yogurt is $\frac{5}{4}$ dollars per y"
+37,2,355,0,0.4471898619813146,107.716513887556,"Let $L$ be the number of Lego sets John has.
+John has 13 Lego sets, so $L = 13$.
+He sells each Lego set for $15, so the money he gets from selling the Lego sets is $15L = 15(13) = $195$.
+He buys 8 video games for $20 each, so the cost of the video games is $20 \times 8 = $160$.
+After buying the vide"
+38,10,3,0,0.44773269729921594,112.03196535852614,"Let $R$ be the number of miles John runs in a week.
+John runs 60 miles a week, so $R = 60$ miles.
+He runs 3 days a week, and runs 3 hours the first day, half as much the other two days he runs.
+The first day he runs 3 hours, so he runs $3 \times 3 = 9$ miles.
+The other two days he runs $\frac{1}{2} "
+39,18,3,0,0.4403552794829011,116.45008560104665,"Let $w$ be the speed at which Dana can walk in miles per hour.
+Since Dana can run at a rate of speed four times faster than she can walk, we have $w = 4w^2$, where $w$ is the speed at which she can walk in miles per hour.
+Since she can run at a rate of speed $w$ miles per hour, she can run at a rate"
+40,8,4,0,0.4396874080557609,146.26609409452087,"Let $x$ be the age of Suzy's iPhone in years.
+Brandon's iPhone is four times as old as Ben's iPhone.
+So, the age of Brandon's iPhone is $4x$ years.
+Ben's iPhone is two times older than Suzy's iPhone.
+So, the age of Ben's iPhone is $x$ years.
+Thus, the age of Ben's iPhone is $x$ years.
+We are given t"
+41,200,400,0,0.43346430848760065,195.2592401330567,"Let $R$ be the range of the dragon's flames, which is 1000 feet.
+Let $r$ be the range of the gold javelin, which is 400 feet.
+When Polly holds the sapphire gemstone, she can throw the javelin three times farther than when not holding the gemstone. This means she can throw the javelin $3 \times 400 ="
+42,26,14,0,0.43381659836450126,115.95282118074749,"Let $x$ be the number of pieces each guest took.
+There were 5 pies.
+Each pie was cut into 8 pieces.
+So, the total number of pieces of pie is $5 \times 8 = 40$ pieces.
+The pies were set out for the guests to serve themselves.
+The number of pies was 5.
+The number of pieces of pie remaining is 14.
+Let "
+43,48,200,0,0.4330065437388839,121.96537438246195,"Let the calories per serving be $c = 250$ calories.
+Let the number of servings in a bag be $n = 5$.
+The calories per serving in the bag is $c = 250$ calories per serving.
+The weight of the bag is $w = 300$ grams.
+The number of calories in the bag is $5 \times 250 = 1250$ calories.
+The total calories"
+44,20,20,1,0.4082802982593421,131.66928010440787,"Let $C$ be the amount of beeswax in pounds.
+For every pound of beeswax, Charlie can make 10 tapered candles. So, if he has $C$ pounds of beeswax, he can make $10C$ candles.
+The cost of the beeswax is $10 per pound. So, for $C$ pounds of beeswax, he needs $10C$ pounds of beeswax. The cost of the bees"
+45,104,4,0,0.43709990102797747,109.0490266637633,"Let $H_M$ be the number of hours Meredith spent writing articles in the three days.
+The number of hours spent on Monday is 4 hours.
+The number of articles written on Monday is 5.
+The number of articles written on Tuesday is $\frac{2}{5}$ times more articles than on Monday.
+So, the number of articles"
+46,163,220,0,0.4007684881798923,120.07713838333474,"Let $x$ be the number of Post-it notes in the package that Candice purchased.
+Candice put 80 Post-it notes in her purse.
+She stopped at a store and purchased a package of Post-it notes.
+At work, she placed a single Post-it note on each of 220 different cups of coffee.
+So, she placed 220 Post-it note"
+47,800,1.5,0,0.42775367586000357,116.99850218173897,"Let $r$ be the number of red ties John bought and $b$ be the number of blue ties he bought.
+We are given that John buys twice as many red ties as blue ties, so $r = 2b$.
+The red ties cost 50% more than blue ties, so the cost of a red tie is $40$ more than the cost of a blue tie. This means that the "
+48,8,8,1,0.456976633737213,125.90417829057837,"Let $x$ be the number of pieces Tracy obtained.
+The wire is 4 feet long.
+Each piece is 6 inches long.
+We need to convert the length of the wire to inches.
+1 foot = 12 inches
+So, 4 feet = 4 * 12 = 48 inches.
+The length of each piece is 6 inches.
+The number of pieces is the total length of the wire di"
+49,30,4,0,0.45434985410247464,118.42773028110915,"Let the total number of floors in the apartment building be $F = 15$.
+Let the number of units per floor be $U = 8$.
+The total number of units in the building is $F \times U = 15 \times 8 = 120$ units.
+The number of occupied units is $\frac{3}{4}$ of the building, so the number of occupied units is $"

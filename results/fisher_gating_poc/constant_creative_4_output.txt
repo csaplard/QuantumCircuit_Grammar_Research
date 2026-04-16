@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: creative
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Create a myth explaining why the moon changes shape.
+
+--- GENERATED ---
+
+
+**The Tale of Lyra and the Shifting Silks**
+
+Long ago, before time measured itself in years and days, the moon was a single, perfect pearl, radiating a constant, serene light. It was the heart of Lyra, a celestial weaver whose tears were stardust and whose laughter brought forth the constellations. Lyra loved the sun, Sol, with a passion that burned brighter than any star. Their love was a dance of light and warmth, a beautiful, constant harmony.
+
+But Sol, alas, was a restless god. He demanded constant movement, chasing the sun across the heavens, bringing light to the world and demanding tribute of warmth. He rarely paused to truly *see* Lyra, lost in his eternal journey. 
+
+Lyra, though heartbroken, understood Sol’s duty. She continued to weave, creating tapestries of light and shadow, each thread imbued with her love for him. She used the rarest silks, spun from nebulae and moonlight, to craft a magnificent blanket for Sol to rest upon during his travels – a blanket meant to remind him of her beauty and peace.
+
+However, Sol’s constant motion made it difficult for him to rest. He would drift, his movements erratic, and the blanket would shift

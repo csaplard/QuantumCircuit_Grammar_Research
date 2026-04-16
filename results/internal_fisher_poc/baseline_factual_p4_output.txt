@@ -1,0 +1,28 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: factual
+PROMPT_IDX: 4
+PROMPT:
+Describe the structure and function of the human heart.
+
+--- GENERATED ---
+
+
+The human heart is a remarkable organ, acting as the central pump of the circulatory system. It’s a muscular organ with a complex structure designed to efficiently deliver oxygen and nutrients to the body and remove waste products. Here's a breakdown of its structure and function:
+
+**I. Structure:**
+
+The heart is divided into four chambers:
+
+* **Atria (Right and Left):** These are the upper chambers, responsible for receiving blood.
+    * **Right Atrium:** Receives deoxygenated blood from the body via the superior and inferior vena cava.
+    * **Left Atrium:** Receives oxygenated blood from the lungs via the pulmonary veins.
+* **Ventricles (Right and Left):** These are the lower chambers, responsible for pumping blood.
+    * **Right Ventricle:** Pumps deoxygenated blood to the lungs via the pulmonary artery.
+    * **Left Ventricle:** Pumps oxygenated blood to the rest of the body via the aorta.
+
+**Key Structural Features:**
+
+* **Valves:** These ensure unidirectional blood flow:
+    * **Tricuspid Valve:** Located between the right atrium and right ventricle.
+    * **Mitral Valve (Bicuspid Valve):

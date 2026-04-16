@@ -1,0 +1,17 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,philosophical,philosophical_r0,0,The,1.25127405,
+baseline,philosophical,philosophical_r0,1, nature,0.52777989,
+baseline,philosophical,philosophical_r0,2, of,0.00227822,
+baseline,philosophical,philosophical_r0,3, time,0.00056946,
+baseline,philosophical,philosophical_r0,4, is,0.29207159,
+baseline,philosophical,philosophical_r0,5, one,0.68079753,
+baseline,philosophical,philosophical_r0,6, of,0.00030144,
+baseline,philosophical,philosophical_r0,7, the,0.04494405,7000031.35426153
+baseline,philosophical,philosophical_r0,8, most,0.28981692,6400037.72003722
+baseline,philosophical,philosophical_r0,9, fundamental,0.91169843,8000016.50025422
+baseline,philosophical,philosophical_r0,10, and,0.57307084,8060634.76595137
+baseline,philosophical,philosophical_r0,11, mysterious,2.31137811,8000021.05018187
+baseline,philosophical,philosophical_r0,12, aspects,0.75007344,7206380.18878788
+baseline,philosophical,philosophical_r0,13, of,0.00894179,9333350.42239089
+baseline,philosophical,philosophical_r0,14, our,0.67898372,8000021.40017558
+baseline,philosophical,philosophical_r0,15, universe,0.53537907,7352969.53816712

@@ -1,32 +1,68 @@
 {
-  "backend": "llama-server",
+  "backend": "ollama",
   "regime": "mathematical",
   "prompt_index": 0,
   "prompt": "Prove that the square root of 2 is irrational. Show each logical step clearly.",
   "model": "qwen2.5-coder:7b",
-  "llama_server_url": "http://127.0.0.1:8080",
+  "llama_server_url": null,
   "temperature": 0.5,
-  "fixed_tokens": 10000,
-  "chunk_tokens": null,
+  "fixed_tokens": 512,
+  "chunk_tokens": 128,
   "top_logprobs": 15,
   "seed": 42,
-  "continuation_rounds": 1,
+  "continuation_rounds": 7,
   "round_meta": [
     {
       "round": 1,
-      "n_logprobs": 10000,
-      "stop_type": "limit",
-      "truncated": false
+      "done_reason": "length",
+      "eval_count": 128,
+      "n_logprobs": 128
+    },
+    {
+      "round": 2,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 3,
+      "done_reason": "length",
+      "eval_count": 128,
+      "n_logprobs": 128
+    },
+    {
+      "round": 4,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 5,
+      "done_reason": "length",
+      "eval_count": 128,
+      "n_logprobs": 128
+    },
+    {
+      "round": 6,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 7,
+      "done_reason": "length",
+      "eval_count": 128,
+      "n_logprobs": 128
     }
   ],
-  "actual_tokens": 10000,
+  "actual_tokens": 512,
   "truncated_before_target": false,
-  "clear_stop_sequences": null,
-  "ollama_raw": null,
+  "clear_stop_sequences": true,
+  "ollama_raw": false,
   "num_ctx": null,
-  "stop_type": "limit",
+  "stop_type": null,
   "repetition_events": [],
-  "response_excerpt": " To prove that the square root of 2 is irrational, we will use a proof by contradiction. This means we will assume the opposite of what we want to prove and then show that this assumption leads to a contradiction.\n\nLet's assume that the square root of 2 is rational. By definition, a rational number can be expressed as a fraction of two integers, say \\( \\sqrt{2} = \\frac{a}{b} \\), where \\( a \\) and \\( b \\) are integers with no common factors other than 1 (i.e., \\( a \\) and \\( b \\) are coprime), and \\( b \\neq 0 \\).\n\nNow, we will square both sides of the equation \\( \\sqrt{2} = \\frac{a}{b} \\):\n\\[\n2 = \\left( \\frac{a}{b} \\right)^2 = \\frac{a^2}{b^2}\n\\]\nThis equation tells us that \\( a^2 = 2b^2 \\). Since \\( a^2 \\) is an even number (because it is equal to 2 times an integer), \\( a \\) must also be a",
+  "response_excerpt": "To prove that the square root of 2 (\\(\\sqrt{2}\\)) is irrational, we will use a proof by contradiction. This method assumes the opposite of what we want to prove and then shows this assumption leads to a contradiction.\n\n### Step-by-Step Proof:\n\n1. **Assumption:**\n   Assume that \\(\\sqrt{2}\\) is rational. By definition, a rational number can be expressed as a fraction in its simplest form (\\(a/b\\)) where \\(a\\) and \\(b\\) are integers with no common factors other than 1 (i.e., the greatest common divisor of \\(a\\) andIt seems like your message got cut off. Let's complete the proof step-by-step:\n\n### Step-by-Step Proof:\n\n1. **Assumption:**\n   Assume that \\(\\sqrt{2}\\) is rational. By definition, a rational number can be expressed as a fraction in its simplest form (\\(a/b\\)) where \\(a\\) and \\(b\\) a",
   "control": "none",
-  "n_steps": 10000
+  "n_steps": 512
 }

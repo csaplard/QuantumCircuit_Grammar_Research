@@ -1,0 +1,40 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: creative
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Write a poem about the last tree on Earth.
+
+--- GENERATED ---
+
+
+The dust remembers whispers of green,
+A memory of sunlight, a vibrant scene.
+But now, the silence reigns, a heavy plea,
+Just one last tree, a lonely entity.
+
+Its bark is etched with stories of the past,
+Of winds that danced and shadows that were cast.
+Each ring a year, a testament to life,
+A silent witness to unending strife.
+
+The roots, they burrow deep, a desperate hold,
+Clinging to earth, a future to unfold.
+Searching for moisture, a drop, a trace,
+In this barren landscape, a desolate space.
+
+Its branches reach, a skeletal embrace,
+Toward a sky devoid of joy or grace.
+No birdsong greets, no leaves in gentle sway,
+Just the echo of what used to be, today.
+
+A single leaf, a stubborn, fragile plea,
+Unfurling slowly, for all the world to see.
+A symbol of hope, a poignant, aching sign,
+That even in darkness, life can still shine.
+
+It stands, a sentinel, weathered and slow,
+The last tree on Earth, a solitary glow.
+A prayer for the future, a lament and a vow,
+To remember the green,

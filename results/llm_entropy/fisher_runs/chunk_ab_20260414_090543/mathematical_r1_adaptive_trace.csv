@@ -1,0 +1,33 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+adaptive,mathematical,mathematical_r1,0,Certainly,1.65689848,,0.7000
+adaptive,mathematical,mathematical_r1,1,!,0.00490498,,0.7000
+adaptive,mathematical,mathematical_r1,2, The,1.33180970,,0.7000
+adaptive,mathematical,mathematical_r1,3, quadratic,0.10025699,,0.7000
+adaptive,mathematical,mathematical_r1,4, formula,0.11885847,,0.7000
+adaptive,mathematical,mathematical_r1,5, is,0.52318036,,0.7000
+adaptive,mathematical,mathematical_r1,6, used,0.85795751,,0.7000
+adaptive,mathematical,mathematical_r1,7, to,0.00338296,,0.7000
+adaptive,mathematical,mathematical_r1,8, solve,0.69844523,,0.7000
+adaptive,mathematical,mathematical_r1,9, equations,1.07583693,,0.7000
+adaptive,mathematical,mathematical_r1,10, of,0.23009881,,0.7000
+adaptive,mathematical,mathematical_r1,11, the,0.00035215,,0.7000
+adaptive,mathematical,mathematical_r1,12, form,0.01832001,,0.7000
+adaptive,mathematical,mathematical_r1,13, \(,0.38518004,,0.7000
+adaptive,mathematical,mathematical_r1,14,ax,0.62724739,,0.7000
+adaptive,mathematical,mathematical_r1,15,^,0.00193443,,0.7000
+adaptive,mathematical,mathematical_r1,16,2,0.00004757,,0.7000
+adaptive,mathematical,mathematical_r1,17, +,0.01306769,,0.7000
+adaptive,mathematical,mathematical_r1,18, bx,0.00028965,,0.7000
+adaptive,mathematical,mathematical_r1,19, +,0.00084029,,0.7000
+adaptive,mathematical,mathematical_r1,20, c,0.00029924,,0.7000
+adaptive,mathematical,mathematical_r1,21, =,0.00194842,,0.7000
+adaptive,mathematical,mathematical_r1,22, ,0.00018402,,0.7000
+adaptive,mathematical,mathematical_r1,23,0,0.00000317,,0.7000
+adaptive,mathematical,mathematical_r1,24,\,0.19585229,,0.7000
+adaptive,mathematical,mathematical_r1,25,"),",0.39875133,,0.7000
+adaptive,mathematical,mathematical_r1,26, where,0.01263487,,0.7000
+adaptive,mathematical,mathematical_r1,27, \(,0.00531750,,0.7000
+adaptive,mathematical,mathematical_r1,28,a,0.00514974,,0.7000
+adaptive,mathematical,mathematical_r1,29,",",0.51273697,,0.7000
+adaptive,mathematical,mathematical_r1,30, b,0.00634594,,0.7000
+adaptive,mathematical,mathematical_r1,31,",\",0.39929983,395.97301841,0.7000

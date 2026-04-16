@@ -1,0 +1,17 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,creative,creative_r1,0,In,2.21332214,
+baseline,creative,creative_r1,1, the,0.87923630,
+baseline,creative,creative_r1,2, perpetual,2.28674424,
+baseline,creative,creative_r1,3, twilight,0.53754068,
+baseline,creative,creative_r1,4, of,1.86803204,
+baseline,creative,creative_r1,5, this,1.19054841,
+baseline,creative,creative_r1,6, en,1.44476427,
+baseline,creative,creative_r1,7,igmatic,0.10625114,6960040.49758160
+baseline,creative,creative_r1,8, place,0.51848827,8181836.09110799
+baseline,creative,creative_r1,9,",",0.00750430,6000073.79914586
+baseline,creative,creative_r1,10, shadows,1.25600358,6888931.26331050
+baseline,creative,creative_r1,11, play,1.90058105,8285735.00016828
+baseline,creative,creative_r1,12, tricks,1.95068680,6000149.39231879
+baseline,creative,creative_r1,13, on,1.28923119,8666679.00029800
+baseline,creative,creative_r1,14, the,0.68320139,8000022.80013694
+baseline,creative,creative_r1,15, senses,1.91196067,8000021.63350587

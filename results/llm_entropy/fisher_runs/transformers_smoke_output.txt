@@ -1,0 +1,1 @@
+ To prove that \(\sqrt{2}\) is irrational, we need to show that there is no integer \(a\) and no integer \(b\) (where \(b \neq 0\)) such that \(\sqrt{

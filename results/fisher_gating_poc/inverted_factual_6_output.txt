@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: factual
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Explain how vaccines work to protect against diseases.
+
+--- GENERATED ---
+
+
+Vaccines work by training your immune system to recognize and fight off specific diseases without actually causing you to get sick. Here's a breakdown of the process:
+
+**1. Types of Vaccines:**
+
+*   **Live-attenuated vaccines:** These use a weakened (attenuated) form of the disease-causing microbe (virus or bacteria). The microbe can still reproduce, but it can't cause serious illness in people with a healthy immune system. (Examples: MMR, chickenpox, polio)
+*   **Inactivated vaccines:** These use killed versions of the microbe. They can't reproduce, so they can't cause illness. (Examples: Flu shot, polio shot, hepatitis A)
+*   **Subunit, recombinant, or polysaccharide vaccines:** These use specific parts of the microbe – like a protein, sugar, or capsid – that trigger an immune response. (Examples: Hepatitis B, HPV, shingles)
+*   **Toxoid vaccines:** These use a toxin produced by the microbe, rendering it harmless. (Example: Tetanus)
+*   **mRNA vaccines:** These vaccines deliver instructions (mRNA) to your cells to produce a specific protein from the virus. Your immune system then recognizes and attacks this protein.

@@ -1,0 +1,1 @@
+Certainly! The quadratic formula is used to solve equations of the form \(ax^2 + bx + c = 0\), where \(a, b,\

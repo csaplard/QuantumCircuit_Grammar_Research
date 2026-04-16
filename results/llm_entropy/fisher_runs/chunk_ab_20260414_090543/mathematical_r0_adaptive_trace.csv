@@ -1,0 +1,33 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+adaptive,mathematical,mathematical_r0,0,To,0.38395818,,0.7000
+adaptive,mathematical,mathematical_r0,1, prove,0.06691706,,0.7000
+adaptive,mathematical,mathematical_r0,2, that,0.02515280,,0.7000
+adaptive,mathematical,mathematical_r0,3, the,0.24448586,,0.7000
+adaptive,mathematical,mathematical_r0,4, square,0.00545538,,0.7000
+adaptive,mathematical,mathematical_r0,5, root,0.00026976,,0.7000
+adaptive,mathematical,mathematical_r0,6, of,0.00027617,,0.7000
+adaptive,mathematical,mathematical_r0,7, ,0.05529337,,0.7000
+adaptive,mathematical,mathematical_r0,8,2,0.00001527,,0.7000
+adaptive,mathematical,mathematical_r0,9, (\,0.68948398,,0.7000
+adaptive,mathematical,mathematical_r0,10,(\,0.21048821,,0.7000
+adaptive,mathematical,mathematical_r0,11,sqrt,0.00211465,,0.7000
+adaptive,mathematical,mathematical_r0,12,{,0.00194564,,0.7000
+adaptive,mathematical,mathematical_r0,13,2,0.00008092,,0.7000
+adaptive,mathematical,mathematical_r0,14,}\,0.00014766,,0.7000
+adaptive,mathematical,mathematical_r0,15,)),0.00167635,,0.7000
+adaptive,mathematical,mathematical_r0,16, is,0.00013451,,0.7000
+adaptive,mathematical,mathematical_r0,17, irrational,0.03967661,,0.7000
+adaptive,mathematical,mathematical_r0,18,",",0.04536155,,0.7000
+adaptive,mathematical,mathematical_r0,19, we,0.06915004,,0.7000
+adaptive,mathematical,mathematical_r0,20, will,1.21192981,,0.7000
+adaptive,mathematical,mathematical_r0,21, use,0.34301822,,0.7000
+adaptive,mathematical,mathematical_r0,22, a,0.44412437,,0.7000
+adaptive,mathematical,mathematical_r0,23, proof,0.76224001,,0.7000
+adaptive,mathematical,mathematical_r0,24, by,0.05980921,,0.7000
+adaptive,mathematical,mathematical_r0,25, contradiction,0.00796799,,0.7000
+adaptive,mathematical,mathematical_r0,26,.,0.46385188,,0.7000
+adaptive,mathematical,mathematical_r0,27, This,1.23086729,,0.7000
+adaptive,mathematical,mathematical_r0,28, method,1.02495147,,0.7000
+adaptive,mathematical,mathematical_r0,29, assumes,0.90246241,,0.7000
+adaptive,mathematical,mathematical_r0,30, that,0.62795344,,0.7000
+adaptive,mathematical,mathematical_r0,31, \,0.75101462,336.98938483,0.7000

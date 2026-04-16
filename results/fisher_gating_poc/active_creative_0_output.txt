@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The salt spray bit at Silas’s face, a familiar, constant ache. He’d spent thirty years on the jagged outcrop of Sentinel Rock, keeper of the North Point Light, a solitary sentinel against the raging Atlantic. Thirty years of solitude, punctuated only by the rhythmic sweep of the lamp and the mournful cry of gulls. Most folks considered him a hermit, a madman staring into the abyss. Silas didn’t mind. The sea, he’d found, had a comforting logic.
+
+Today was a typical day – a bruised grey sky, a low, persistent wind, and the endless, relentless churn of the ocean. He was polishing the Fresnel lens, ensuring its prism was gleaming, when he spotted it. A bottle, green and battered, washed up on the rocks just below the base of the lighthouse.
+
+He’d seen plenty of debris over the years – driftwood, fishing nets, the occasional lost buoy – but this was different. It was a bottle, a proper glass bottle, sealed with wax. Curiosity, a rare guest in Silas’s methodical life, tugged at him.
+
+He retrieved it, carefully, brushing off the seaweed and sand. The wax was brittle with age, crumbling under his touch. Inside, rolled

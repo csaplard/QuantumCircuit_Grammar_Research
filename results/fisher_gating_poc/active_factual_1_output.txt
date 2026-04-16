@@ -1,0 +1,33 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: factual
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Describe how photosynthesis works in plants.
+
+--- GENERATED ---
+
+
+Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of sugars. It is a fundamental process that sustains nearly all life on Earth. Here's a breakdown of how it works:
+
+**1. The Ingredients:**
+
+*   **Carbon Dioxide (CO2):**  Plants absorb this gas from the air through small pores on their leaves called stomata.
+*   **Water (H2O):** Plants take up water from the soil through their roots.
+*   **Sunlight:** The energy source for the entire process.
+
+**2. The Location: Chloroplasts**
+
+*   Photosynthesis takes place inside organelles called **chloroplasts** within plant cells.
+*   Chloroplasts contain **chlorophyll**, a green pigment that absorbs sunlight. Chlorophyll is the key to capturing the light energy.
+
+**3. The Two Main Stages:**
+
+Photosynthesis is divided into two main stages:
+
+   **a) Light-Dependent Reactions (The "Photo" part):**
+      *   **Location:** Thylakoid membranes within the chloroplasts.
+      *   **What happens:**
+          *   Chlorophyll absorbs sunlight.
+          *   

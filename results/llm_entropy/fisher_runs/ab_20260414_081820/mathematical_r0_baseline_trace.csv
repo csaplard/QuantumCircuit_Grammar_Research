@@ -1,0 +1,17 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,mathematical,mathematical_r0,0,To,0.37158872,
+baseline,mathematical,mathematical_r0,1, prove,0.06831439,
+baseline,mathematical,mathematical_r0,2, that,0.02657700,
+baseline,mathematical,mathematical_r0,3, the,0.23346723,
+baseline,mathematical,mathematical_r0,4, square,0.00515087,
+baseline,mathematical,mathematical_r0,5, root,0.00026891,
+baseline,mathematical,mathematical_r0,6, of,0.00026670,
+baseline,mathematical,mathematical_r0,7, ,0.05584051,8000020.70018241
+baseline,mathematical,mathematical_r0,8,2,0.00001403,5692362.00578908
+baseline,mathematical,mathematical_r0,9, (\,0.67508658,7000030.91676522
+baseline,mathematical,mathematical_r0,10,(\,0.20976091,7016423.09310061
+baseline,mathematical,mathematical_r0,11,sqrt,0.00216307,7142889.00008714
+baseline,mathematical,mathematical_r0,12,{,0.00196332,6000082.66526103
+baseline,mathematical,mathematical_r0,13,2,0.00008132,6967780.36938295
+baseline,mathematical,mathematical_r0,14,}\,0.00013760,6482804.66697040
+baseline,mathematical,mathematical_r0,15,)),0.00170227,5133390.93540393

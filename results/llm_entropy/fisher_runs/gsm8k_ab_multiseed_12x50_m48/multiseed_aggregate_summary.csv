@@ -1,0 +1,2 @@
+n_seeds,questions_per_seed,total_questions,baseline_correct_total,adaptive_correct_total,baseline_accuracy_total,adaptive_accuracy_total,adaptive_minus_baseline_accuracy_total,baseline_accuracy_mean_per_seed,adaptive_accuracy_mean_per_seed,adaptive_minus_baseline_mean_per_seed,adaptive_minus_baseline_std_per_seed
+12,50,600,19,19,0.03166666666666667,0.03166666666666667,0.0,0.03166666666666667,0.03166666666666667,0.0,0.0

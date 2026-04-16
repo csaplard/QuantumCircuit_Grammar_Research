@@ -1,0 +1,43 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+baseline,factual,factual_r0,0,-,2.15617390,,0.7000
+baseline,factual,factual_r0,1, Brussels,1.29003613,,0.7000
+baseline,factual,factual_r0,2,"
+",0.79109372,,0.7000
+baseline,factual,factual_r0,3,-,0.00038957,,0.7000
+baseline,factual,factual_r0,4, Berlin,2.34012370,,0.7000
+baseline,factual,factual_r0,5,"
+",0.01065292,,0.7000
+baseline,factual,factual_r0,6,-,0.00009940,,0.7000
+baseline,factual,factual_r0,7, Rome,1.99223788,,0.7000
+baseline,factual,factual_r0,8,"
+",0.00346282,,0.7000
+baseline,factual,factual_r0,9,-,0.00004942,,0.7000
+baseline,factual,factual_r0,10, Paris,0.94595005,,0.7000
+baseline,factual,factual_r0,11,"
+",0.00264475,,0.7000
+baseline,factual,factual_r0,12,-,0.00002887,,0.7000
+baseline,factual,factual_r0,13, Madrid,0.42370082,,0.7000
+baseline,factual,factual_r0,14,"
+",0.00250065,,0.7000
+baseline,factual,factual_r0,15,-,0.00005804,,0.7000
+baseline,factual,factual_r0,16, Lisbon,0.84656745,,0.7000
+baseline,factual,factual_r0,17,"
+",0.00251621,,0.7000
+baseline,factual,factual_r0,18,-,0.00003378,,0.7000
+baseline,factual,factual_r0,19, Vienna,1.53463084,,0.7000
+baseline,factual,factual_r0,20,"
+",0.00286421,,0.7000
+baseline,factual,factual_r0,21,-,0.00003119,,0.7000
+baseline,factual,factual_r0,22, Amsterdam,0.77183803,,0.7000
+baseline,factual,factual_r0,23,"
+",0.00376285,,0.7000
+baseline,factual,factual_r0,24,-,0.00012116,,0.7000
+baseline,factual,factual_r0,25, Athens,1.86962625,,0.7000
+baseline,factual,factual_r0,26,"
+",0.01672352,,0.7000
+baseline,factual,factual_r0,27,-,0.00031817,,0.7000
+baseline,factual,factual_r0,28, Buch,1.70258347,,0.7000
+baseline,factual,factual_r0,29,arest,0.00027982,,0.7000
+baseline,factual,factual_r0,30,"
+",0.22231448,,0.7000
+baseline,factual,factual_r0,31,-,0.00035849,473.63901770,0.7000

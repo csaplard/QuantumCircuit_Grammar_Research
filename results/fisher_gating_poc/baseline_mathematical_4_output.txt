@@ -1,0 +1,32 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: mathematical
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Prove by induction that 1+2+...+n = n(n+1)/2.
+
+--- GENERATED ---
+
+
+**Base Case:** For n=1, the sum is 1.  The formula gives 1(1+1)/2 = 1(2)/2 = 1.  So the base case holds.
+
+**Inductive Hypothesis:** Assume that 1+2+...+k = k(k+1)/2 is true for some integer k >= 1.
+
+**Inductive Step:** We want to show that 1+2+...+k+1 = (k+1)(k+2)/2 is true.
+
+Starting with the left-hand side of the equation, we have:
+
+1+2+...+k+1
+
+Using the inductive hypothesis, we can replace 1+2+...+k with k(k+1)/2:
+
+k(k+1)/2 + 1
+
+Now, we want to simplify this expression:
+
+(k(k+1) + 2)/2 = (k^2 + k + 2)/2
+
+We want to show that this is equal to (k+1)(k+2)/2.  Let's expand the right-hand side:
+
+(k+1)(k+2) = k^2 + 2k + k

@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: creative
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Describe a city that exists entirely underwater.
+
+--- GENERATED ---
+
+
+**The City of Aethel**
+
+Aethel doesn't rise from the ocean; it *is* the ocean. Constructed over centuries, using a complex weave of bioluminescent coral, reinforced basalt, and genetically engineered algae, the city is nestled within a vast, perpetually twilight trench in the Pacific. It’s not a surface settlement that has been submerged; it’s a creation, a deliberate shaping of the seabed.
+
+**Layout & Structure:**
+
+*   **The Heartwood:** The central core of Aethel is the Heartwood, a colossal, branching coral structure pulsating with a soft, azure light. It houses the city’s central power source – a network of hydrothermal vents harnessed and stabilized by symbiotic algae. This is also where the oldest citizens, known as the "Rooted," reside, their bodies having adapted to the extreme pressure and mineral-rich waters.
+*   **The Shells:** Radiating outwards from the Heartwood are the Shells – geodesic domes constructed from polished basalt and reinforced with a bio-plastic secreted by colossal, filter-feeding mollusks. Each Shell houses a specific district:
+    *   **The Lumina Shell:** A hub for art, research, and the study of bioluminescence.

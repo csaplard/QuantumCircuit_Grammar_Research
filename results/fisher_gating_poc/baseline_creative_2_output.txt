@@ -1,0 +1,21 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 2
+SEED: 42
+PROMPT:
+Describe an alien civilization that communicates through colors.
+
+--- GENERATED ---
+
+
+**The Chromatics of Xylos**
+
+The Xylosians are a silicon-based lifeform native to the planet Xylos, a world perpetually bathed in the violet glow of a binary star system. Their physiology is dramatically different from anything found on Earth. They are not flesh and blood, but rather intricate structures of shimmering, multifaceted crystals that grow and evolve throughout their lives. These crystals, varying in size and hue, form a constantly shifting, beautiful mosaic that represents the individual Xylosian.
+
+**Communication: A Symphony of Light**
+
+Instead of spoken language, the Xylosians communicate through a complex system of color manipulation. Each crystal within their structure vibrates at a specific frequency, and when these frequencies synchronize, they create patterns of light – colors – that convey meaning. It’s not simply about projecting a single color; it’s a layered, dynamic experience.
+
+*   **Basic Concepts:** The primary colors - red, blue, green, yellow - represent fundamental concepts: emotion, action, concept, and observation respectively. A bright, pulsating red indicates urgency or passion; a deep, calming blue represents contemplation or wisdom.
+*   **Nuance & Complexity:** The color palettes are incredibly complex. Subtle shifts in hue

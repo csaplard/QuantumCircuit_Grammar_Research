@@ -1,0 +1,19 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 4
+PROMPT:
+Write a short story about a stranger arriving in a village snowed in for the winter.
+
+--- GENERATED ---
+
+
+The snow fell with a deliberate, heavy insistence, each flake a tiny, icy fist hammering against the windows of Oakhaven. By midday, the village was a muffled white, the only sound the sigh of the wind and the rhythmic scrape of shovels against frozen earth. Oakhaven was, as it was every winter, stubbornly locked down.
+
+I arrived just as the last of the deliveries had been made, a figure swallowed by the swirling white, a man draped in a thick, charcoal-grey coat that seemed to absorb the light. I didn’t know how I’d gotten there, only that I felt compelled to reach Oakhaven. It was a pull, a subtle pressure behind my eyes, urging me towards the village nestled deep within the Blackwood Forest.
+
+The villagers, faces etched with a comfortable weariness, regarded me with polite suspicion. They were a stoic bunch, the Oakhaven folk, hardened by generations of isolation and winter’s wrath. Silas, the baker, offered me a steaming mug of hot cider, his eyes the color of slate.
+
+“Lost, are you?” he asked, his voice low and gravelly.
+
+“I… I don’t know,” I admitted, the words feeling clumsy

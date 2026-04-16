@@ -1,0 +1,28 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: mathematical
+PROMPT_IDX: 4
+PROMPT:
+Show that if n^2 is even, then n is even.
+
+--- GENERATED ---
+
+
+**Proof:**
+
+Assume that n^2 is even.
+We want to show that n is even.
+
+We can use a proof by contradiction.
+Assume, for the sake of contradiction, that n is odd.
+If n is odd, then n can be written as n = 2k + 1 for some integer k.
+Then n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1, which is an odd number.
+Since we assumed that n^2 is even, we have a contradiction.
+Therefore, our assumption that n is odd must be false.
+Thus, n must be even.
+
+Alternatively, we can use the contrapositive.
+The contrapositive of "if n^2 is even, then n is even" is "if n is not even, then n^2 is not even."
+Equivalently, "if n is odd, then n^2 is odd."
+If n is odd, then n = 2k + 1 for some integer k.
+Then n^2 = (2k + 1)^2 = 

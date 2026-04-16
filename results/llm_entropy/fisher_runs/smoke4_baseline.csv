@@ -1,0 +1,9 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,factual,smoke4,0, A,1.99953449,
+baseline,factual,smoke4,1, chunk,0.66425694,
+baseline,factual,smoke4,2, smoke,0.00492676,
+baseline,factual,smoke4,3, test,0.00021745,
+baseline,factual,smoke4,4, is,0.73127403,
+baseline,factual,smoke4,5, a,0.22180717,
+baseline,factual,smoke4,6, type,1.16721814,
+baseline,factual,smoke4,7, of,0.00004139,8037056.60170187

@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: creative
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Create a myth explaining why the moon changes shape.
+
+--- GENERATED ---
+
+
+**The Myth of Lyra and the Shifting Weaver**
+
+Long ago, before time was measured and the stars were fixed, the moon was a single, perfect pearl, radiating a constant, serene light. This pearl was the work of Lyra, the Weaver of Dreams, a goddess of unparalleled skill and boundless generosity. She lived in a realm of shimmering silk and endless twilight, crafting dreams for all living things – joy, sorrow, wisdom, and courage.
+
+Lyra's most treasured creation was a loom of pure moonlight, capable of weaving the very fabric of emotions.  She used threads spun from laughter and tears, hope and fear, and infused them with the essence of the hearts of mortals.  With this loom, she wove the dreams that danced in every sleeping mind.
+
+But Lyra was not alone. She had a companion, a mischievous sprite named Corvus. Corvus was the Keeper of Change, charged with gathering the emotions that flowed across the world – the excitement of a newborn, the grief of a lost love, the triumph of a battle won. He would collect these feelings, not to hoard them, but to feed the loom, ensuring the dreams remained vibrant and alive.
+
+One day, Corvus grew bored. He began

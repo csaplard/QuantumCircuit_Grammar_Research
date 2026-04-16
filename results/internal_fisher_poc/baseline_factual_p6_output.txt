@@ -1,0 +1,21 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: factual
+PROMPT_IDX: 6
+PROMPT:
+Summarize the key ideas of Darwin's theory of evolution.
+
+--- GENERATED ---
+
+
+Darwin's theory of evolution, primarily outlined in his book *On the Origin of Species*, posits that life on Earth has changed over time through a process he called natural selection. Here's a summary of the key ideas:
+
+1.  **Variation:** Individuals within a population exhibit variation in their traits—size, color, behavior, etc. These variations are often heritable, meaning they can be passed down from parents to offspring.
+
+2.  **Inheritance:** Traits are passed from parents to offspring through genes.
+
+3.  **Overproduction:** Organisms typically produce more offspring than the environment can support, leading to a struggle for resources (food, space, mates).
+
+4.  **Natural Selection:** This is the core of Darwin's theory.  Individuals with traits that are better suited to their environment (i.e., traits that provide an advantage in terms of survival and reproduction) are more likely to survive and reproduce.  Because they reproduce more, they pass on their advantageous traits to their offspring.
+
+5.  **Adaptation:** Over many generations, the frequency of these advantageous traits increases in the population, leading to the population becoming better adapted to its environment.  This gradual accumulation of changes over time is what constitutes

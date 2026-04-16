@@ -1,0 +1,32 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: mathematical
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Prove that the square root of 2 is irrational.
+
+--- GENERATED ---
+
+
+**Proof by contradiction:**
+
+Assume, for the sake of contradiction, that √2 is rational. This means that √2 can be expressed as a fraction p/q, where p and q are integers and q ≠ 0, and the fraction p/q is in its simplest form (i.e., p and q have no common factors other than 1).
+
+So, we can write:
+
+√2 = p/q
+
+Squaring both sides, we get:
+
+2 = p²/q²
+
+Multiplying both sides by q², we get:
+
+2q² = p²
+
+This implies that p² is an even number because it is equal to 2 times an integer (q²).
+
+If p² is even, then p must also be even. (Proof: If p were odd, then p could be written as 2k+1 for some integer k. Then p² = (2k+1)² = 4k² + 4k + 1 = 2(2k² + 2k) + 1, which is odd.  So, if p² is even, p must be even.)
+
+Since p is even, we can write p = 2k

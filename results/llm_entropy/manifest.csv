@@ -173,3 +173,5 @@ creative_p0_seed99,random_uniform,llama-server,creative,0,99,qwen2.5-coder:7b,10
 creative_p0_seed7,none,llama-server,creative,0,7,qwen2.5-coder:7b,10000,10000,results\llm_entropy\runs\creative_p0_seed7_none.csv
 creative_p0_seed7,shuffled,llama-server,creative,0,7,qwen2.5-coder:7b,10000,10000,results\llm_entropy\runs\creative_p0_seed7_shuffled.csv
 creative_p0_seed7,random_uniform,llama-server,creative,0,7,qwen2.5-coder:7b,10000,10000,results\llm_entropy\runs\creative_p0_seed7_random_uniform.csv
+factual_p0_seed42,none,ollama,factual,0,42,qwen2.5-coder:7b,512,512,results\llm_entropy\runs\factual_p0_seed42_none.csv
+mathematical_p0_seed42,none,ollama,mathematical,0,42,qwen2.5-coder:7b,512,512,results\llm_entropy\runs\mathematical_p0_seed42_none.csv

@@ -1,0 +1,33 @@
+MODEL: Qwen/Qwen2.5-Coder-1.5B-Instruct
+MODE: baseline
+REGIME: mathematical
+PROMPT:
+Prove that the square root of 2 is irrational.
+
+--- GENERATED ---
+ To prove that the square root of 2 is irrational, we will use a proof by contradiction. This means we will assume that the square root of 2 is rational and then show that this assumption leads to a contradiction.
+
+### Step 1: Assume the square root of 2 is rational
+By definition, a number is rational if it can be expressed as the quotient of two integers, where the denominator is not zero. Therefore, we can write:
+\[
+\sqrt{2} = \frac{a}{b}
+\]
+where \(a\) and \(b\) are integers with no common factors other than 1 (i.e., \(\gcd(a, b) = 1\)).
+
+### Step 2: Square both sides of the equation
+To eliminate the square root, we square both sides of the equation:
+\[
+(\sqrt{2})^2 = \left(\frac{a}{b}\right)^2
+\]
+This simplifies to:
+\[
+2 = \frac{a^2}{b^2}
+\]
+
+### Step 3: Cross-multiply to eliminate the fraction
+To clear the fraction, we cross-multiply:
+\[
+2b^2 = a^2
+\]
+
+### Step 

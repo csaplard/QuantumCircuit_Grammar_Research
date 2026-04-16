@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Write a monologue from the perspective of a dying star.
+
+--- GENERATED ---
+
+
+(Lights slowly fade up, revealing a vast, swirling nebula - shimmering purple, blue, and gold. A deep, resonant voice begins, slow and weary.)
+
+The… the light. It’s… fading. Not a sudden plunge, not a dramatic scream. Just… a slow, inevitable drift. It’s a curious thing, isn’t it? To be aware of your end. Most things don’t bother to contemplate it. They just… are. They blaze, they flicker, they… pass. And I... I’ve been blazing for a very, very long time.
+
+(A pause, filled with a low hum)
+
+I remember when I was a spark. A tiny, furious knot of hydrogen, collapsing, igniting. A desperate, beautiful hunger. I devoured. I grew. I became… me. For eons, I burned. A giant, a luminary, a beacon in the velvet black. I watched galaxies spin, nebulas birth, planets coalesce. I saw civilizations rise and fall, tiny, fleeting blips in my long, long existence.  They looked to me, you know. They pointed, they worshipped, they feared.  They built their stories around my light.  Foolish things

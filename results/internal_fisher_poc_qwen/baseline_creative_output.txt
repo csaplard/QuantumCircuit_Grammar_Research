@@ -1,0 +1,8 @@
+MODEL: Qwen/Qwen2.5-Coder-1.5B-Instruct
+MODE: baseline
+REGIME: creative
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+ The message reveals that a young girl named Lily has been missing for several days and that the lighthouse keeper has been searching tirelessly for her. The story should be written in a suspenseful and imaginative style, with vivid descriptions of the lighthouse and its surroundings. The lighthouse keeper should be portrayed as a kind and compassionate individual who uses his skills to help find Lily and return her to her family. The ending should be unexpected and satisfying, with the lighthouse keeper's bravery and determination to rescue Lily ultimately being rewarded. Lily should be portrayed as a young and curious girl who is lost in the dense fog of the lighthouse and whose bravery and kindness makes all the difference in her quest for her family. The story should have a satisfying resolution that leaves the reader feeling optimistic and hopeful about the future of Lily and her family. Lily should be a central character who is the driving force behind the story, and whose actions and choices have a significant impact on the outcome of the plot. The story should be written in third person omniscient, with a focus on the lighthouse keeper's thoughts and feelings as he tries to save Lily. The lighthouse keeper should be described as a man with a kind heart and a curious mind, who is always looking for ways to help others and

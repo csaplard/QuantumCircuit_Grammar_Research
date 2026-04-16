@@ -1,0 +1,76 @@
+[load] google/gemma-3-1b-it ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+W0416 12:57:01.581000 18400 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/340 [00:00<?, ?it/s]Loading weights:   0%|          | 1/340 [00:01<06:50,  1.21s/it]C:\Users\csapl\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   1%|          | 3/340 [00:01<02:00,  2.80it/s]Loading weights:   5%|4         | 16/340 [00:01<00:17, 18.46it/s]Loading weights:   9%|8         | 29/340 [00:01<00:09, 33.82it/s]Loading weights:  11%|#1        | 39/340 [00:01<00:06, 44.88it/s]Loading weights:  14%|#4        | 48/340 [00:01<00:05, 51.81it/s]Loading weights:  17%|#6        | 57/340 [00:01<00:04, 56.65it/s]Loading weights:  20%|##        | 69/340 [00:02<00:03, 69.69it/s]Loading weights:  24%|##3       | 81/340 [00:02<00:03, 79.91it/s]Loading weights:  27%|##6       | 91/340 [00:02<00:03, 81.53it/s]Loading weights:  30%|##9       | 101/340 [00:02<00:03, 78.88it/s]Loading weights:  32%|###2      | 110/340 [00:02<00:02, 77.57it/s]Loading weights:  36%|###5      | 122/340 [00:02<00:02, 81.39it/s]Loading weights:  40%|###9      | 135/340 [00:02<00:02, 86.91it/s]Loading weights:  44%|####3     | 148/340 [00:02<00:02, 91.96it/s]Loading weights:  47%|####7     | 161/340 [00:03<00:01, 94.69it/s]Loading weights:  51%|#####1    | 174/340 [00:03<00:01, 95.77it/s]Loading weights:  55%|#####5    | 187/340 [00:03<00:01, 99.25it/s]Loading weights:  59%|#####8    | 200/340 [00:03<00:01, 99.66it/s]Loading weights:  63%|######2   | 213/340 [00:03<00:01, 101.15it/s]Loading weights:  66%|######6   | 226/340 [00:03<00:01, 100.15it/s]Loading weights:  70%|#######   | 239/340 [00:03<00:01, 99.76it/s] Loading weights:  74%|#######4  | 252/340 [00:03<00:00, 98.95it/s]Loading weights:  78%|#######7  | 265/340 [00:04<00:00, 97.72it/s]Loading weights:  82%|########1 | 278/340 [00:04<00:00, 98.49it/s]Loading weights:  86%|########5 | 291/340 [00:04<00:00, 99.53it/s]Loading weights:  89%|########9 | 304/340 [00:04<00:00, 99.62it/s]Loading weights:  93%|#########3| 317/340 [00:04<00:00, 99.01it/s]Loading weights:  97%|#########7| 330/340 [00:04<00:00, 98.60it/s]Loading weights: 100%|##########| 340/340 [00:04<00:00, 71.32it/s]
+[load] OK  device=cuda:0
+[model] google/gemma-3-1b-it  n_layers=26  gate_at=4
+[gate-trained] weight=1.000000  bias=-0.093003
+[gate-init]    weight=1.000000  bias=0.000000
+[pre-acc] loaded from eval_before.csv: 20.0%
+
+[eval] Post-training WITHOUT gate ...
+C:\Users\csapl\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  [post-no-gate] 10/50  acc=20.0%
+  [post-no-gate] 20/50  acc=15.0%
+  [post-no-gate] 30/50  acc=16.7%
+  [post-no-gate] 40/50  acc=20.0%
+  [post-no-gate] 50/50  acc=20.0%
+  [post-no-gate] FINAL acc=20.0% (10/50)
+
+[eval] Post-training WITH init gate (weight=1, bias=0) ...
+C:\Users\csapl\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  [post-init-gate] 10/50  acc=10.0%
+  [post-init-gate] 20/50  acc=10.0%
+  [post-init-gate] 30/50  acc=10.0%
+  [post-init-gate] 40/50  acc=10.0%
+  [post-init-gate] 50/50  acc=10.0%
+  [post-init-gate] FINAL acc=10.0% (5/50)
+
+[eval] Post-training WITH trained gate ...
+C:\Users\csapl\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  [post-trained-gate] 10/50  acc=10.0%
+  [post-trained-gate] 20/50  acc=10.0%
+  [post-trained-gate] 30/50  acc=10.0%
+  [post-trained-gate] 40/50  acc=12.5%
+  [post-trained-gate] 50/50  acc=14.0%
+  [post-trained-gate] FINAL acc=14.0% (7/50)
+
+[regime-check] Fisher gate sensitivity after training ...
+C:\Users\csapl\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+  mathematical   : mean_gate=0.4867  mean_F=154.41
+  factual        : mean_gate=0.4445  mean_F=176.21
+
+==========================================================
+DIAGNOSTIC SUMMARY
+==========================================================
+1. Did the gate learn?
+   weight: 1.0000 -> 1.000000  (0.00% shift)
+   bias:   0.0000 -> -0.093003  (0.0930 abs)
+   -> PARTIAL — only bias learned (weight gradient was zero due to z=0 during training)
+
+2. Did loss decrease?
+   First 3 steps: 2.9229  |  Last 3 steps: 2.9229
+   -> FLAT/NOISY
+
+3. Accuracy comparison:
+                        mode  accuracy
+      pre-training (no gate)      0.20
+     post-training (no gate)      0.20
+   post-training (init gate)      0.10
+post-training (trained gate)      0.14
+   Trained gate delta vs baseline: -6.0%
+   Init gate    delta vs baseline: -10.0%
+   -> REGRESSION
+
+4. Regime-dependent gate behaviour (trained gate):
+   mathematical   : gate=0.4867  F=154.41
+   factual        : gate=0.4445  F=176.21
+   |delta gate| = 0.0422  -> REGIME-SENSITIVE
+
+[write] -> C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\fisher_gate_training

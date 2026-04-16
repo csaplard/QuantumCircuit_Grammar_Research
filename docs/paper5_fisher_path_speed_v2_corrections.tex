@@ -1,0 +1,99 @@
+% paper5_fisher_path_speed_v2 — corrections (merge into master; rebuild PDF)
+% Numbers for K=5,9 topology paragraph from repository results CSVs (full run).
+\documentclass[11pt]{article}
+\usepackage{amsmath,booktabs}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\begin{document}
+
+\section*{Paper 5 (\texttt{fisher\_path\_speed} v2) --- corrections}
+
+Copy the \texttt{verbatim} blocks into your main \texttt{.tex} (or Word) source.
+The PDF master lives in \verb|Downloads/paper5_fisher_path_speed_v2.pdf|.
+
+\subsection*{1. Abstract --- topology / CV wording}
+
+\textit{Issue:} CV $0.14$--$0.17$ in the abstract did not match Snake CV $\approx 0.23$
+in Table~1 ($K{=}7$). Also clarify that topology stability is stated per fixed~$K$.
+
+\begin{verbatim}
+Within each SAX alphabet size K in {5,7,9}, the product A*tau is stable across
+the three Sycamore hardware topologies among readouts where the exponential
+model wins: at K=7 the topology-wise medians of A*tau agree within ~2% and the
+topology-level coefficients of variation (CV) range from 0.13 (Bulk) to
+0.23 (Snake; Table 1).
+The same qualitative pattern holds at K=5 and K=9 (exponential-fit subset):
+per-topology medians differ by only a few percent, with CV values ~0.07--0.22
+when CV is computed on A*tau within each topology.
+Varying K across {5,7,9}, the cross-K medians of A*tau follow
+A*tau ~ 21.5 * K^0.57 with residuals below 1.4% at the three tabulated K values.
+\end{verbatim}
+
+\noindent(LaTeX version with math mode is in the repository script output if you
+prefer: use \verb|$K\in\{5,7,9\}$|, \verb|$A\times\tau$|, etc.)
+
+\subsection*{2. Table 2 --- replace HTML \texttt{n<sub>exp</sub>}}
+
+\begin{verbatim}
+\begin{tabular}{@{}lcccccc@{}}
+  \toprule
+  $K$ & $d=K(K{-}1)$ & $n_{\mathrm{exp}}$ & Median $A\times\tau$ & Pred.$^*$ & Error \\
+  \midrule
+  5 & 20 & 26 & 53.32 & 53.64 & 0.6\% \\
+  7 & 42 & 25 & 65.87 & 64.94 & 1.4\% \\
+  9 & 72 & 25 & 74.30 & 74.90 & 0.8\% \\
+  \bottomrule
+\end{tabular}
+\end{verbatim}
+
+\subsection*{3. \S2.1 / \S2.2 --- sentence for $d=K(K{-}1)$}
+
+\begin{verbatim}
+Here d = K(K-1) counts the total number of free coordinates in the row-stochastic
+model: each of the K rows lies on a (K-1)-simplex, and the Fisher-Rao metric is
+taken with respect to the product of these K simplices (block-diagonal Fisher
+information).
+\end{verbatim}
+
+\subsection*{4. \S3.3 --- after Table 1 (numeric support for $K{=}5,9$)}
+
+\begin{verbatim}
+For K=5 (26 exponential-fit readouts) the topology-level medians of A*tau are
+54.13 (Snake, n=7), 49.00 (Block, n=13), and 56.79 (Bulk, n=6), with
+CV = std/median within each topology of 0.22, 0.16, and 0.11 respectively.
+For K=9 (25 exponential-fit readouts) the corresponding medians are 75.31,
+73.50, and 74.30 (n=7,13,5) with CV 0.16, 0.17, and 0.07.
+Thus the "topology independence within fixed K" statement is not special to
+K=7; it is reproducible across alphabet sizes, with Snake rows typically
+slightly noisier than Bulk in this CV sense.
+\end{verbatim}
+
+\subsection*{5. \S3.5 LLM --- replace ``10 non-pathological''}
+
+\begin{verbatim}
+The same analysis applied to LLM entropy time series (Qwen2.5-Coder:7B, K=7,
+twelve experimental conditions) yields noisier profiles: the power-law tail
+model is preferred by AIC in all twelve conditions, consistent with multi-scale
+temporal structure documented in the Curvature Research Note.
+We therefore do not interpret the exponential sub-parameters (tau, A, hence
+A*tau) as primary estimands for LLMs; the reported median A*tau ~ 91.5
+(and p = 0.11 vs. 65.97) is exploratory only and is not used in the main
+Sycamore scaling analysis.
+\end{verbatim}
+
+\subsection*{6. Summary bullet 3 (replace)}
+
+\begin{verbatim}
+\item The product A*tau is stable across hardware topologies within each fixed K
+  among exponential-fit readouts (Table 1 at K=7; qualitatively similar at
+  K in {5,9} as tabulated in the repository). Across K in {5,7,9}, median A*tau
+  scales as 21.5 * K^0.57 (residuals < 1.4%).
+\end{verbatim}
+
+\section*{LaTeX math check (compiles)}
+Table header: $n_{\mathrm{exp}}$ \quad (not \verb|n<sub>exp</sub>|).
+
+Degrees of freedom: $d = K(K-1)$.
+
+Power law: $A\times\tau \approx 21.5\,K^{0.57}$.
+
+\end{document}

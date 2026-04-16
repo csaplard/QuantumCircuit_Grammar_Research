@@ -1,0 +1,7 @@
+regime,mode,n_steps,fisher_mean,fisher_std,n_down,n_up,n_hold,elapsed_s,model
+factual,baseline,256,8348.182442725942,18397.54533523732,0,0,256,62.04,google/gemma-3-1b-it
+factual,adaptive,256,8869.691159065727,20108.059926085694,33,24,199,59.87,google/gemma-3-1b-it
+mathematical,baseline,256,8057.583469908524,18242.564921097262,0,0,256,60.39,google/gemma-3-1b-it
+mathematical,adaptive,256,1190.8460680469766,175.216656823627,18,13,225,59.96,google/gemma-3-1b-it
+creative,baseline,256,1416.408700974303,267.4129078028989,0,0,256,60.35,google/gemma-3-1b-it
+creative,adaptive,256,1367.4525348859663,243.17786186487658,2,22,232,60.91,google/gemma-3-1b-it

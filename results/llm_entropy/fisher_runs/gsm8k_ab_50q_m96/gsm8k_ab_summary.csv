@@ -1,0 +1,2 @@
+n_questions,baseline_correct,adaptive_correct,baseline_accuracy,adaptive_accuracy,adaptive_minus_baseline_accuracy,adaptive_down_total,adaptive_up_total,adaptive_hold_total
+50,1,1,0.02,0.02,0.0,462,643,3695

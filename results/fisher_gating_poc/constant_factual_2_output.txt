@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: factual
+PROMPT_IDX: 2
+SEED: 42
+PROMPT:
+What are the main differences between TCP and UDP protocols?
+
+--- GENERATED ---
+
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used for sending data over a network, but they differ significantly in their characteristics and suitability for different applications. Here's a breakdown of the key differences:
+
+**1. Connection-Oriented vs. Connectionless:**
+
+* **TCP:**  TCP is **connection-oriented**. Before data transfer begins, a connection (a handshake) must be established between the sender and receiver. This ensures a reliable and ordered flow of data.  Think of it like making a phone call – you establish a connection before speaking.
+* **UDP:** UDP is **connectionless**. It doesn't establish a connection beforehand. Data is simply sent without any prior setup.  It's like sending a postcard – you just drop it in the mail without confirming the recipient is ready.
+
+**2. Reliability:**
+
+* **TCP:** TCP is **reliable**. It guarantees that data will be delivered to the destination accurately and in the correct order. It uses mechanisms like:
+    * **Sequence numbers:** To track the order of data packets.
+    * **Acknowledgements:**  The receiver confirms receipt of each packet.
+    * **Retransmission:** If a packet is

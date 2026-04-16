@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-1b-it
+MODE: adaptive
+REGIME: creative
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The light was a constant, unwavering presence, a sentinel against the endless gray. Silas, the lighthouse keeper, had spent thirty years tending to it, a solitary existence punctuated by the rhythmic sweep of the beam.
+
+He loved the solitude, the raw, elemental beauty of the sea.  He’d found a strange comfort in the gray, a feeling of being perfectly placed.
+
+One blustery morning, while clearing debris from the base of the lighthouse, he stumbled upon something unusual. A bottle, nestled amongst the seaweed and barnacles. It was an emerald green glass bottle, intricately carved with a seashell design.
+
+Silas, a man of few words, carefully retrieved the bottle. He brought it inside, the scent of brine and something else, something faintly floral, filling the small space.
+
+He examined it, turning it over in his hands. There was a small, rolled-up piece of parchment tucked inside.  With trembling fingers, he unfurled it.
+
+The message was written in elegant, faded ink. "To whomever finds this, I am lost at sea. My ship, the 'Seafoam Dream,' was caught in a storm. I sent this bottle as a plea for help. I am known as Elara

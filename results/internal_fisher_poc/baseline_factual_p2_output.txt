@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: factual
+PROMPT_IDX: 2
+PROMPT:
+Summarize the main events of the French Revolution.
+
+--- GENERATED ---
+
+
+The French Revolution (1789-1799) was a period of radical social and political upheaval in late 18th-century France that ultimately toppled the monarchy and established a republic. Here's a summary of the main events:
+
+**1. Pre-Revolutionary France (1789):**
+
+* **Economic Crisis:** France faced severe financial problems due to extravagant spending by the monarchy, costly wars, and poor harvests.
+* **Social Inequality:** French society was rigidly divided into three Estates: the clergy, the nobility, and the commoners (including peasants, artisans, and merchants). The first two Estates enjoyed significant privileges and exemptions from taxation, while the Third Estate bore the brunt of the tax burden.
+* **Enlightenment Ideas:**  Philosophical ideas of thinkers like Locke, Rousseau, and Montesquieu challenged the divine right of kings and promoted concepts of liberty, equality, and popular sovereignty.
+
+
+**2. Initial Stages (1789-1792):**
+
+* **Estates-General (1789):**  King Louis XVI called the Estates-General (an assembly representing the three Estates) to address the financial crisis. Disputes over voting procedures led

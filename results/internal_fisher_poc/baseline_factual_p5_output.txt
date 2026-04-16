@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: factual
+PROMPT_IDX: 5
+PROMPT:
+Explain the theory of plate tectonics.
+
+--- GENERATED ---
+
+
+The theory of plate tectonics is the unifying theory in geology that explains many of the Earth's most dramatic features, including mountains, volcanoes, earthquakes, and ocean trenches. It describes how the Earth's outer shell, the lithosphere, is broken into large and small pieces called plates that move and interact with each other. Here's a breakdown of the key aspects:
+
+**1. The Earth's Structure:**
+
+*   **Lithosphere:** This is the rigid outer layer of the Earth, composed of the crust (oceanic and continental) and the uppermost part of the mantle. It's about 100 km (62 miles) thick on average.
+*   **Asthenosphere:** Beneath the lithosphere is the asthenosphere – a partially molten, ductile layer of the mantle.  It's hot enough to allow the lithospheric plates to move on top of it.
+*   **Mantle:** The mantle is a mostly solid, rocky layer that makes up the majority of the Earth's volume.
+
+**2. Plate Types:**
+
+*   **Oceanic Plates:** These are thinner, denser plates primarily composed of basalt (dark, volcanic rock). They're typically found under the oceans.
+

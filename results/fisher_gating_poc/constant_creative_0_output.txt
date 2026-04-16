@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The salt spray had been my only company for twenty years. Twenty years of the rhythmic pulse of the light, the mournful cry of gulls, and the ceaseless, grey dance of the sea. I'm Silas Blackwood, and I’ve been keeper of North Point Lighthouse, a lonely sentinel on the jagged coast of Oakhaven Isle, for longer than I care to remember. Most folks consider it a lonely job, a slow slide into madness, but it's honest work, and I've found a grim comfort in the routine.
+
+This morning began like any other – coffee strong enough to stand a spoon in, a check of the lamp, and a sweep of the jagged cliffs below. The sea was particularly restless, a bruised purple under a leaden sky. As I finished my rounds, something caught my eye.
+
+Washed up on the rocks, nestled amongst seaweed and shattered shells, was a bottle. A thick, green glass bottle, sealed with wax and tied with a faded blue ribbon. I’d seen bottles before, lost by tourists, sometimes filled with trinkets. But this one… this one felt different.
+
+I carefully retrieved it, the salt clinging to my weathered hands. The wax was brittle, crumbling under

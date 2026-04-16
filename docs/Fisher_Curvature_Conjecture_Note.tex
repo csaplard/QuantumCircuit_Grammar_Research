@@ -1,0 +1,183 @@
+% Fisher Curvature Conjecture Note — layout consistent with LLM_Grammar_Fisher_Preprint.tex
+% Build: pdflatex Fisher_Curvature_Conjecture_Note.tex (twice) from docs/
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Curvature at the Fisher Threshold --- Research Note (April 2026)}
+\fancyhead[R]{\small \thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\begin{center}
+{\large Research Note --- April 2026}\\[0.8em]
+{\LARGE\bfseries Curvature Structure at the Fisher Information Threshold:\\[0.25em]
+Numerical Evidence from Quantum Processors and Language Models}\\[0.9em]
+{\large Continuation of \textit{Grammar Fingerprinting} (\href{https://doi.org/10.5281/zenodo.19158088}{doi:10.5281/zenodo.19158088}),\\
+\textit{Fisher Information Threshold Study} (\href{https://doi.org/10.5281/zenodo.19391582}{doi:10.5281/zenodo.19391582})}\\[0.5em]
+Daniel Csapl\'ar\\
+Independent Researcher, Kazincbarcika, Hungary\\
+ORCID: \href{https://orcid.org/0009-0000-7362-7232}{0009-0000-7362-7232}\\
+April 2026
+\end{center}
+
+\vspace{0.6em}
+\noindent\textbf{Abstract}\\[0.3em]
+We report numerical evidence for a curvature structure at the Fisher information threshold $N^\star$ in Grammar Fingerprinting transition matrices. Using second-derivative analysis of the Fisher trace $\mathrm{Tr}(F)$ as a function of data length $N$, we show that the global maximum of $|d^2\mathrm{Tr}/dN^2|$ coincides with $N^\star$ (the Fisher trace maximum) in 89\% of 28 Google Sycamore quantum processor readout configurations (within one grid step). In LLM entropy time series (Qwen2.5-Coder:7B, 10{,}000 tokens), the coincidence holds for simpler regimes (factual), while more complex regimes (mathematical) exhibit a separation between an early curvature peak and a later trace maximum---consistent with multi-scale temporal structure. We propose that the Fisher trace maximum and the curvature maximum define two complementary scales: a structure-onset threshold (where the sharpest information gain occurs) and an information ceiling (where the learned grammar saturates). In simple systems these coincide; in complex systems they separate. We conjecture that this curvature structure reflects a geometric phase transition on the statistical manifold of transition matrices, and note the structural parallel to the macroscopicity threshold in the Page--Wootters mechanism for emergent time. The formal derivation of this connection remains an open problem.
+
+\vspace{0.6em}
+\textbf{1.\ The Conjecture}
+
+We state the conjecture in three parts.
+
+\textbf{Part 1 (Curvature--threshold coincidence):} For structured sequential processes with a single dominant temporal scale, the global maximum of $|d^2\mathrm{Tr}(F)/dN^2|$ coincides with the Fisher trace maximum $N^\star$ on the data-length grid.
+
+\textbf{Part 2 (Scale separation in complex systems):} For processes with multiple temporal scales, the global curvature maximum $N_{\mathrm{curv}}$ and the Fisher trace maximum $N^\star$ separate. $N_{\mathrm{curv}}$ marks the onset of structure acquisition (sharpest information gain); $N^\star$ marks the saturation of the dominant grammar. The ratio $N^\star/N_{\mathrm{curv}}$ reflects the system's structural complexity.
+
+\textbf{Part 3 (Geometric phase transition):} The curvature structure at $N^\star$ (or $N_{\mathrm{curv}}$) corresponds to a change in the Riemannian curvature of the statistical manifold of row-stochastic transition matrices, parameterized by data length. This change is analogous to the macroscopicity threshold in the Page--Wootters (PaW) mechanism, where classical time emerges from quantum entanglement above a critical system size.
+
+Parts 1 and 2 are supported by numerical evidence presented below. Part 3 is a formal conjecture requiring analytical derivation.
+
+\vspace{0.5em}
+\textbf{2.\ Numerical Evidence: Google Sycamore}
+
+\textbf{2.1 Data and method.} Fisher trace curves $\mathrm{Tr}(F)$ vs.\ data length $N$ were computed for all 28 readout configurations of the Google Sycamore quantum supremacy dataset (Arute et al., 2019), using the Grammar Fingerprinting pipeline (SAX alphabet 7, LSTM hidden 32, seq\_len 16, 50 epochs). The grid spans $N=500$ to 50{,}000 in 21 steps. For each curve, the second derivative $d^2\mathrm{Tr}/dN^2$ was computed via natural cubic spline interpolation, and the global maximum of $|d^2\mathrm{Tr}/dN^2|$ was identified.
+
+\textbf{2.2 Results.}
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Criterion & Result \\
+\midrule
+Exact coincidence ($\Delta=0$) & 19 / 28 (67.9\%) \\
+Within one grid step ($\Delta\le 1000$) & 25 / 28 (89.3\%) \\
+Within two grid steps ($\Delta\le 2000$) & 26 / 28 (92.9\%) \\
+Among high-curvature readouts ($|d^2|\ge 100$) & 9 / 9 within $\Delta\le 1000$ \\
+Outliers (46q, 49q) & $|d^2|<0.1$ --- flat curvature, peak location unreliable \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The median $\Delta$ is 0; the mean is inflated by two outliers with essentially flat second derivatives. Where the curvature is well-defined ($|d^2|\ge 100$), the coincidence is complete.
+
+\textbf{2.3 Interpretation.} On Google Sycamore, each readout configuration represents a single physical topology with one dominant temporal scale. The Fisher trace rises, peaks at $N^\star$, and declines. The curvature maximum coincides with this peak, consistent with Part 1 of the conjecture: in a single-scale system, the sharpest information gain and the information ceiling occur at the same data length.
+
+\vspace{0.5em}
+\textbf{3.\ Numerical Evidence: LLM Entropy Series}
+
+\textbf{3.1 Data and method.} Fisher trace curves were computed for entropy time series from Qwen2.5-Coder:7B (10{,}000 tokens, LLM seed 42) under factual and mathematical discourse regimes, each with three conditions: real signal (\emph{none}) and two controls (\emph{shuffled}, \emph{random\_uniform}). The Fisher pipeline matches the primary LLM study in the repository: SAX alphabet 7, LSTM hidden 32, seq\_len 16, 50 epochs, with \textbf{grammar (LSTM) seed 2} for the reported Fisher-vs-$N$ curves (same convention as \texttt{llm\_entropy\_fisher\_summary} and related outputs). The same spline-based second derivative analysis was applied (\texttt{curvature\_fisher\_trace\_llm.py}).
+
+\textbf{3.2 Results.} Table~1 lists $N^\star=\arg\max_N \mathrm{Tr}(F)$, $N_{\mathrm{curv}}=\arg\max_N |d^2\mathrm{Tr}/dN^2|$, and $\Delta=|N_{\mathrm{curv}}-N^\star|$ for all six curves.
+
+\begin{table}[htbp]
+\centering
+\caption{LLM seed 42: factual and mathematical regimes (grammar seed 2).}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Regime & Condition & $N^\star$ & $N_{\mathrm{curv}}$ & $\Delta$ \\
+\midrule
+Factual & none & 384 & 384 & 0 \\
+Factual & shuffled & 224 & 224 & 0 \\
+Factual & random\_uniform & 32 & 48 & 16 \\
+Mathematical & none & 1536 & 112 & 1424 \\
+Mathematical & shuffled & 48 & 48 & 0 \\
+Mathematical & random\_uniform & 64 & 64 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The factual regime (lower structural complexity in this comparison) shows exact or near coincidence. The mathematical \emph{none} condition shows clear scale separation: the curvature peak occurs early ($N_{\mathrm{curv}}=112$, $|d^2|\approx 476$) while the Fisher trace peaks much later ($N^\star=1536$). A weak local $|d^2|$ feature exists at $N=1536$ ($|d^2|\approx 11$) but is not dominant relative to the early peak.
+
+\textbf{3.3 Interpretation.} Mathematical discourse in an LLM involves multiple structural layers: syntactic constraints, logical sequencing, symbolic conventions, and topic-level coherence. The early curvature peak ($N_{\mathrm{curv}}=112$) likely reflects the LSTM acquiring basic transition structure; the Fisher trace continues to rise as longer-range dependencies accumulate, peaking at $N^\star=1536$. This is consistent with Part 2 of the conjecture: in multi-scale systems, $N_{\mathrm{curv}}$ and $N^\star$ separate, and their ratio ($N^\star/N_{\mathrm{curv}}\approx 14$ here) may serve as a complexity indicator.
+
+\vspace{0.5em}
+\textbf{4.\ Two Scales, One Mechanism}
+
+We propose that the Grammar Fingerprinting pipeline, applied to any structured sequential process, defines two characteristic scales:
+
+\textbf{$N_{\mathrm{curv}}$ (structure-onset threshold):} The data length at which the sharpest change in Fisher information occurs. This is where the learning system first ``catches'' the dominant pattern. Operationally: $\arg\max_N |d^2\mathrm{Tr}(F)/dN^2|$.
+
+\textbf{$N^\star$ (information ceiling):} The data length at which the Fisher trace is maximal. This is where the learned grammar carries the most information about the transition structure. Operationally: $\arg\max_N \mathrm{Tr}(F)$.
+
+In simple systems (single temporal scale), $N_{\mathrm{curv}}\approx N^\star$. In complex systems (multiple temporal scales), $N_{\mathrm{curv}}<N^\star$, and the ratio $N^\star/N_{\mathrm{curv}}$ characterizes the system's structural depth.
+
+This framework is consistent with the transfer model from the Fisher threshold study (Csapl\'ar, 2026b):
+\[
+N^\star = H_0 \times B_{\mathrm{backend}} \times C_{\mathrm{regime}} \times Q^{\alpha},
+\]
+where the threshold depends on the backend ($B$), the circuit or discourse regime ($C$), and the system size ($Q$) with exponent $\alpha\approx -0.77$. The present analysis adds that the internal structure of the transition---whether it is a single sharp event or a multi-stage process---is visible in the curvature profile.
+
+\vspace{0.5em}
+\textbf{5.\ Connection to Emergent Time (Open Problem)}
+
+The Page--Wootters (PaW) mechanism (Page \& Wootters, 1983; Foti et al., 2021) shows that time emerges from entanglement between two non-interacting quantum subsystems when the ``clock'' subsystem reaches a macroscopicity threshold. Below this threshold, the composite system is static (Wheeler--DeWitt regime); above it, unitary evolution---and thus time---emerges.
+
+The structural parallel to Grammar Fingerprinting is direct:
+
+PaW: below macroscopicity threshold $\rightarrow$ static, no time. Above $\rightarrow$ time emerges.
+
+Grammar Fingerprinting: below $N^\star$ $\rightarrow$ no detectable temporal structure (chance-level classification, Fisher trace at noise floor). Above $N^\star$ $\rightarrow$ temporal grammar emerges.
+
+Both transitions are sharp, system-dependent, and mark the boundary between structurelessness and emergent order.
+
+We conjecture (Part 3) that this parallel is not merely analogical. If the statistical manifold of transition matrices $T(N)$---parameterized by data length $N$---has a Riemannian structure defined by the Fisher information metric, then the curvature singularity at $N^\star$ (or $N_{\mathrm{curv}}$) may correspond formally to the quantum-to-classical crossover in the PaW framework, where the large-$N$ limit of generalized coherent states produces classical equations of motion.
+
+The formal derivation of this correspondence---connecting the curvature of the transition-matrix manifold to the macroscopicity condition in canonical quantum gravity---remains an open problem. It requires tools from information geometry (Amari, 1985), the large-$N$ coherent state formalism (Foti et al., 2021), and the theory of statistical phase transitions on simplicial probability spaces.
+
+This note provides the numerical motivation; the analytical bridge is left for future work.
+
+\vspace{0.5em}
+\textbf{6.\ Summary}
+
+\begin{enumerate}\setlength\itemsep{0.25em}
+\item On Google Sycamore (28 readouts), the curvature maximum $|d^2\mathrm{Tr}/dN^2|$ coincides with the Fisher trace maximum $N^\star$ in 89\% of configurations (within one grid step). Where the curvature is well-defined, the coincidence is complete.
+\item On LLM entropy series, the coincidence holds for simpler discourse regimes (factual). For complex regimes (mathematical none), the curvature peak and trace maximum separate, defining two scales: a structure-onset threshold ($N_{\mathrm{curv}}$) and an information ceiling ($N^\star$).
+\item We conjecture that this curvature structure reflects a geometric phase transition on the statistical manifold of learned transition matrices, with a formal parallel to the macroscopicity threshold in the Page--Wootters mechanism for emergent time.
+\item The formal derivation of this connection is an open problem.
+\end{enumerate}
+
+\vspace{0.6em}
+\noindent\textbf{References}
+
+\begin{itemize}\setlength\itemsep{0.2em}
+\item Amari, S. (1985). \textit{Differential-Geometrical Methods in Statistics}. Springer.
+\item Arute, F., et al.\ (2019). Quantum supremacy using a programmable superconducting processor. \textit{Nature}, 574, 505--510.
+\item Csapl\'ar, D. (2026a). Grammar Fingerprinting of Quantum Processor Topology. Zenodo. \href{https://doi.org/10.5281/zenodo.19158088}{doi:10.5281/zenodo.19158088}.
+\item Csapl\'ar, D. (2026b). Fisher Information Threshold Study: Grammar Fingerprinting on Google Sycamore. Zenodo. \href{https://doi.org/10.5281/zenodo.19391582}{doi:10.5281/zenodo.19391582}.
+\item Csapl\'ar, D. (2026c). Grammar Fingerprinting and Fisher Information Thresholds in Large Language Model Entropy Series. Zenodo. \href{https://doi.org/10.5281/zenodo.19454201}{doi:10.5281/zenodo.19454201}.
+\item Foti, C., et al.\ (2021). Time and classical equations of motion from quantum entanglement via the Page and Wootters mechanism with generalized coherent states. \textit{Nature Communications}, 12, 1787.
+\item Page, D.\ N.\ \& Wootters, W.\ K.\ (1983). Evolution without evolution: Dynamics described by stationary observables. \textit{Physical Review D}, 27, 2885.
+\end{itemize}
+
+\vspace{0.6em}
+\noindent\textbf{Data and Code Availability}
+
+Sycamore readout data: Dryad DOI \href{https://doi.org/10.5061/dryad.k6t1rj8}{10.5061/dryad.k6t1rj8}. Grammar Fingerprinting code and validation results: Zenodo \href{https://doi.org/10.5281/zenodo.19158088}{doi:10.5281/zenodo.19158088}. Fisher threshold study: Zenodo \href{https://doi.org/10.5281/zenodo.19391582}{doi:10.5281/zenodo.19391582}. LLM entropy study: Zenodo \href{https://doi.org/10.5281/zenodo.19454201}{doi:10.5281/zenodo.19454201}.
+
+\begin{sloppypar}
+Curvature analysis scripts (\texttt{curvature\_fisher\_trace\_sycamore.py}, \texttt{curvature\_fisher\_trace\_llm.py}), summary CSVs, and per-$N$ output files are maintained in the project repository:\\
+\url{https://github.com/csaplard/QuantumCircuit_Grammar_Research}
+\end{sloppypar}
+
+\vspace{0.8em}
+\begin{center}
+--- End of research note ---
+\end{center}
+
+\end{document}

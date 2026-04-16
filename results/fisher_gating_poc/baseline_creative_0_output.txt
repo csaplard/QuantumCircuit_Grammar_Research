@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The salt spray stung Silas’s face as he adjusted the wick in the lamp, its rhythmic pulse a steadfast heartbeat against the relentless roar of the sea. For twenty years, he’d been the keeper of North Point Lighthouse, a solitary sentinel on the jagged coast of Blackwood Isle. His life was a simple equation: light, logs, and the ocean’s moods. He’d long grown accustomed to the loneliness, finding solace in the cries of gulls and the endless, shifting gray of the waves.
+
+One blustery afternoon, after a particularly violent storm, he was patrolling the lower rocks, checking for debris, when he spotted it – a bottle, green and barnacle-encrusted, bobbing amongst the seaweed. It was a relic of the storm, he thought, a forgotten trinket carried by the waves. He retrieved it, curious.
+
+Inside, nestled amongst a tangle of dried seaweed, was a rolled-up piece of parchment, tied with a faded crimson ribbon. Silas carefully extracted it, his hands trembling slightly. It was a letter, penned in elegant, looping script.
+
+“To the Keeper of North Point,” it began, “If you find this, know that I, Elias Thorne, am lost. I sailed

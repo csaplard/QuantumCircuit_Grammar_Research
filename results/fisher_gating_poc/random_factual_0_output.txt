@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: factual
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Explain the causes and consequences of World War I.
+
+--- GENERATED ---
+
+
+**Causes of World War I**
+
+World War I, also known as the Great War, was a complex conflict with roots extending far beyond a single event. While the assassination of Archduke Franz Ferdinand in Sarajevo on June 28, 1914, is often cited as the immediate trigger, several long-term underlying causes contributed to the outbreak of the war:
+
+1.  **Militarism:**  A pervasive belief in the importance of military strength and preparedness.  European powers engaged in an arms race, particularly between Great Britain and Germany, building up massive armies and navies.  This created a climate of suspicion and competition.
+
+2.  **Alliances:**  A web of interlocking treaties obligated nations to defend one another in case of attack.  The two major alliances were:
+    *   **The Triple Alliance:** Germany, Austria-Hungary, Italy (later joined by Hungary and Bulgaria)
+    *   **The Triple Entente:** Great Britain, France, Russia
+
+    These alliances meant that a localized conflict could quickly escalate into a wider war.
+
+3.  **Imperialism:**  European powers competed for colonies and territories around the world, seeking resources, markets, and strategic advantages.  This created tensions and

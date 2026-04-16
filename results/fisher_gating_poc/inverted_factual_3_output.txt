@@ -1,0 +1,28 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: factual
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Explain how a combustion engine works step by step.
+
+--- GENERATED ---
+
+
+A combustion engine, also known as an internal combustion engine, is a remarkable machine that converts chemical energy into mechanical energy. Here's a breakdown of how it works, step by step, focusing on the most common type – the four-stroke engine:
+
+**1. The Basics: The Four Strokes**
+
+*   **Four Strokes:** A four-stroke engine completes its cycle in four distinct movements (strokes) of a piston within a cylinder.  Each stroke represents a change in the volume of the cylinder.
+*   **Cylinder:** The cylinder is a chamber where the piston moves up and down.
+*   **Piston:** A cylindrical component that moves up and down inside the cylinder, driven by the force of combustion.
+*   **Connecting Rod:** Connects the piston to the crankshaft, converting the piston's linear motion into rotational motion.
+*   **Crankshaft:** A rotating shaft that converts the piston's up-and-down motion into rotational motion, which ultimately powers the vehicle or machine.
+
+**2. The Four Strokes in Detail**
+
+Let's break down each of the four strokes:
+
+**Stroke 1: Intake Stroke**
+
+1.  **Piston Movement:** The piston moves *

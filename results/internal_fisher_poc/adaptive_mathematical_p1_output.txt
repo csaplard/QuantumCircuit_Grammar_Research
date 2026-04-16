@@ -1,0 +1,23 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: mathematical
+PROMPT_IDX: 1
+PROMPT:
+Prove that there are infinitely many prime numbers.
+
+--- GENERATED ---
+
+
+**Proof by contradiction:**
+
+Assume, for the sake of contradiction, that there are finitely many prime numbers. Let's list them as $p_1, p_2, \dots, p_n$, where $n$ is a finite number.
+
+Now, consider the number $N = p_1 p_2 \dots p_n + 1$.
+
+We can analyze the divisibility of $N$. Since $N > 1$, $N$ must be divisible by at least one prime number.
+
+If $N$ is prime itself, then we have found a prime number not in our original list $p_1, p_2, \dots, p_n$, which contradicts our assumption that we had a complete list of all prime numbers.
+
+Therefore, $N$ must be divisible by a prime number in our list $p_1, p_2, \dots, p_n$. Let $p_i$ be a prime factor of $N$. Then $N = p_i \cdot k$ for some integer $k$.
+
+We have $N = p_1 p_2 \dots p_n + 1$.  So, $p_i \cdot k =

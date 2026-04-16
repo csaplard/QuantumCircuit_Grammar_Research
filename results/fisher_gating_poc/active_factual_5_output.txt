@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: factual
+PROMPT_IDX: 5
+SEED: 42
+PROMPT:
+What were the key events of the French Revolution?
+
+--- GENERATED ---
+
+
+The French Revolution (1789-1799) was a period of radical social and political upheaval in late 18th-century France. Here's a breakdown of the key events, broadly divided into phases:
+
+**1. The Pre-Revolutionary Period (Before 1789):**
+
+* **Economic Crisis (1780s):** France faced severe financial problems due to extravagant spending by the monarchy, costly wars (including supporting the American Revolution), and an inefficient tax system.
+* **Social Inequality:** French society was rigidly divided into three Estates:
+    * **First Estate:** Clergy (owned a lot of land and paid little tax)
+    * **Second Estate:** Nobility (held high positions and were largely exempt from taxes)
+    * **Third Estate:** Everyone else – 97% of the population, including merchants, artisans, peasants, and the bourgeoisie (middle class). They bore the brunt of taxation.
+* **Enlightenment Ideas:** Philosophers like Locke, Rousseau, and Montesquieu promoted ideas of natural rights, popular sovereignty, and separation of powers, influencing public opinion.
+* **Weak Leadership:** King Louis XVI was considered a weak and indecis

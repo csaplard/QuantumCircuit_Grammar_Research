@@ -1,0 +1,17 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: creative
+PROMPT_IDX: 6
+PROMPT:
+Write a short story about a violin that has been continuously played for two hundred years.
+
+--- GENERATED ---
+
+
+The air in the attic always smelled of dust and regret. It clung to the rafters, settled on the forgotten trunks, and permeated the very wood of the house. It was here, in this neglected space, that I resided – Violin No. 17, a survivor of two centuries.
+
+My maker, a small, meticulous man named Elias Thorne, had poured his soul into my construction in 1823. He’d used maple from a single, perfect tree, spruce from a mountain peak, and rosewood so dark it seemed to swallow the light. He’d crafted me not for fame or fortune, but for the quiet solace of a travelling musician, a man named Silas Blackwood.
+
+Silas was a shadow, a whisper of a man, and I became his voice. He played me in taverns, in grand halls, and in the lonely corners of country inns. His music was raw, heartbroken, beautiful – a tapestry woven from loss and longing. He played until his fingers bled, until his voice was gone, and until he left me, wrapped in a worn velvet case, to his son, Jasper.
+
+Jasper was a stern man, a soldier who rarely spoke of his father. He used me sparingly, only for

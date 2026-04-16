@@ -1,0 +1,5 @@
+Certainly! The quadratic formula is derived from solving the standard form of a quadratic equation:
+
+\[ ax^2 + bx + c = 0 \]
+
+Here's

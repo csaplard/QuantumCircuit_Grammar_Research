@@ -1,0 +1,1 @@
+To prove that the square root of 2 (\(\sqrt{2}\)) is irrational, we will use a proof by contradiction. This method assumes that \

@@ -1,0 +1,31 @@
+MODEL: google/gemma-3-4b-it
+MODE: monitor
+REGIME: mathematical
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Show that the sum of angles in a triangle is 180 degrees.
+
+--- GENERATED ---
+
+
+**Proof:**
+
+Let the triangle be denoted as $\triangle ABC$. Let the angles at vertices $A$, $B$, and $C$ be $\angle A$, $\angle B$, and $\angle C$, respectively.
+
+1.  **Draw a line parallel to the base:**
+    Draw a line $DE$ parallel to the base $BC$ of $\triangle ABC$, such that $D$ is on $AB$ and $E$ is on $AC$.
+
+2.  **Observe the angles:**
+    Since $DE \parallel BC$, we have the following angle relationships:
+    *   $\angle ADE = \angle ABC$ (alternate interior angles)
+    *   $\angle AED = \angle ABC$ (alternate interior angles)
+    *   $\angle BDE = \angle BCA$ (alternate interior angles)
+    *   $\angle CED = \angle BCA$ (alternate interior angles)
+
+3.  **Form a triangle:**
+    The line segment $DE$ creates a triangle $\triangle ADE$.
+
+4.  **Calculate the angles in $\triangle ADE$:**
+    The angles in $\triangle ADE$ are $\angle ADE$, $\angle AED$, and $\angle DAE$.
+    

@@ -1,0 +1,7 @@
+regime,mode,n_steps,fisher_mean,fisher_std,n_down,n_up,n_hold,elapsed_s,model
+factual,baseline,256,0.9733301426211642,0.07777141505366732,0,0,256,26.97,Qwen/Qwen2.5-Coder-1.5B-Instruct
+factual,adaptive,256,0.9814559612826815,0.09725674871477154,0,28,228,24.56,Qwen/Qwen2.5-Coder-1.5B-Instruct
+mathematical,baseline,256,0.8010608501212223,0.07684234919976451,0,0,256,25.16,Qwen/Qwen2.5-Coder-1.5B-Instruct
+mathematical,adaptive,256,0.8086596859735391,0.0777407701873603,0,44,212,25.74,Qwen/Qwen2.5-Coder-1.5B-Instruct
+creative,baseline,256,0.9066321582320941,0.07139349955825046,0,0,256,27.81,Qwen/Qwen2.5-Coder-1.5B-Instruct
+creative,adaptive,256,0.8921942167073225,0.0946024866292621,13,28,215,27.86,Qwen/Qwen2.5-Coder-1.5B-Instruct

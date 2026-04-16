@@ -1,0 +1,25 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: mathematical
+PROMPT_IDX: 5
+PROMPT:
+Prove by induction that 2^n > n for every positive integer n.
+
+--- GENERATED ---
+
+
+**Base Case:** For n = 1, we have 2^1 = 2 > 1, so the statement is true for n = 1.
+
+**Inductive Hypothesis:** Assume that 2^k > k for some positive integer k.
+
+**Inductive Step:** We want to show that 2^(k+1) > k+1.
+Starting with 2^(k+1), we can write it as 2 * 2^k.
+By the inductive hypothesis, we know that 2^k > k. Therefore,
+2 * 2^k > 2 * k.
+Since 2 > 1, we have 2 * 2^k > 2k.
+We want to show that 2 * 2^k > k+1.
+Let's compare 2k and k+1.
+We want to show that 2k > k+1, which is equivalent to k > 1.
+Since we are assuming 2^k > k, we have k > 1.
+Thus, 2k > k+1.
+Therefore, 2 * 2^k > 2k > k+1

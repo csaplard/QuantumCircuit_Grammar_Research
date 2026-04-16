@@ -1,0 +1,36 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: mathematical
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Prove by induction that 1+2+...+n = n(n+1)/2.
+
+--- GENERATED ---
+
+
+**Base Case (n=1):**
+
+For n=1, the left-hand side (LHS) is 1.  The right-hand side (RHS) is 1(1+1)/2 = 1(2)/2 = 1.  Since LHS = RHS, the formula holds for n=1.
+
+**Inductive Hypothesis:**
+
+Assume that the formula holds for some arbitrary integer k ≥ 1.  That is, assume that
+
+1 + 2 + ... + k = k(k+1)/2
+
+**Inductive Step:**
+
+We want to show that the formula also holds for n=k+1.  That is, we want to show that
+
+1 + 2 + ... + (k+1) = (k+1)(k+2)/2
+
+Starting with the left-hand side of the equation for n=k+1:
+
+1 + 2 + ... + (k+1)
+
+We can rewrite this as (1 + 2 + ... + k) + (k+1)
+
+By the inductive hypothesis, we can replace (1 + 2 + ... + k) with k(k+1)/2:
+
+k

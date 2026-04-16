@@ -1,0 +1,21 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: creative
+PROMPT_IDX: 5
+PROMPT:
+Write a short story about an astronaut who hears a faint voice on Mars.
+
+--- GENERATED ---
+
+
+The red dust swirled around Commander Elias Vance’s boots, a hypnotic dance under the weak Martian sun. He was alone, or at least, he *should* have been. The Ares VI mission was meant to be a meticulously planned solo expedition – a testament to human resilience, a stepping stone to a future among the stars. But the silence, broken only by the hiss of his suit and the rhythmic thump of his heart, was starting to wear on him.
+
+He’d been tasked with surveying the northwest region of Valles Marineris, a vast canyon system that held the promise of uncovering ancient waterways and, perhaps, evidence of past life. Days bled into weeks, a monotonous cycle of sample collection, geological analysis, and agonizing solitude. The comms were reliable, albeit frustratingly slow due to the distance. His contact with Earth was a lifeline, a thin thread connecting him to the world he’d left behind.
+
+Then, it happened.
+
+It started as a static crackle, a background noise he’d learned to filter out during the long, silent hours. But it persisted, evolving into something… else. A voice.
+
+“Hello?” he whispered into his microphone, his pulse hammering against his ribs.
+
+The static resolved itself

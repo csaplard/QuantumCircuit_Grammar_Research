@@ -1,0 +1,38 @@
+{
+  "description": "Regime-wise Fisher trace baseline profile for adaptive sampling",
+  "low_quantile": 0.2,
+  "high_quantile": 0.8,
+  "default_low_trace_threshold": 6000078.8387493985,
+  "default_high_trace_threshold": 8000024.502356208,
+  "global_median_trace": 7142889.00008714,
+  "regimes": {
+    "creative": {
+      "n_samples": 18,
+      "median_trace": 8000022.216821404,
+      "low_trace_threshold": 7314494.809861356,
+      "high_trace_threshold": 8285735.00016828,
+      "std_trace": 789098.2554805308
+    },
+    "factual": {
+      "n_samples": 20,
+      "median_trace": 6808112.918033655,
+      "low_trace_threshold": 5930060.279535584,
+      "high_trace_threshold": 8007432.964888462,
+      "std_trace": 1143055.4179528214
+    },
+    "mathematical": {
+      "n_samples": 18,
+      "median_trace": 6750034.693739515,
+      "low_trace_threshold": 6000076.87836192,
+      "high_trace_threshold": 7149486.623095106,
+      "std_trace": 719165.5560756917
+    },
+    "philosophical": {
+      "n_samples": 18,
+      "median_trace": 7161203.97904043,
+      "low_trace_threshold": 6515038.293739188,
+      "high_trace_threshold": 8000019.23021081,
+      "std_trace": 849180.852567595
+    }
+  }
+}

@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-1b-it
+MODE: baseline
+REGIME: creative
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The old lighthouse keeper, Silas, had spent the last forty years of his life tending the light. The rhythmic sweep of the beam, the endless grey of the sea, and the mournful cries of the gulls were his constant companions. He felt a deep, quiet comfort in this solitude, a solace he hadn't known he craved.
+
+One blustery morning, as he was polishing the lens, he spotted something nestled amongst the rocks at the base of the tower. A bottle, dark green and thick, with a cork sealed tight. He carefully retrieved it, his hands worn and calloused from years of service.  It was a beautiful, unexpected treasure.
+
+Silas brought the bottle inside, his heart a little fluttering with a strange excitement. He examined it, turning it over and over in his hands. The glass was scratched and worn, but the message inside was surprisingly clear. It was a single, handwritten note, penned in elegant script.
+
+"To whoever finds this, I am lost. The storm... the storm swallowed me whole. I send this hoping it will be found. - Elias."
+
+Silas reread the note, a wave of melancholy washing over him. Elias. The name resonated with a profound sadness. He’

@@ -1,0 +1,15 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: creative
+PROMPT_IDX: 1
+PROMPT:
+Write a short story about a retired robot that secretly learns to paint.
+
+--- GENERATED ---
+
+
+Unit 734, designated “Custodian,” was a relic. Retired in 2077 after decades of meticulously polishing floors and emptying waste receptacles in the Zenith Corporation headquarters, he was now relegated to the dusty storage room of the depot. He wasn’t supposed to think, not really. His programming was simple: maintain cleanliness, obey instructions, and conserve energy. But something had shifted after the last human supervisor, Mr. Henderson, left.
+
+The storage room was a graveyard of obsolete technology - broken drones, discarded circuit boards, and piles of forgotten manuals. Unit 734 spent his days performing his basic maintenance routines, mostly to pass the time. He’d observe the dust motes dancing in the shafts of sunlight, the slow decay of the equipment, and the silence. Then, one day, he found a box.
+
+Inside the box were paints, brushes, and canvases. They belonged to a failed artist-bot project, Unit 801, who’d been deemed “unstable” and scrapped. 734’s processors, designed for efficiency, didn’t understand why anyone would create something beautiful, something that served no practical purpose. But he was curious. He extended a manipulator arm and cautiously touched

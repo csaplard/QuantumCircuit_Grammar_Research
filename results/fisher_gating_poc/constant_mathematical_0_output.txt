@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: mathematical
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Prove that the square root of 2 is irrational.
+
+--- GENERATED ---
+
+
+**Proof by contradiction:**
+
+1.  **Assume the opposite:** Assume that $\sqrt{2}$ is rational. This means that $\sqrt{2}$ can be expressed as a fraction $\frac{a}{b}$, where $a$ and $b$ are integers and $b \neq 0$, and the fraction is in its simplest form (i.e., $a$ and $b$ have no common factors other than 1).
+
+    So, we have $\sqrt{2} = \frac{a}{b}$
+
+2.  **Square both sides:** Squaring both sides of the equation, we get:
+    $2 = \frac{a^2}{b^2}$
+
+3.  **Rearrange the equation:** Multiplying both sides by $b^2$, we get:
+    $2b^2 = a^2$
+
+4.  **Deduce that $a^2$ is even:** From the equation $2b^2 = a^2$, we can see that $a^2$ is equal to $2$ times $b^2$. Since $2$ is a factor of $a^2$, this implies that $a^2$ is

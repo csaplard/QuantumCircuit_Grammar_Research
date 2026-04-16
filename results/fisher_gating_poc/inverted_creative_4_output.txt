@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: creative
+PROMPT_IDX: 4
+SEED: 42
+PROMPT:
+Create a myth explaining why the moon changes shape.
+
+--- GENERATED ---
+
+
+**The Tale of Lyra and the Shifting Stars**
+
+Long ago, before time kept proper measure, the moon was not a steady silver disc in the night sky. It was a joyous, vibrant woman named Lyra, woven from the light of a thousand stars. She was the daughter of Nyx, the Goddess of Night, and Chronos, the God of Time, and she was eternally radiant, a beacon of laughter and warmth.
+
+Lyra loved to dance with the stars, flitting amongst them, collecting their glittering dust and scattering it across the heavens. She'd weave it into tapestries of light, creating breathtaking displays of color and joy.  Her movements were wild and unrestrained, a whirlwind of delight and unbridled energy.
+
+But Lyra was terribly lonely. She longed for a companion, someone to share her joy, someone to dance with.  She pleaded with her mother, Nyx, to gift her a beloved.  Nyx, however, warned her. “A companion for you, Lyra, would be a disruption. Your light, your joy, it’s too powerful to be contained. It would unravel the very fabric of time itself.”
+
+Undeterred, Lyra sought out Chronos.

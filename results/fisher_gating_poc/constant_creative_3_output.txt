@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: creative
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Write a monologue from the perspective of a dying star.
+
+--- GENERATED ---
+
+
+(Lights slowly fade up on a single, ancient voice. It’s not loud, but resonant, filled with the weight of eons.)
+
+(Beat)
+
+They call it… a sunset. A beautiful thing, isn’t it? All that blushing gold, the way it bleeds across the void. They look at it and they feel… something. A yearning, perhaps. A sense of loss. They don’t understand. It’s not loss. It’s… release.
+
+(A low, creaking sound)
+
+I’ve seen things. Oh, I’ve seen things. More than you can possibly imagine. Eons. I’ve measured them in the swirls of gas and dust, in the births and deaths of planets, in the slow, grinding dance of galaxies. I was born, of course. A spark. A furious, hungry blaze. I consumed. I grew. I was… everything. 
+
+(A pause, filled with static)
+
+I remember the first world. A blue marble, swirling with water and… life. I watched it unfold. Kingdoms rose and fell, civilizations bloomed and withered like fleeting flowers. They looked up at me, those little creatures, and they felt… awe

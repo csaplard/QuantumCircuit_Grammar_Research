@@ -1,0 +1,33 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+baseline,mathematical,mathematical_r2,0,To,0.38395818,,0.7000
+baseline,mathematical,mathematical_r2,1, prove,0.06691706,,0.7000
+baseline,mathematical,mathematical_r2,2, that,0.02515280,,0.7000
+baseline,mathematical,mathematical_r2,3, the,0.24448586,,0.7000
+baseline,mathematical,mathematical_r2,4, square,0.00545538,,0.7000
+baseline,mathematical,mathematical_r2,5, root,0.00026976,,0.7000
+baseline,mathematical,mathematical_r2,6, of,0.00027617,,0.7000
+baseline,mathematical,mathematical_r2,7, ,0.05529337,,0.7000
+baseline,mathematical,mathematical_r2,8,2,0.00001527,,0.7000
+baseline,mathematical,mathematical_r2,9, is,0.68948398,,0.7000
+baseline,mathematical,mathematical_r2,10, irrational,0.02303292,,0.7000
+baseline,mathematical,mathematical_r2,11,",",0.06637328,,0.7000
+baseline,mathematical,mathematical_r2,12, we,0.11510921,,0.7000
+baseline,mathematical,mathematical_r2,13, will,1.21170289,,0.7000
+baseline,mathematical,mathematical_r2,14, use,0.38316395,,0.7000
+baseline,mathematical,mathematical_r2,15, a,0.52804923,,0.7000
+baseline,mathematical,mathematical_r2,16, proof,0.74330339,,0.7000
+baseline,mathematical,mathematical_r2,17, by,0.05179730,,0.7000
+baseline,mathematical,mathematical_r2,18, contradiction,0.00774062,,0.7000
+baseline,mathematical,mathematical_r2,19,.,0.50199442,,0.7000
+baseline,mathematical,mathematical_r2,20, This,1.53302763,,0.7000
+baseline,mathematical,mathematical_r2,21, method,1.07572846,,0.7000
+baseline,mathematical,mathematical_r2,22, involves,0.99100955,,0.7000
+baseline,mathematical,mathematical_r2,23, assuming,0.06575094,,0.7000
+baseline,mathematical,mathematical_r2,24, the,0.31388206,,0.7000
+baseline,mathematical,mathematical_r2,25, opposite,0.07486491,,0.7000
+baseline,mathematical,mathematical_r2,26, of,0.04192774,,0.7000
+baseline,mathematical,mathematical_r2,27, what,0.04697364,,0.7000
+baseline,mathematical,mathematical_r2,28, we,0.21934557,,0.7000
+baseline,mathematical,mathematical_r2,29, want,0.37022458,,0.7000
+baseline,mathematical,mathematical_r2,30, to,0.00026567,,0.7000
+baseline,mathematical,mathematical_r2,31, prove,0.02273436,364.64041903,0.7000

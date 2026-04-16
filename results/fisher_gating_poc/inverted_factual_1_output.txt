@@ -1,0 +1,30 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: factual
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Describe how photosynthesis works in plants.
+
+--- GENERATED ---
+
+
+Photosynthesis is the remarkable process by which plants, algae, and some bacteria convert light energy into chemical energy in the form of sugars. It's essential for life on Earth because it produces the oxygen we breathe and forms the base of most food chains. Here's a breakdown of how it works:
+
+**1. The Basics: Ingredients and Equation**
+
+*   **Ingredients:**
+    *   **Carbon Dioxide (CO2):** Absorbed from the air through tiny pores on leaves called stomata.
+    *   **Water (H2O):** Absorbed from the soil through the roots and transported to the leaves.
+    *   **Sunlight:**  The energy source.
+*   **Equation:**  The overall chemical equation for photosynthesis is:
+
+    6CO2 + 6H2O + Sunlight → C6H12O6 + 6O2
+    (Carbon Dioxide + Water + Sunlight → Glucose + Oxygen)
+
+**2. The Two Main Stages**
+
+Photosynthesis occurs in two main stages, both happening within chloroplasts, organelles found inside plant cells:
+
+*   **a) Light-Dependent Reactions (The "Photo" part):**  These reactions *require* light.
+

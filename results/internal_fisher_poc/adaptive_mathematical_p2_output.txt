@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: mathematical
+PROMPT_IDX: 2
+PROMPT:
+Derive the quadratic formula from a x^2 + b x + c = 0 by completing the square.
+
+--- GENERATED ---
+
+
+To derive the quadratic formula, we start with the general quadratic equation:
+$$ax^2 + bx + c = 0$$
+where $a, b, c$ are constants and $a \neq 0$.
+
+Divide the equation by $a$ to make the coefficient of $x^2$ equal to 1:
+$$x^2 + \frac{b}{a}x + \frac{c}{a} = 0$$
+
+Now, we want to complete the square on the left side. We take half of the coefficient of the $x$ term, which is $\frac{b}{2a}$, and square it, which is $\left(\frac{b}{2a}\right)^2 = \frac{b^2}{4a^2}$.
+Add this to both sides of the equation:
+$$x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = \frac{b^2}{4a^2}$$
+The left side is now a perfect square trinomial:
+$$\left(x + \frac{b}{2a}\right)^2 = \frac{b^2}{4a^2

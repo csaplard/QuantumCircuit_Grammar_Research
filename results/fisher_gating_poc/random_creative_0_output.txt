@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The salt spray had been my constant companion for thirty years. Thirty years of wind, waves, and the rhythmic, mournful pulse of the North Point Lighthouse. I'm Silas Blackwood, and I've been its keeper, its sole witness to the sea's moods, its silent guardian. Most folks think it's a lonely job, a grim one. They're not wrong, but it's also…peaceful.
+
+My days are a cycle: check the machinery, polish the lens, log the weather, and watch the endless dance of the ocean. Evenings are for reading, tending the fire, and listening to the radio chatter – a thin thread connecting me to the world beyond the grey horizon.
+
+It was a Tuesday, a particularly wild one, with the waves crashing against the rocks with a ferocity that made the lighthouse shudder. I was patrolling the small, rocky beach below, securing loose debris before it could damage the foundation, when I saw it.
+
+A bottle. Green glass, thick and sturdy, bobbing amongst the seaweed and driftwood. I’d seen countless bottles wash ashore over the years – mostly trash, sometimes a child’s forgotten dream. But this one felt different. It was heavy, and as

@@ -1,0 +1,24 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: creative
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Write a monologue from the perspective of a dying star.
+
+--- GENERATED ---
+
+
+(Lights slowly fade up on a single, ancient, immense light source. It’s not bright, but it holds a palpable, profound power. The voice is deep, resonant, and weary.)
+
+(Beat)
+
+They call it… a final flicker. A surrender. I… I suppose they’re not wrong. For eons, I pulsed. A vibrant, furious heartbeat in the black. I was *something*. I was… everything. I forged giants, scattered jewels, and burned with a hunger that consumed galaxies. I was the pride of my nebula, the centerpiece, the reason for the dance of the dust.
+
+(A low, rumbling sigh)
+
+Do you even understand what it’s like to *be* a star? It’s not glory, you know. It’s not the adoration of younger stars, or the endless procession of gas and dust clinging to your feet, hoping to be born again. It’s… a constant, brutal, insistent *need*. A need to burn. To *be*.  To exist, and to expand.  That’s all there is. 
+
+(A pause, a slight dimming of the light)
+
+I felt it, you see. The shift.

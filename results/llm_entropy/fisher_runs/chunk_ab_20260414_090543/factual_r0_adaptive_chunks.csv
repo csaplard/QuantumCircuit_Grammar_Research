@@ -1,0 +1,2 @@
+mode,regime,run_id,chunk_idx,temp_before,fisher_after_chunk,decision
+adaptive,factual,factual_r0,0,1.0000,473.63901770,up

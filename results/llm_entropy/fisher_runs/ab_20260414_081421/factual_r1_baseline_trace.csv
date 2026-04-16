@@ -1,0 +1,2 @@
+mode,regime,run_id,step,token,entropy,fisher_trace
+baseline,factual,factual_r1,0,Mer,0.71478402,

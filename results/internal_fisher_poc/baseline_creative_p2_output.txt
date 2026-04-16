@@ -1,0 +1,17 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 2
+PROMPT:
+Write a short story about an old clockmaker searching for a missing pocket watch.
+
+--- GENERATED ---
+
+
+Silas Blackwood, a man weathered like an ancient oak, ran a clock shop that smelled perpetually of oiled gears and polished brass. The shop, “Blackwood’s Time,” was a haven for collectors, repairmen, and those who simply valued the rhythm of a ticking second. Silas himself was a legend, a master craftsman who could coax life back into the most stubborn of timepieces. But lately, a shadow had fallen over his world - a missing pocket watch.
+
+It wasn't just any watch. It was the Chronos, a gold-plated marvel commissioned by a wealthy merchant, Mr. Beaumont, decades ago. Silas had painstakingly built it, a testament to his skill and a personal pride. Now, it was gone. Stolen, he suspected, during a recent, chaotic delivery to Beaumont’s estate.
+
+“Damn fool delivery boy,” he muttered, tracing the outline of the empty space on his workbench. He'd been certain it was there, nestled amongst the tools. Now, only a lingering scent of expensive cologne remained.
+
+The police had dismissed it as a simple robbery, but Silas knew better. The Chronos wasn’t just a timepiece; it was a complex mechanism of interlocking gears, miniature escapements, and

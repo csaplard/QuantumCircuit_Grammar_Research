@@ -1,0 +1,29 @@
+MODEL: google/gemma-3-4b-it
+MODE: constant
+REGIME: factual
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Explain how a combustion engine works step by step.
+
+--- GENERATED ---
+
+
+A combustion engine, also known as an internal combustion engine, converts chemical energy (from fuel) into mechanical energy (to move a vehicle). Here's a breakdown of how it works, step by step, typically in a four-stroke engine (the most common type):
+
+**1. Intake Stroke:**
+
+*   **Piston Movement:** The piston moves *down* inside the cylinder.
+*   **Valve Action:** The intake valve opens.
+*   **What Happens:** A vacuum is created in the cylinder as the piston descends. This vacuum sucks in a mixture of air and fuel (gasoline or diesel) into the cylinder.  This is where the engine 'breathes in'.
+
+**2. Compression Stroke:**
+
+*   **Piston Movement:** The piston moves *up* inside the cylinder.
+*   **Valve Action:** Both the intake and exhaust valves are closed.
+*   **What Happens:** The piston compresses the air-fuel mixture, reducing its volume and increasing its pressure and temperature.  This compression is crucial for efficient combustion.
+
+**3. Combustion (Power) Stroke:**
+
+*   **Piston Movement:** The piston is forced *down* by the high-pressure air-fuel mixture.
+

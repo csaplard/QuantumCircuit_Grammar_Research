@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: creative
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Describe a city that exists entirely underwater.
+
+--- GENERATED ---
+
+
+**The City of Aethel:**
+
+Aethel doesn't rise from the ocean; it *is* the ocean. Constructed over centuries by the descendants of a group of brilliant, desperate engineers and biologists, it’s not a city built on the seabed, but a city woven into the currents, a bioluminescent, symbiotic marvel of glass, coral, and living organisms.
+
+**Structure & Architecture:**
+
+*   **The Shell:** The city is contained within a massive, triple-layered shell of reinforced, self-healing bio-glass. This shell is partially transparent, allowing filtered sunlight to penetrate and providing a soft, diffused glow throughout the lower levels.
+*   **Coral Keeps:** The majority of the city is built using cultivated, incredibly strong coral formations. These 'Coral Keeps' are shaped and molded by specialized bio-engineers into spiraling towers, interconnected chambers, and sprawling, organic structures. They glow with bioluminescent algae, shifting colours with the seasons and moods of the city.
+*   **Kinetic Pathways:** Instead of streets, Aethel has a network of ‘Kinetic Pathways’ – streams of intensely cultivated, fast-growing kelp that pulse with a gentle current, forming waterways and pathways for transport. Small

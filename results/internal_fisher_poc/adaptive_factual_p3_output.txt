@@ -1,0 +1,28 @@
+MODEL: google/gemma-3-4b-it
+MODE: adaptive
+REGIME: factual
+PROMPT_IDX: 3
+PROMPT:
+Explain how a CPU executes machine instructions.
+
+--- GENERATED ---
+
+
+The Central Processing Unit (CPU) is the brain of a computer, responsible for executing instructions that tell the computer what to do. Here's a breakdown of how it executes machine instructions, broken down into stages:
+
+**1. The Instruction Set:**
+
+* **Machine Code:** The CPU operates on machine code, which is a sequence of binary digits (0s and 1s) representing instructions. These instructions are specific to the CPU architecture (e.g., x86, ARM).
+* **Instruction Set Architecture (ISA):**  This defines the set of instructions a CPU can understand.  It includes things like:
+    * **Arithmetic Instructions:**  Add, subtract, multiply, divide.
+    * **Logic Instructions:**  AND, OR, NOT.
+    * **Data Transfer Instructions:** Load data from memory, store data to memory.
+    * **Control Flow Instructions:**  Jump, branch, call.
+
+
+**2. The Fetch-Decode-Execute Cycle (Instruction Cycle):**
+
+The CPU constantly repeats a cycle to execute instructions.  Here's how it works:
+
+* **Fetch:**
+    * The CPU's **Program Counter (PC)** holds the address of the next instruction to be executed

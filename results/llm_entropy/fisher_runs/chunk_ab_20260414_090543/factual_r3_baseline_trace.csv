@@ -1,0 +1,19 @@
+mode,regime,run_id,step,token,entropy,fisher_trace,temperature
+baseline,factual,factual_r3,0,Mer,0.70401207,,0.7000
+baseline,factual,factual_r3,1,cury,0.00002893,,0.7000
+baseline,factual,factual_r3,2,",",0.10553704,,0.7000
+baseline,factual,factual_r3,3, Venus,0.00067375,,0.7000
+baseline,factual,factual_r3,4,",",0.00003215,,0.7000
+baseline,factual,factual_r3,5, Earth,0.00041680,,0.7000
+baseline,factual,factual_r3,6,",",0.00011002,,0.7000
+baseline,factual,factual_r3,7, Mars,0.00179078,,0.7000
+baseline,factual,factual_r3,8,",",0.00122496,,0.7000
+baseline,factual,factual_r3,9, Jupiter,0.00052522,,0.7000
+baseline,factual,factual_r3,10,",",0.00007005,,0.7000
+baseline,factual,factual_r3,11, Saturn,0.00009456,,0.7000
+baseline,factual,factual_r3,12,",",0.00007761,,0.7000
+baseline,factual,factual_r3,13, Uran,0.00066710,,0.7000
+baseline,factual,factual_r3,14,us,0.00000660,,0.7000
+baseline,factual,factual_r3,15,",",0.00065069,,0.7000
+baseline,factual,factual_r3,16, Neptune,0.00668969,,0.7000
+baseline,factual,factual_r3,17,.,0.34447707,,0.7000

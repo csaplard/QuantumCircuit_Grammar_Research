@@ -1,0 +1,25 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: mathematical
+PROMPT_IDX: 3
+SEED: 42
+PROMPT:
+Show that the sum of angles in a triangle is 180 degrees.
+
+--- GENERATED ---
+
+
+**Proof:**
+
+Let $\triangle ABC$ be a triangle.
+We want to show that $\angle A + \angle B + \angle C = 180^\circ$.
+
+1.  **Draw a line parallel to the base.**
+    Draw a line $l$ parallel to the base $BC$ of $\triangle ABC$ such that it passes through vertex $A$.
+
+2.  **Consider the angles.**
+    Let's examine the angles formed when line $l$ intersects the triangle.
+    *   At vertex $A$, the line $l$ intersects the side $AB$ at a point $D$ and the side $AC$ at a point $E$.
+    *   The angle $\angle DAE$ is equal to the angle $\angle A$ because they are corresponding angles formed by the line $l$ and the transversal $AB$.
+    *   The angle $\angle BAE$ is equal to the angle $\angle B$ because they are corresponding angles formed by the line $l$ and the transversal $AC$.
+    *   The angle $\angle BAC$ is equal to the angle $\angle DAE$ (which is equal to $\angle A$) because they are corresponding angles

@@ -1,0 +1,40 @@
+MODEL: google/gemma-3-4b-it
+MODE: baseline
+REGIME: creative
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Write a poem about the last tree on Earth.
+
+--- GENERATED ---
+
+
+The dust remembers, a rust-colored haze,
+A film upon the sun, a mournful glaze.
+The wind whispers tales of a greener age,
+Of forests deep, a vibrant, leafy stage.
+
+Now, just one stands, a sentinel of stone,
+A twisted silhouette, utterly alone.
+Its bark is scarred with battles, slow and deep,
+A silent witness to a world asleep.
+
+Roots claw at earth, a desperate, clinging plea,
+For moisture, for life, for what used to be.
+The branches reach, a skeletal embrace,
+Toward a sky devoid of solace or grace.
+
+It remembers rain, a fragrant, cooling shower,
+The songs of birds, a joyous, vibrant power.
+It remembers sunlight, dappled and bright,
+A world of color, bathed in golden light.
+
+The leaves, if they remain, are brittle and brown,
+Each one a memory, slowly falling down.
+A single tear, a droplet of ancient pain,
+As it sighs, “I am the last, and I remain.”
+
+No seeds it offers, no future to impart,
+Just a lonely vigil, a heartbroken heart.
+A testament to loss, a somber decree,
+The

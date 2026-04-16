@@ -1,0 +1,22 @@
+MODEL: Qwen/Qwen2.5-Coder-1.5B-Instruct
+MODE: adaptive
+REGIME: factual
+PROMPT:
+Explain the causes and consequences of World War I.
+
+--- GENERATED ---
+ World War I, also known as the Great War, was a global conflict that lasted from 1914 to 1918. It had many causes and had many consequences.
+
+Causes:
+
+1. Political instability: The Treaty of Versailles, which ended World War I, forced Germany to pay a large amount of money and indemnify war damages. This led to increased political instability in Germany, which in turn led to economic problems and social unrest.
+
+2. Economic conflicts: Many countries were trying to expand their economies and industrialize. This led to tensions between countries, particularly in Europe. For example, the United States was trying to expand its influence in the Pacific, while Germany was trying to expand its influence in Europe.
+
+3. Religious conflicts: Many countries were struggling with religious differences. This led to tensions between countries, particularly in Europe. For example, the United States was trying to expand its influence in the Pacific, while Germany was trying to expand its influence in Europe.
+
+Consequences:
+
+1. Military: World War I was a major military conflict. Many countries were engaged in combat, which led to the deaths of millions of people. The war also led to the development of new weapons and tactics.
+
+2. Economics: World War I had a significant

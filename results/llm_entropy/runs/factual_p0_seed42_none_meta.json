@@ -1,32 +1,236 @@
 {
-  "backend": "llama-server",
+  "backend": "ollama",
   "regime": "factual",
   "prompt_index": 0,
   "prompt": "List the capital cities of European Union member states. Be concise, one per line.",
   "model": "qwen2.5-coder:7b",
-  "llama_server_url": "http://127.0.0.1:8080",
+  "llama_server_url": null,
   "temperature": 0.5,
-  "fixed_tokens": 10000,
-  "chunk_tokens": null,
+  "fixed_tokens": 512,
+  "chunk_tokens": 128,
   "top_logprobs": 15,
   "seed": 42,
-  "continuation_rounds": 1,
+  "continuation_rounds": 35,
   "round_meta": [
     {
       "round": 1,
-      "n_logprobs": 10000,
-      "stop_type": "limit",
-      "truncated": false
+      "done_reason": "stop",
+      "eval_count": 71,
+      "n_logprobs": 70
+    },
+    {
+      "round": 2,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 3,
+      "done_reason": "stop",
+      "eval_count": 24,
+      "n_logprobs": 23
+    },
+    {
+      "round": 4,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 5,
+      "done_reason": "stop",
+      "eval_count": 10,
+      "n_logprobs": 9
+    },
+    {
+      "round": 6,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 7,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 8,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 9,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 10,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 11,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 12,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 13,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 14,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 15,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 16,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 17,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 18,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 19,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 20,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 21,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 22,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 23,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 24,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 25,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 26,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 27,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 28,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 29,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 30,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 31,
+      "done_reason": "stop",
+      "eval_count": 31,
+      "n_logprobs": 30
+    },
+    {
+      "round": 32,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 33,
+      "done_reason": "stop",
+      "eval_count": 26,
+      "n_logprobs": 25
+    },
+    {
+      "round": 34,
+      "done_reason": "load",
+      "n_logprobs": 0,
+      "note": "empty logprobs; retry 1/4 with prompt nudge"
+    },
+    {
+      "round": 35,
+      "done_reason": "length",
+      "eval_count": 25,
+      "n_logprobs": 25
     }
   ],
-  "actual_tokens": 10000,
+  "actual_tokens": 512,
   "truncated_before_target": false,
-  "clear_stop_sequences": null,
-  "ollama_raw": null,
+  "clear_stop_sequences": true,
+  "ollama_raw": false,
   "num_ctx": null,
-  "stop_type": "limit",
+  "stop_type": null,
   "repetition_events": [],
-  "response_excerpt": " Brussels\nBerlin\nMadrid\nRome\nParis\nVienna\nAmsterdam\nAthens\nBucharest\nDublin\nHelsinki\n Lisbon\nLuxembourg\nOslo\nPrague\nWarsaw\nZagreb\nStockholm\nBratislava\nBudapest\nPrague\nRiga\nSofia\nTallinn\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgorica\nTbilisi\nTiraspol\nVaduz\nVienna\nZurich\nMinsk\nPodgo",
+  "response_excerpt": "Brussels  \nVienna  \nBerlin  \nRome  \nMadrid  \nParis  \nAmsterdam  \nWarsaw  \nPrague  \nOslo  \nBucharest  \nBelgrade  \nPodgorica  \nSkopje  \nLisbon  \nAthens  \nBudapest  \nDublin  \nHelsinki  \nLuxembourg  \nStockholm  \nBratislavaI'm sorry, I didn't understand your question. Can you please provide more context or ask a different question?Hello! How can I assist you today?It seems like there might be an issue with your request. Could you please provide more details or ask a specific question so I can assist you better?Hello! How can I assist you today? If you have any questions or need information, feel free to let me know.It looks like there might be an issue with your input. Could you please provide more details or ask a specific question so I can assist you better?Hello! How can I assist you today? ",
   "control": "none",
-  "n_steps": 10000
+  "n_steps": 512
 }

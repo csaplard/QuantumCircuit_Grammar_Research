@@ -1,0 +1,174 @@
+% Auto-generated from preprint v2 text + editorial corrections (repository, April 2026).
+% pdflatex paper5_fisher_path_speed_v2_generated.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin=2.3cm]{geometry}
+\setlength{\parskip}{0.35em}
+\renewcommand{\baselinestretch}{1.05}
+
+\title{Exponential Relaxation of Fisher Path Speed on the Statistical Manifold of Learned Transition Matrices\texorpdfstring{\\[0.3em]\large Numerical Evidence from Quantum Processors}{: Numerical Evidence from Quantum Processors}}
+\author{Daniel Cs\'apl\'ar\\[0.5em]
+\small Independent Researcher, Kazincbarcika, Hungary\\
+\small ORCID: \texttt{0009-0000-7362-7232}}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+\noindent\small\textit{Continuation of} Grammar Fingerprinting (\texttt{doi:10.5281/zenodo.19158088}), Fisher Information Threshold Study (\texttt{doi:10.5281/zenodo.19391582}), LLM Grammar Fingerprinting (\texttt{doi:10.5281/zenodo.19454201}), \textit{and} Curvature at the Fisher Threshold (Research Note, April 2026).
+
+\begin{abstract}
+We study the dynamics of learned transition matrices on the Fisher--Rao statistical manifold as a function of data length $N$, using the Grammar Fingerprinting pipeline applied to 28 Google Sycamore quantum processor readout configurations. By computing the Fisher path speed---the rate of change of the transition matrix $T(N)$ on the manifold, measured via the Fisher information metric---we show that the speed decays exponentially, $v(N)=v_\infty+A\exp(-N/\tau)$. The exponential model is preferred (lower AIC) in 25--26 of 28 readouts for each alphabet size $K\in\{5,7,9\}$ (26/28 at $K{=}5$, 25/28 at $K{=}7$, 25/28 at $K{=}9$). The relaxation timescale $\tau$ is systematically larger than the Fisher trace threshold $N^\ast$ by $\tau/N^\ast\approx 3.2$ (median). Within each fixed $K$, the product $A\times\tau$ is stable across hardware topologies among exponential-fit readouts: at $K{=}7$ topology-wise medians agree within $\sim$2\% and topology-level CV ranges from 0.13 (Bulk) to 0.23 (Snake; Table~\ref{tab:atau}); qualitatively similar patterns hold at $K{=}5$ and $K{=}9$ (CV $\sim$0.07--0.22 on $A\times\tau$ within topology). Across $\{5,7,9\}$, medians of $A\times\tau$ follow $A\times\tau\approx 21.5\,K^{0.57}$ with residuals below 1.4\%. We compare the Fisher speed profile with the macroscopicity threshold of Coppo, Pranzini and Verrucchi (2022): both exhibit exponential decay with logarithmic threshold dependence on a tolerance parameter. The Grammar Fingerprinting threshold $N^\ast$ and the Coppo threshold $N_t$ are identified as two distinct points on the same exponential curve---structure onset ($\sim$27\% decay) versus classical completion ($\sim$95\% decay). The formal derivation of this correspondence remains an open problem.
+\end{abstract}
+
+\section{Introduction}
+The Grammar Fingerprinting methodology (Csapl\'ar, 2026a) established that quantum processor readout sequences carry statistically learnable temporal structure, detectable via the Fisher information trace of a SAX-discretized, LSTM-learned transition matrix. The Fisher Information Threshold Study (Csapl\'ar, 2026b) showed that a data-length threshold $N^\ast$ exists below which no reliable structure is detectable, and that this threshold is consistent across 28 Sycamore readout configurations, 3 LSTM seeds, and broadly aligned with the $\sim$8{,}000-point classification threshold from supervised experiments. The LLM extension (Csapl\'ar, 2026c) demonstrated domain agnosticism: the same pipeline detects temporal grammar in large language model entropy series with signal-to-noise ratios of 2.2--263$\times$. The Curvature Research Note (Csapl\'ar, 2026d) introduced a second characteristic scale $N_{\mathrm{curv}}$ (the maximum of $|d^2\mathrm{Tr}(F)/dN^2|$) and conjectured a geometric phase transition on the statistical manifold at the threshold.
+
+All prior work analyzed the Fisher trace $\mathrm{Tr}(F)$---a scalar summary of the learned transition matrix $T(N)$. The present study moves beyond scalars to the geometry of the full transition matrix manifold. We compute the saved $T(N)$ matrices for all (readout, $N$) pairs, embed them in the Fisher--Rao manifold of row-stochastic matrices, and measure the Fisher path speed: the norm of the manifold velocity $dT/dN$, evaluated in the Fisher information metric. This provides a direct, geometry-aware measure of how rapidly the learned grammar changes as data accumulates.
+
+We find that the Fisher path speed decays exponentially in $N$, with a characteristic timescale $\tau$ that is robust across topologies. The product $A\times\tau$ (amplitude times timescale) is an empirical summary within a given $K$, and scales approximately as a power law across $K$. We compare this relaxation profile with the macroscopicity threshold of Coppo, Pranzini and Verrucchi (2022), who derived the minimum system size $N_t$ for the emergence of classical-like behavior in the Page--Wootters mechanism via generalized coherent state discrimination.
+
+\section{Methods}
+\subsection{Transition matrix extraction and storage}
+The Grammar Fingerprinting pipeline (SAX alphabet $K$, LSTM \texttt{hidden\_dim}${}=32$, \texttt{seq\_len}${}=16$, \texttt{epochs}${}=50$) is applied to each of the 28 Sycamore readout configurations on a data-length grid of 15 points ($N=500,1000,2000,\ldots,40000$). For each (readout, $N$) pair, the $K\times K$ row-stochastic transition matrix $T(N)$ is saved, yielding 420 matrices per $K$ value. Three alphabet sizes are tested: $K\in\{5,7,9\}$.
+
+Here $d=K(K-1)$ counts the total number of free coordinates in the row-stochastic model: each of the $K$ rows lies on a $(K-1)$-simplex, and the Fisher--Rao metric is taken with respect to the product of these $K$ simplices (block-diagonal Fisher information). Thus $d\in\{20,42,72\}$ for $K\in\{5,7,9\}$.
+
+\subsection{Fisher--Rao embedding}
+Each row of $T(N)$ defines a point on the $(K-1)$-simplex. The Fisher information metric on the multinomial simplex in free coordinates $\theta=(p_1,\ldots,p_{K-1})$ is $G_{ab}=\delta_{ab}/p_a+1/p_K$. The full $K\times K$ transition matrix lives on a product of $K$ such simplices, giving a $d$-dimensional Riemannian manifold with block-diagonal Fisher metric. Two manifold quantities are computed for each (readout, $N$) pair: $\log\det G(N)$ (log-determinant of the Fisher metric tensor at $T(N)$), and \texttt{fisher\_speed\_dn} (Fisher path speed $\|d\theta/dN\|_G$, estimated via finite differences between consecutive $T(N)$ matrices).
+
+\subsection{Exponential relaxation fit}
+For each readout, the Fisher speed profile $v(N)$ is fitted to two models: exponential $v=v_\infty+A\exp(-N/\tau)$, and power law $v=v_\infty+aN^{-b}$. Model selection is by AIC. The product $A\times\tau$ is recorded for each readout. The grammar threshold $N^\ast$ is taken from the Fisher trace maximum on the same $N$-grid.
+
+\section{Results}
+\subsection{Exponential dominance}
+The exponential model is preferred (lower AIC) in 25--26 of 28 readouts for all three $K$ values: 26/28 at $K{=}5$, 25/28 at $K{=}7$, 25/28 at $K{=}9$. The Fisher path speed universally shows high values at small $N$ (rapid exploration of the manifold) followed by monotonic decay toward a near-zero asymptote.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.92\linewidth}\centering\vspace{2.2cm}
+\textit{[Figure 1 placeholder]} Fisher path speed (blue) and $\log\det G$ (red) vs.\ $N$ for 28 readouts ($K{=}7$). Dashed vertical lines: $N^\ast$.
+\vspace{2.2cm}\end{minipage}}
+\caption{Fisher path speed (left axis) and $\log\det G$ (right axis) versus $N$ for all 28 Sycamore readout configurations ($K{=}7$). Dashed vertical lines indicate $N^\ast$.}
+\end{figure}
+
+\subsection{Relaxation timescale and threshold}
+At $K{=}7$, the median relaxation timescale is $\tau\approx 22{,}400$ (range 13{,}800--39{,}700). The ratio $\tau/N^\ast$ has median 3.22, meaning $N^\ast$ sits at $N^\ast/\tau\approx 0.31$ on the exponential curve---where only $\sim$27\% of the total decay has occurred. $N^\ast$ thus marks the onset of detectable structure, not the completion of relaxation.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.92\linewidth}\centering\vspace{2.0cm}
+\textit{[Figure 2 placeholder]} Phase-transition style panels (trace, KL, entropy, Frobenius).
+\vspace{2.0cm}\end{minipage}}
+\caption{Fisher information phase transition analysis for 28 Sycamore readouts ($K{=}7$).}
+\end{figure}
+
+\subsection{$A\times\tau$ stability within $K$}
+\begin{table}[htbp]
+\centering
+\caption{$A\times\tau$ across topologies ($K{=}7$, Sycamore, exponential-fit readouts only).}\label{tab:atau}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Topology & $n$ & Median $A{\times}\tau$ & Std & CV \\
+\midrule
+1D Snake & 6 & 66.04 & 15.32 & 0.23 \\
+2D Block & 13 & 65.87 & 9.70 & 0.15 \\
+Bulk Full & 6 & 64.95 & 8.47 & 0.13 \\
+\midrule
+All & 25 & 65.87 & 10.73 & 0.16 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:atau} summarizes $A\times\tau$ for $K{=}7$. The median is 65.87 across all 25 exponential-fit readouts. The three topologies agree within $\sim$2\% in median $A\times\tau$: 1D Snake 66.04, 2D Block 65.87, Bulk Full 64.95. This suggests that $A\times\tau$ is largely a property of the manifold geometry and the learning pipeline, not of the physical hardware topology.
+
+For $K{=}5$ (26 exponential-fit readouts) topology-level medians of $A\times\tau$ are 54.13 (Snake, $n{=}7$), 49.00 (Block, $n{=}13$), and 56.79 (Bulk, $n{=}6$), with CV$=$std/median of 0.22, 0.16, and 0.11. For $K{=}9$ (25 exponential-fit readouts) the corresponding medians are 75.31, 73.50, and 74.30 ($n{=}7,13,5$) with CV 0.16, 0.17, and 0.07. Thus within-$K$ stability is not special to $K{=}7$; Snake rows are typically slightly noisier than Bulk in this CV sense.
+
+\subsection{Power law scaling across $K$}
+\begin{table}[htbp]
+\centering
+\caption{$A\times\tau$ scaling across $K$ (28 Sycamore readouts; exponential fits).}\label{tab:scaling}
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+$K$ & $d{=}K(K{-}1)$ & $n_{\mathrm{exp}}$ & Median $A{\times}\tau$ & Pred.$^\ast$ & Error \\
+\midrule
+5 & 20 & 26 & 53.32 & 53.64 & 0.6\% \\
+7 & 42 & 25 & 65.87 & 64.94 & 1.4\% \\
+9 & 72 & 25 & 74.30 & 74.90 & 0.8\% \\
+\bottomrule
+\end{tabular}\\[0.4em]
+{\small $^\ast$Power law $A\times\tau = 21.5\,K^{0.57}$ fit to the three medians; all residuals $<1.4\%$.}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.92\linewidth}\centering\vspace{1.8cm}
+\textit{[Figure 3 placeholder]} Median $\pm$ std of $A\times\tau$ vs.\ $K$ with power-law overlay.
+\vspace{1.8cm}\end{minipage}}
+\caption{$A\times\tau$ (median $\pm$ std across readouts) versus $K\in\{5,7,9\}$.}
+\end{figure}
+
+\subsection{LLM entropy series (exploratory)}
+The same analysis applied to LLM entropy time series (Qwen2.5-Coder:7B, $K{=}7$, twelve conditions) yields noisier profiles: the power-law tail model is preferred by AIC in \emph{all twelve} conditions, consistent with multi-scale temporal structure documented in the Curvature Research Note. We therefore do not treat exponential sub-parameters ($\tau$, $A$, hence $A\times\tau$) as primary estimands for LLMs; the reported median $A\times\tau\approx 91.5$ ($p{=}0.11$ vs.\ 65.97) is exploratory only and is excluded from the main Sycamore scaling analysis.
+
+\section{Comparison with the Coppo--Pranzini--Verrucchi threshold}
+\subsection{The macroscopicity threshold}
+Coppo, Pranzini and Verrucchi (2022) derived a threshold system size $N_t(\varepsilon,\delta)$ beyond which a quantum system admits a classical-like description via generalized coherent state (GCS) discrimination. For the $\mathfrak{su}(2)$ case: $N_t=\ln(\varepsilon)/\ln[\cos(\delta/2)]$, where $\varepsilon$ is a tolerance and $\delta$ is experimental resolution. The GCS overlap decays exponentially in $N$.
+
+\subsection{Functional form comparison}
+The overlap speed is a pure exponential in the Coppo construction; Grammar Fingerprinting uses $v(N)=v_\infty+A\exp(-N/\tau)$. Both are exponential relaxations with a single characteristic timescale. Threshold dependence on tolerance is logarithmic in both constructions.
+
+\subsection{Two thresholds on one curve}
+The Grammar Fingerprinting threshold $N^\ast$ sits at $N^\ast/\tau\approx 0.31$ (onset of structure). The Coppo threshold $N_t$ (at $\varepsilon=0.22$, their example) sits at $N_t/\tau\approx 3.03$ (classical completion). Their ratio is $N_t/N^\ast\approx 9.7$ for $\varepsilon=0.22$.
+
+\begin{figure}[htbp]
+\centering
+\fbox{\begin{minipage}{0.92\linewidth}\centering\vspace{1.6cm}
+\textit{[Figure 4 placeholder]} Normalized decay with $N^\ast$ and $N_t$ markers.
+\vspace{1.6cm}\end{minipage}}
+\caption{Normalized exponential decay $v/v_0=\exp(-N/\tau)$ with $N^\ast$ and $N_t$ marked.}
+\end{figure}
+
+\subsection{What matches, what does not}
+The functional form (exponential relaxation $\rightarrow$ logarithmic threshold dependence) matches at a qualitative level. The within-$K$ stability of $A\times\tau$ across hardware topologies mirrors the algebra-independence of the Coppo $\varepsilon$-dependence (always proportional to $\ln\varepsilon$). However, the Coppo invariant $A_C\times\tau_C=1/2$ on $S^2$ does not hold for Grammar Fingerprinting ($A\times\tau\approx 66$ at $K{=}7$, scaling $\propto K^{0.57}$ across the three $K$ values). This is expected: Coppo et al.\ work on the SU(2) coherent-state manifold $S^2$, while Grammar Fingerprinting operates on a product of $(K{-}1)$-simplices. The correspondence is structural (shared functional form and threshold logic), not parametric.
+
+\section{Discussion}
+The main finding is universal relaxation of the learned transition matrix toward a fixed point on the Fisher--Rao manifold, exponentially in $N$, with $\tau$ systematically $\sim$3$\times$ larger than the Fisher trace threshold $N^\ast$. The product $A\times\tau$ is an empirical pipeline summary at fixed $K$, largely insensitive to hardware topology (Table~\ref{tab:atau} and the $K{=}5,9$ paragraph above), and scales sublinearly in $K$ over $\{5,7,9\}$.
+
+The Coppo comparison supplies a theoretical frame: exponential distinguishability decay and logarithmic tolerance thresholds. Whether the analogy reflects a deeper formal connection remains open.
+
+The sublinear $K$-scaling ($A\times\tau\sim K^{0.57}$) requires further investigation: three $K$ values identify sublinearity but not a unique functional form. Additional $K$ values would test robustness of the exponent.
+
+\section{Summary}
+\begin{enumerate}\setlength{\itemsep}{0.15em}
+\item Fisher path speed decays exponentially in $N$, with the exponential model preferred in 25--26/28 readouts for each $K\in\{5,7,9\}$.
+\item $\tau$ is systematically $\sim$3.2$\times$ larger than $N^\ast$, placing $N^\ast$ at the onset ($\sim$27\% decay) of exponential relaxation.
+\item $A\times\tau$ is stable across hardware topologies within each fixed $K$ among exponential-fit readouts (Table~\ref{tab:atau} at $K{=}7$; qualitatively similar at $K{\in}\{5,9\}$). Across $\{5,7,9\}$, median $A\times\tau$ scales as $21.5\,K^{0.57}$ (residuals $<1.4\%$; Table~\ref{tab:scaling}).
+\item The exponential relaxation form parallels the Coppo--Pranzini--Verrucchi macroscopicity construction; $N^\ast$ and $N_t$ mark different milestones on a decay curve.
+\item A formal bridge between Fisher--Rao geometry of transition matrices and the Page--Wootters mechanism remains an open problem.
+\end{enumerate}
+
+\section*{References}
+\small
+\begin{itemize}\setlength{\itemsep}{0.1em}
+\item Amari, S.\ (1985). \textit{Differential-Geometrical Methods in Statistics.} Springer.
+\item Arute, F., et al.\ (2019). Quantum supremacy using a programmable superconducting processor. \textit{Nature}, 574, 505--510.
+\item Coppo, A., Pranzini, N.\ \& Verrucchi, P.\ (2022). Threshold size for the emergence of classical-like behavior. \textit{Phys.\ Rev.\ A}, 106, 042208.
+\item Csapl\'ar, D.\ (2026a). Grammar Fingerprinting of Quantum Processor Topology. Zenodo. \texttt{doi:10.5281/zenodo.19158088}.
+\item Csapl\'ar, D.\ (2026b). Fisher Information Threshold Study: Grammar Fingerprinting on Google Sycamore. Zenodo. \texttt{doi:10.5281/zenodo.19391582}.
+\item Csapl\'ar, D.\ (2026c). Grammar Fingerprinting and Fisher Information Thresholds in Large Language Model Entropy Series. Zenodo. \texttt{doi:10.5281/zenodo.19454201}.
+\item Csapl\'ar, D.\ (2026d). Curvature Structure at the Fisher Information Threshold. Research Note (April 2026).
+\item Foti, C., Coppo, A., Barni, G., Cuccoli, A.\ \& Verrucchi, P.\ (2021). Time and classical equations of motion from quantum entanglement via Page and Wootters with GCS. \textit{Nature Communications}, 12, 1787.
+\item Lin, J., Keogh, E., Wei, L.\ \& Lonardi, S.\ (2007). Experiencing SAX. \textit{Data Mining and Knowledge Discovery}, 15(2), 107--144.
+\item Page, D.\,N.\ \& Wootters, W.\,K.\ (1983). Evolution without evolution. \textit{Phys.\ Rev.\ D}, 27, 2885.
+\end{itemize}
+
+\section*{Data and code}
+Sycamore readout data: Dryad DOI \texttt{10.5061/dryad.k6t1rj8}. Code and results: \texttt{https://github.com/csaplard/QuantumCircuit\_Grammar\_Research}.
+
+\vspace{1em}\noindent\rule{\linewidth}{0.4pt}\\[0.3em]
+\small\textit{PDF generated from v2 preprint text with corrections (editorial pass, April 2026). Figures are placeholders; replace with publication figures from the analysis notebook/pipeline.}
+
+\end{document}

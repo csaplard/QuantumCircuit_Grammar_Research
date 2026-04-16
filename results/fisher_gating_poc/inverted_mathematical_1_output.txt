@@ -1,0 +1,36 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: mathematical
+PROMPT_IDX: 1
+SEED: 42
+PROMPT:
+Derive the quadratic formula from ax^2 + bx + c = 0.
+
+--- GENERATED ---
+
+
+To derive the quadratic formula, we start with the general quadratic equation:
+
+ax^2 + bx + c = 0, where a, b, and c are constants and a ≠ 0.
+
+We want to solve for x.  We can divide the entire equation by 'a' to simplify:
+
+x^2 + (b/a)x + (c/a) = 0
+
+Now, we will use the method of completing the square:
+
+1. Move the constant term to the right side:
+
+x^2 + (b/a)x = -c/a
+
+2. Complete the square on the left side.  To do this, we need to add (b/2a)^2 to both sides:
+
+x^2 + (b/a)x + (b/2a)^2 = -c/a + (b/2a)^2
+
+3. Simplify the left side:
+
+(x + b/2a)^2 = -c/a + b^2/4a^2
+
+4. Combine the terms on the right side:
+
+(x + b/2a)^2 = (b^2 - 4ac) / 4a^

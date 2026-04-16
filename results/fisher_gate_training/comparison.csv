@@ -1,0 +1,5 @@
+mode,accuracy
+pre-training (no gate),0.2
+post-training (no gate),0.2
+post-training (init gate),0.1
+post-training (trained gate),0.14

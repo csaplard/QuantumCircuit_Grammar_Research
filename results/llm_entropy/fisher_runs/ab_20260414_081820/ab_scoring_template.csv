@@ -1,0 +1,17 @@
+mode,regime,prompt_id,run_id,trace_csv,score_coherence,score_hallucination,score_structure,fisher_trace_std
+baseline,factual,factual_p0,factual_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/factual_r0_baseline_trace.csv,,,,695910.45202760
+baseline,factual,factual_p1,factual_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/factual_r1_baseline_trace.csv,,,,1216375.38418372
+baseline,mathematical,mathematical_p0,mathematical_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/mathematical_r0_baseline_trace.csv,,,,821362.27666792
+baseline,mathematical,mathematical_p1,mathematical_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/mathematical_r1_baseline_trace.csv,,,,597313.56971814
+baseline,creative,creative_p0,creative_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/creative_r0_baseline_trace.csv,,,,295898.30749426
+baseline,creative,creative_p1,creative_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/creative_r1_baseline_trace.csv,,,,947400.73767425
+baseline,philosophical,philosophical_p0,philosophical_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/philosophical_r0_baseline_trace.csv,,,,789624.20842315
+baseline,philosophical,philosophical_p1,philosophical_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/philosophical_r1_baseline_trace.csv,,,,623260.83689995
+adaptive,factual,factual_p0,factual_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/factual_r0_adaptive_trace.csv,,,,695910.45202760
+adaptive,factual,factual_p1,factual_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/factual_r1_adaptive_trace.csv,,,,1216375.38418372
+adaptive,mathematical,mathematical_p0,mathematical_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/mathematical_r0_adaptive_trace.csv,,,,821362.27666792
+adaptive,mathematical,mathematical_p1,mathematical_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/mathematical_r1_adaptive_trace.csv,,,,597313.56971814
+adaptive,creative,creative_p0,creative_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/creative_r0_adaptive_trace.csv,,,,295898.30749426
+adaptive,creative,creative_p1,creative_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/creative_r1_adaptive_trace.csv,,,,947400.73767425
+adaptive,philosophical,philosophical_p0,philosophical_r0,results/llm_entropy/fisher_runs/ab_20260414_081820/philosophical_r0_adaptive_trace.csv,,,,789624.20842315
+adaptive,philosophical,philosophical_p1,philosophical_r1,results/llm_entropy/fisher_runs/ab_20260414_081820/philosophical_r1_adaptive_trace.csv,,,,623260.83689995

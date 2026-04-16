@@ -1,0 +1,20 @@
+MODEL: google/gemma-3-4b-it
+MODE: active
+REGIME: creative
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Describe a city that exists entirely underwater.
+
+--- GENERATED ---
+
+
+**The City of Aethel**
+
+Aethel doesn't rise from the ocean; it *is* the ocean. Constructed over centuries, using a symbiotic relationship with bioluminescent coral and genetically modified marine life, it’s a sprawling, shimmering metropolis nestled within the perpetual twilight of the Atlantic’s abyssal plain, roughly 500 miles off the coast of Ireland. 
+
+**Structure & Architecture:**
+
+*   **Coral Foundations:** The city's foundation is a vast, interwoven network of ‘living coral’ – genetically engineered to be incredibly dense and durable. These coral structures aren’t just static; they slowly grow, shift, and repair themselves, constantly adapting to the pressure and currents.
+*   **Shell Domes:**  The city’s primary structures are enormous, iridescent shells harvested from colossal, ancient nautilus species – relics from a time before human intervention. These shells are carefully positioned and reinforced with the living coral, creating massive, interconnected domes of varying sizes.
+*   **Hydro-Sculpted Buildings:** Within the domes, buildings are sculpted from compressed seawater and reinforced with crystallized bioluminescence. They are fluid, organic shapes, mimicking the curves of marine life – spiraling towers that resemble giant shells, branching

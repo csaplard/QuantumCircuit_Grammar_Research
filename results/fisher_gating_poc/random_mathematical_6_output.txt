@@ -1,0 +1,22 @@
+MODEL: google/gemma-3-4b-it
+MODE: random
+REGIME: mathematical
+PROMPT_IDX: 6
+SEED: 42
+PROMPT:
+Prove that e is irrational using its series expansion.
+
+--- GENERATED ---
+
+
+The series expansion of e is given by:
+$$e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \dots = \sum_{n=0}^{\infty} \frac{1}{n!}$$
+
+Assume, for the sake of contradiction, that e is rational. Then, we can write $e = \frac{p}{q}$ for some integers $p$ and $q$, where $q \neq 0$.
+
+Since $e = \sum_{n=0}^{\infty} \frac{1}{n!}$, we have:
+$$e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \dots$$
+We can write $e$ as a fraction $\frac{p}{q}$, where $p$ and $q$ are integers.
+Since $e$ is a rational number, we can write $e = \frac{p}{q}$, where $p$ and $q$ are integers and $q \neq 0$.
+
+Let's express $e$ as a fraction with a common denominator of $q!$.

@@ -1,0 +1,18 @@
+MODEL: google/gemma-3-4b-it
+MODE: inverted
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+PROMPT:
+Write a short story about a lighthouse keeper who discovers a message in a bottle.
+
+--- GENERATED ---
+
+
+The salt spray had been my constant companion for thirty years. Thirty years of wind, waves, and the rhythmic, lonely pulse of the Sentinel’s light. I'm Silas Blackwood, and I’ve been keeper of this isolated sentinel on Blackrock Island for longer than most folks can remember. My life is a simple one – oil the gears, polish the lens, log the weather, and listen to the sea. It’s a good life, a solitary one, and a life I’ve chosen.
+
+I’d seen a lot of storms in my time, and a lot of calm. I’d seen ships sail by, sometimes barely a flicker on the horizon, and I’d seen wreckage washed ashore, grim reminders of the sea’s unforgiving nature. But I’d never found anything… unusual. Until yesterday.
+
+The tide was unusually low, revealing a stretch of beach I rarely saw. I was checking the seawall, ensuring it hadn’t sustained any damage from the previous night’s gale, when I spotted it. A bottle, nestled amongst the seaweed and barnacle-encrusted rocks. A dark green bottle, sealed with wax, bobbing gently in the shallows.
+
+My heart skipped a beat
