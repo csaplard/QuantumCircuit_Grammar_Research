@@ -15,6 +15,7 @@
 3. **IBM Quantum:** Raw shot collection (`collect_ibm_shots.py`), grammar learning, IBM-specific Fisher sweeps, optional Marrakesh vs. Torino comparisons.
 4. **Temporal drift (IBM):** Distribution-level and **grammar-matrix KL** comparisons between archived and refreshed shot files; marginal / Hamming summaries for high-q regimes.
 5. **Transfer / universality:** Ridge-style models linking IBM and Sycamore threshold estimates; clustering / purity reports; optional DOCX report builders.
+6. **Human EEG (`eeg/`):** Same pipeline (unmodified parameters) applied to the PhysioNet eegmat dataset — 36 subjects, eyes-closed rest vs. first-minute mental arithmetic. Recovers the classical alpha-suppression topography from a substrate-agnostic information-theoretic metric. See `eeg/README.md` for details.
 
 **Not tracked in Git** (see `.gitignore`): Dryad-scale `readout_raw_data/`; IBM `results/ibm_raw_shots/`; run logs; large `*.npz` caches; exploratory IBM subset analyses (`10_20`, `no5q`, `raw4` filename patterns); extra Fisher phase-transition PNGs (publication figures remain under `results/fisher_figures/`).
 

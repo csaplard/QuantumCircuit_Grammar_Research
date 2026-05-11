@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Cross-Substrate Sequential-Grammar Pipeline Recovers Alpha-Suppression Topography in Human EEG: Convergent Validation on Mental Arithmetic Recordings",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "publication_date": "2026-05-10",
+    "creators": [
+      {
+        "name": "Csaplár, Daniel",
+        "affiliation": "Independent Researcher, Kazincbarcika, Hungary",
+        "orcid": "0009-0000-7362-7232"
+      }
+    ],
+    "description": "We test whether the substrate-agnostic sequential-grammar pipeline previously validated on superconducting quantum-processor readouts and on large-language-model logit-entropy traces also recovers state-discriminative information from human EEG. Using an unmodified pipeline (SAX alphabet K=7, LSTM hidden_dim=16, seq_len=20, 50 epochs), we analyze 36 healthy volunteers' eyes-closed rest versus first-minute mental arithmetic recordings (19-channel 10-20 montage; PhysioNet eegmat 1.0.0). Per-stream grammar perplexity discriminates regimes with Cohen's d = 0.99 (Wilcoxon p = 9.1e-83); the spatial distribution recapitulates the classical Berger-Klimesch alpha-suppression topography; leave-one-subject-out classification of regime achieves 75.2% accuracy on held-out subjects. AAFT surrogate analysis indicates that the discrimination is mediated by linear power-spectral content re-represented as symbolic grammar (regime x surrogate interaction n.s.). Convergent validation that the same pipeline used across two prior substrates (quantum and linguistic) recovers substrate-appropriate, neurophysiologically interpretable state distinctions in human EEG.",
+    "keywords": [
+      "EEG",
+      "mental arithmetic",
+      "alpha suppression",
+      "LSTM",
+      "SAX",
+      "information theory",
+      "surrogate data",
+      "AAFT",
+      "cross-substrate methodology",
+      "grammar fingerprinting"
+    ],
+    "language": "eng",
+    "access_right": "open",
+    "license": "CC-BY-4.0",
+    "communities": [
+      {"identifier": "neuroscience"}
+    ],
+    "related_identifiers": [
+      {
+        "relation": "isContinuationOf",
+        "identifier": "10.5281/zenodo.19158088",
+        "scheme": "doi"
+      },
+      {
+        "relation": "isContinuationOf",
+        "identifier": "10.5281/zenodo.19391582",
+        "scheme": "doi"
+      },
+      {
+        "relation": "isContinuationOf",
+        "identifier": "10.5281/zenodo.19454201",
+        "scheme": "doi"
+      },
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "10.13026/C2JQ1P",
+        "scheme": "doi",
+        "resource_type": "dataset"
+      }
+    ],
+    "references": [
+      "Berger, H. (1929). Über das Elektrenkephalogramm des Menschen. Archiv für Psychiatrie und Nervenkrankheiten, 87, 527-570.",
+      "Klimesch, W. (1999). EEG alpha and theta oscillations reflect cognitive and memory performance. Brain Research Reviews, 29, 169-195.",
+      "Theiler, J., Eubank, S., Longtin, A., Galdrikian, B. & Farmer, J. D. (1992). Testing for nonlinearity in time series: the method of surrogate data. Physica D, 58, 77-94.",
+      "Lin, J., Keogh, E., Wei, L. & Lonardi, S. (2007). Experiencing SAX: a novel symbolic representation of time series. Data Mining and Knowledge Discovery, 15(2), 107-144.",
+      "Zyma, I., Tukaev, S., Seleznov, I., Kiyono, K., Popov, A., Chernykh, M. & Shpenkov, O. (2019). Electroencephalograms during Mental Arithmetic Task Performance. Data, 4(1), 14.",
+      "Gramfort, A., et al. (2013). MEG and EEG data analysis with MNE-Python. Frontiers in Neuroscience, 7, 267."
+    ]
+  }
+}

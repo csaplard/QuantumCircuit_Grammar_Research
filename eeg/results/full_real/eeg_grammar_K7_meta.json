@@ -1,0 +1,21 @@
+{
+  "data_dir": "C:/Users/csapl/eeg_data/eegmat",
+  "out_dir": "results/full_real",
+  "subjects": "all",
+  "regimes": "rest,arithmetic",
+  "channels": "all",
+  "target_fs": 100.0,
+  "lfreq": 1.0,
+  "hfreq": 40.0,
+  "notch": 50.0,
+  "keep_refs": false,
+  "K": 7,
+  "hidden_dim": 16,
+  "seq_len": 20,
+  "epochs": 50,
+  "lr": 0.01,
+  "seed": 42,
+  "surrogates": "",
+  "n_surrogate_reps": 1,
+  "quick": false
+}
