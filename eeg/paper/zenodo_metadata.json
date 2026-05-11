@@ -38,12 +38,17 @@
       },
       {
         "relation": "isContinuationOf",
-        "identifier": "10.5281/zenodo.19391582",
+        "identifier": "10.5281/zenodo.19394880",
         "scheme": "doi"
       },
       {
         "relation": "isContinuationOf",
-        "identifier": "10.5281/zenodo.19454201",
+        "identifier": "10.5281/zenodo.19461103",
+        "scheme": "doi"
+      },
+      {
+        "relation": "isContinuationOf",
+        "identifier": "10.5281/zenodo.19519454",
         "scheme": "doi"
       },
       {

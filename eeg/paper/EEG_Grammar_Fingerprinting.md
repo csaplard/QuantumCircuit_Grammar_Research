@@ -1,6 +1,6 @@
 # Cross-Substrate Sequential-Grammar Pipeline Recovers Alpha-Suppression Topography in Human EEG: Convergent Validation on Mental Arithmetic Recordings
 
-Continuation of Grammar Fingerprinting (doi:10.5281/zenodo.19158088), Fisher Information Threshold Study (doi:10.5281/zenodo.19391582), LLM Grammar Fingerprinting (doi:10.5281/zenodo.19454201), Curvature at the Fisher Threshold (Research Note, April 2026), Exponential Relaxation of Fisher Path Speed (May 2026)
+Continuation of Grammar Fingerprinting (doi:10.5281/zenodo.19158088), Fisher Information Threshold Study (doi:10.5281/zenodo.19394880), LLM Grammar Fingerprinting (doi:10.5281/zenodo.19461103), Curvature at the Fisher Threshold (Research Note, April 2026), Exponential Relaxation of Fisher Path Speed (doi:10.5281/zenodo.19519454)
 
 Daniel Csaplár
 
@@ -132,10 +132,10 @@ Three follow-ups would extend the present results. (i) Replication on the good-c
 
 - Berger, H. (1929). Über das Elektrenkephalogramm des Menschen. Archiv für Psychiatrie und Nervenkrankheiten, 87, 527–570.
 - Csaplár, D. (2026a). Grammar Fingerprinting of Quantum Processor Topology. Zenodo. doi:10.5281/zenodo.19158088.
-- Csaplár, D. (2026b). Fisher Information Threshold Study: Grammar Fingerprinting on Google Sycamore. Zenodo. doi:10.5281/zenodo.19391582.
-- Csaplár, D. (2026c). Grammar Fingerprinting and Fisher Information Thresholds in Large Language Model Entropy Series. Zenodo. doi:10.5281/zenodo.19454201.
+- Csaplár, D. (2026b). Fisher Information Threshold Study: Grammar Fingerprinting on Google Sycamore. Zenodo. doi:10.5281/zenodo.19394880.
+- Csaplár, D. (2026c). Grammar Fingerprinting and Fisher Information Thresholds in Large Language Model Entropy Series. Zenodo. doi:10.5281/zenodo.19461103.
 - Csaplár, D. (2026d). Curvature Structure at the Fisher Information Threshold. Research Note (April 2026).
-- Csaplár, D. (2026e). Exponential Relaxation of Fisher Path Speed on the Statistical Manifold of Learned Transition Matrices. Zenodo (May 2026).
+- Csaplár, D. (2026e). Exponential Relaxation of Fisher Path Speed on the Statistical Manifold of Learned Transition Matrices. Zenodo. doi:10.5281/zenodo.19519454.
 - Gramfort, A., et al. (2013). MEG and EEG data analysis with MNE-Python. Frontiers in Neuroscience, 7, 267.
 - Klimesch, W. (1999). EEG alpha and theta oscillations reflect cognitive and memory performance: a review and analysis. Brain Research Reviews, 29, 169–195.
 - Lin, J., Keogh, E., Wei, L. & Lonardi, S. (2007). Experiencing SAX: a novel symbolic representation of time series. Data Mining and Knowledge Discovery, 15(2), 107–144.
