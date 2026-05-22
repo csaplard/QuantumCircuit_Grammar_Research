@@ -1,0 +1,952 @@
+{
+  "layer_sep": [
+    {
+      "layer": 0,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.6152
+    },
+    {
+      "layer": 0,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.6906
+    },
+    {
+      "layer": 0,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2086
+    },
+    {
+      "layer": 0,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.85
+    },
+    {
+      "layer": 0,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.6902
+    },
+    {
+      "layer": 0,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.5153
+    },
+    {
+      "layer": 1,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.7317
+    },
+    {
+      "layer": 1,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.9862
+    },
+    {
+      "layer": 1,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2671
+    },
+    {
+      "layer": 1,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.0166
+    },
+    {
+      "layer": 1,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.8144
+    },
+    {
+      "layer": 1,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7427
+    },
+    {
+      "layer": 2,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.05
+    },
+    {
+      "layer": 2,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.0665
+    },
+    {
+      "layer": 2,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1543
+    },
+    {
+      "layer": 2,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.4037
+    },
+    {
+      "layer": 2,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1083
+    },
+    {
+      "layer": 2,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.9804
+    },
+    {
+      "layer": 3,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.3288
+    },
+    {
+      "layer": 3,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.9276
+    },
+    {
+      "layer": 3,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0567
+    },
+    {
+      "layer": 3,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.7705
+    },
+    {
+      "layer": 3,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.3914
+    },
+    {
+      "layer": 3,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 1.038
+    },
+    {
+      "layer": 4,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.7469
+    },
+    {
+      "layer": 4,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.1175
+    },
+    {
+      "layer": 4,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7588
+    },
+    {
+      "layer": 4,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.9413
+    },
+    {
+      "layer": 4,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.4341
+    },
+    {
+      "layer": 4,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 1.0984
+    },
+    {
+      "layer": 5,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.8684
+    },
+    {
+      "layer": 5,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.0124
+    },
+    {
+      "layer": 5,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.5911
+    },
+    {
+      "layer": 5,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.2876
+    },
+    {
+      "layer": 5,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.119
+    },
+    {
+      "layer": 5,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2764
+    },
+    {
+      "layer": 6,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.7224
+    },
+    {
+      "layer": 6,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.2381
+    },
+    {
+      "layer": 6,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2595
+    },
+    {
+      "layer": 6,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.2201
+    },
+    {
+      "layer": 6,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.8151
+    },
+    {
+      "layer": 6,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.9749
+    },
+    {
+      "layer": 7,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 2.0485
+    },
+    {
+      "layer": 7,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.7716
+    },
+    {
+      "layer": 7,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.4424
+    },
+    {
+      "layer": 7,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 2.4295
+    },
+    {
+      "layer": 7,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 2.3288
+    },
+    {
+      "layer": 7,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.3797
+    },
+    {
+      "layer": 8,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.3909
+    },
+    {
+      "layer": 8,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.0616
+    },
+    {
+      "layer": 8,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0261
+    },
+    {
+      "layer": 8,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 2.0434
+    },
+    {
+      "layer": 8,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.3785
+    },
+    {
+      "layer": 8,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 1.0882
+    },
+    {
+      "layer": 9,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.9374
+    },
+    {
+      "layer": 9,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.4687
+    },
+    {
+      "layer": 9,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.3117
+    },
+    {
+      "layer": 9,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.295
+    },
+    {
+      "layer": 9,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7866
+    },
+    {
+      "layer": 9,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.8583
+    },
+    {
+      "layer": 10,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.4035
+    },
+    {
+      "layer": 10,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.5539
+    },
+    {
+      "layer": 10,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0369
+    },
+    {
+      "layer": 10,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 2.0817
+    },
+    {
+      "layer": 10,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.4816
+    },
+    {
+      "layer": 10,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.6522
+    },
+    {
+      "layer": 11,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.9586
+    },
+    {
+      "layer": 11,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.0638
+    },
+    {
+      "layer": 11,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7981
+    },
+    {
+      "layer": 11,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.5328
+    },
+    {
+      "layer": 11,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.3747
+    },
+    {
+      "layer": 11,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2758
+    },
+    {
+      "layer": 12,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.7239
+    },
+    {
+      "layer": 12,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 1.1548
+    },
+    {
+      "layer": 12,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7667
+    },
+    {
+      "layer": 12,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.3348
+    },
+    {
+      "layer": 12,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1175
+    },
+    {
+      "layer": 12,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2999
+    },
+    {
+      "layer": 13,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.9683
+    },
+    {
+      "layer": 13,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.333
+    },
+    {
+      "layer": 13,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.3916
+    },
+    {
+      "layer": 13,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.1251
+    },
+    {
+      "layer": 13,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1508
+    },
+    {
+      "layer": 13,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.068
+    },
+    {
+      "layer": 14,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.1279
+    },
+    {
+      "layer": 14,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.2387
+    },
+    {
+      "layer": 14,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1761
+    },
+    {
+      "layer": 14,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.9271
+    },
+    {
+      "layer": 14,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1553
+    },
+    {
+      "layer": 14,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.362
+    },
+    {
+      "layer": 15,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.1728
+    },
+    {
+      "layer": 15,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.3816
+    },
+    {
+      "layer": 15,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2834
+    },
+    {
+      "layer": 15,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.9311
+    },
+    {
+      "layer": 15,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.2665
+    },
+    {
+      "layer": 15,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.5832
+    },
+    {
+      "layer": 16,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.5743
+    },
+    {
+      "layer": 16,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.8844
+    },
+    {
+      "layer": 16,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1074
+    },
+    {
+      "layer": 16,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.0859
+    },
+    {
+      "layer": 16,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.559
+    },
+    {
+      "layer": 16,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.8619
+    },
+    {
+      "layer": 17,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.2436
+    },
+    {
+      "layer": 17,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.8705
+    },
+    {
+      "layer": 17,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.224
+    },
+    {
+      "layer": 17,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.6925
+    },
+    {
+      "layer": 17,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1168
+    },
+    {
+      "layer": 17,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.666
+    },
+    {
+      "layer": 18,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.1722
+    },
+    {
+      "layer": 18,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.5771
+    },
+    {
+      "layer": 18,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0943
+    },
+    {
+      "layer": 18,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.831
+    },
+    {
+      "layer": 18,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.1162
+    },
+    {
+      "layer": 18,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.4831
+    },
+    {
+      "layer": 19,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.3005
+    },
+    {
+      "layer": 19,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.2113
+    },
+    {
+      "layer": 19,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0315
+    },
+    {
+      "layer": 19,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.1677
+    },
+    {
+      "layer": 19,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.3287
+    },
+    {
+      "layer": 19,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2464
+    },
+    {
+      "layer": 20,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 1.2378
+    },
+    {
+      "layer": 20,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.0626
+    },
+    {
+      "layer": 20,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1291
+    },
+    {
+      "layer": 20,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 1.2819
+    },
+    {
+      "layer": 20,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.3729
+    },
+    {
+      "layer": 20,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0618
+    },
+    {
+      "layer": 21,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.9713
+    },
+    {
+      "layer": 21,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.055
+    },
+    {
+      "layer": 21,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.014
+    },
+    {
+      "layer": 21,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.977
+    },
+    {
+      "layer": 21,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 1.0022
+    },
+    {
+      "layer": 21,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0447
+    },
+    {
+      "layer": 22,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.8043
+    },
+    {
+      "layer": 22,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.1498
+    },
+    {
+      "layer": 22,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0612
+    },
+    {
+      "layer": 22,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.8761
+    },
+    {
+      "layer": 22,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.7876
+    },
+    {
+      "layer": 22,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2143
+    },
+    {
+      "layer": 23,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.6808
+    },
+    {
+      "layer": 23,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.084
+    },
+    {
+      "layer": 23,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1836
+    },
+    {
+      "layer": 23,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.7035
+    },
+    {
+      "layer": 23,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.5902
+    },
+    {
+      "layer": 23,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.2495
+    },
+    {
+      "layer": 24,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.3985
+    },
+    {
+      "layer": 24,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.2289
+    },
+    {
+      "layer": 24,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.4554
+    },
+    {
+      "layer": 24,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.193
+    },
+    {
+      "layer": 24,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1264
+    },
+    {
+      "layer": 24,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1193
+    },
+    {
+      "layer": 25,
+      "regime_a": "factual",
+      "regime_b": "mathematical",
+      "cohens_d": 0.2105
+    },
+    {
+      "layer": 25,
+      "regime_a": "factual",
+      "regime_b": "creative",
+      "cohens_d": 0.7714
+    },
+    {
+      "layer": 25,
+      "regime_a": "factual",
+      "regime_b": "philosophical",
+      "cohens_d": 0.905
+    },
+    {
+      "layer": 25,
+      "regime_a": "mathematical",
+      "regime_b": "creative",
+      "cohens_d": 0.1721
+    },
+    {
+      "layer": 25,
+      "regime_a": "mathematical",
+      "regime_b": "philosophical",
+      "cohens_d": 0.1473
+    },
+    {
+      "layer": 25,
+      "regime_a": "creative",
+      "regime_b": "philosophical",
+      "cohens_d": 0.0711
+    }
+  ],
+  "participation": {
+    "factual": 7391.9,
+    "mathematical": 5558.5528,
+    "creative": 7319.4067,
+    "philosophical": 7741.6314
+  },
+  "path_speed": {
+    "factual": 8846.4126,
+    "mathematical": 6918.56,
+    "creative": 8523.5177,
+    "philosophical": 8494.9832
+  }
+}

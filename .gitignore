@@ -58,6 +58,14 @@ results/grammar_pairwise_kl_*.txt
 results/fisher_phase_transition_all_readouts*.png
 results/fisher_phase_transition_summary.png
 
+# Runtime logs (contain machine-specific paths, not reproducibility artifacts)
+results/dream_replay_log.txt
+results/dream_replay_v2_log.txt
+results/fisher_gate_training/eval_log.txt
+results/**/*_log.txt
+results/**/*_log_*.txt
+.claude/
+
 # LaTeX build artifacts (preprint in docs/ or stray builds under results/)
 docs/*.aux
 results/*.aux

@@ -1,6 +1,6 @@
 IBM Torino: per-qubit marginal drift + Hamming-weight distance
-reference_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
-current_dir:   C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+reference_dir: .\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
+current_dir:   .\results\ibm_raw_shots
 
 mean_abs_marginal_dp: average over qubits of |P_ref(bit=1) - P_cur(bit=1)|
 tv_hamming / js_hamming: TV and JS on Hamming weight (0..n).

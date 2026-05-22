@@ -1,6 +1,6 @@
 IBM Torino run comparison (empirical outcome distributions)
-reference_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
-current_dir:   C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+reference_dir: .\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
+current_dir:   .\results\ibm_raw_shots
 
 tv = total variation; js_distance = sqrt(JS divergence), base e;
 sym_kl = mean of KL(ref||cur) and KL(cur||ref) on smoothed union support.

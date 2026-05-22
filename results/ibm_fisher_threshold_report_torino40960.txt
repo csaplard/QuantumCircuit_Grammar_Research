@@ -1,6 +1,6 @@
 === IBM FISHER THRESHOLD SWEEP REPORT ===
 
-shots_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+shots_dir: .\results\ibm_raw_shots
 backend_prefix: ibm_torino
 filename_substr: 40960
 seed: 42, epochs: 5

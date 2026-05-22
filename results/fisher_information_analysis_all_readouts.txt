@@ -1,7 +1,7 @@
 === FISHER INFORMATION METRIC ANALYSIS ===
 
 Files processed: 28
-Input directory: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\readout_raw_data
+Input directory: .\readout_raw_data
 
 
 --- 12q (2D_Block) :: 12q_readout_raw_data.txt ---

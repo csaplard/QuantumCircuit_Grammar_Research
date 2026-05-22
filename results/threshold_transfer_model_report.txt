@@ -66,11 +66,11 @@ Bootstrap R2 (row resample): 95% CI [0.5111, 0.8357], mean=0.6722 (199 reps)
 
 
 Files:
-  predictions: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_predictions.csv
-  cv improved: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_folds.csv
-  cv baseline OLS: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_baseline_ols.csv
-  cv Sycamore LOO topology: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_sycamore_loo_topology.csv
-  cv IBM-only / Syc-only: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_ibm_only.csv, C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_cv_sycamore_only.csv
-  uncertainty: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_uncertainty.txt
-  one-pager: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_onepager.txt
-  figure: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\threshold_transfer_pred_vs_obs.png
+  predictions: .\results\threshold_transfer_predictions.csv
+  cv improved: .\results\threshold_transfer_cv_folds.csv
+  cv baseline OLS: .\results\threshold_transfer_cv_baseline_ols.csv
+  cv Sycamore LOO topology: .\results\threshold_transfer_cv_sycamore_loo_topology.csv
+  cv IBM-only / Syc-only: .\results\threshold_transfer_cv_ibm_only.csv, .\results\threshold_transfer_cv_sycamore_only.csv
+  uncertainty: .\results\threshold_transfer_uncertainty.txt
+  one-pager: .\results\threshold_transfer_onepager.txt
+  figure: .\results\threshold_transfer_pred_vs_obs.png

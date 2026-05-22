@@ -1,6 +1,6 @@
 IBM Torino grammar fingerprint pairwise comparison
-reference_dir: C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
-current_dir:   C:\Users\csapl\.gemini\antigravity\scratch\QuantumCircuit\Grammar_Fingerprinting_Archive\Grammar_Fingerprinting_Code_and_Results_v1.0\QuantumCircuit_Grammar_Research_Archive\results\ibm_raw_shots
+reference_dir: .\results\ibm_raw_shots\archive_ibm_torino_20260329_122743
+current_dir:   .\results\ibm_raw_shots
 train: alphabet=7 hidden=32 seq_len=16 epochs=20 lr=0.01 seed=0
 
                                   file  kl_ref_to_cur  kl_cur_to_ref   sym_kl  frob_diff  val_loss_ref  val_loss_cur  ppl_ref  ppl_cur  ok
