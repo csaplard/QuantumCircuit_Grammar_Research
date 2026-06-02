@@ -1,0 +1,278 @@
+{
+  "turn1_gate": {
+    "passed": true,
+    "cells": [
+      {
+        "key": [
+          "creative",
+          0,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "creative",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "creative",
+          0,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "creative",
+          1,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "creative",
+          1,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "creative",
+          1,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 192
+      },
+      {
+        "key": [
+          "factual",
+          0,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 119
+      },
+      {
+        "key": [
+          "factual",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 95
+      },
+      {
+        "key": [
+          "factual",
+          0,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 91
+      },
+      {
+        "key": [
+          "factual",
+          1,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 22
+      },
+      {
+        "key": [
+          "factual",
+          1,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 62
+      },
+      {
+        "key": [
+          "factual",
+          1,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 68
+      },
+      {
+        "key": [
+          "mathematical",
+          0,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 105
+      },
+      {
+        "key": [
+          "mathematical",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 50
+      },
+      {
+        "key": [
+          "mathematical",
+          0,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 50
+      },
+      {
+        "key": [
+          "mathematical",
+          1,
+          17
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 15
+      },
+      {
+        "key": [
+          "mathematical",
+          1,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 15
+      },
+      {
+        "key": [
+          "mathematical",
+          1,
+          1337
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 15
+      }
+    ]
+  },
+  "turn1_jsd_sanity": {
+    "max_over_cells": 0.0,
+    "expected": "~0 (design assumption: identical turn-1 forward pass)",
+    "note": "non-zero values indicate fp non-determinism; above ~1e-3 suggests a state-mismatch bug, not a headline finding"
+  },
+  "paired_real": {
+    "n_pairs": 18.0,
+    "median_D_A": 0.2111056846030125,
+    "median_D_B": 0.23106301144217892,
+    "cliffs_delta": -0.006172839506172839,
+    "abs_cliffs_delta": 0.006172839506172839,
+    "sign_of_gap": -1,
+    "wilcoxon_stat": 77.0,
+    "wilcoxon_p": 0.7337265014648438
+  },
+  "jsd_pass_cells": 9,
+  "jsd_total_cells": 18,
+  "null_markov": {
+    "n_pairs": 18.0,
+    "median_D_A": 0.21378310561919373,
+    "median_D_B": 0.1576757208714502,
+    "cliffs_delta": 0.3333333333333333,
+    "abs_cliffs_delta": 0.3333333333333333,
+    "sign_of_gap": 1,
+    "wilcoxon_stat": 39.0,
+    "wilcoxon_p": 0.0431671142578125
+  },
+  "null_ar1": {
+    "n_pairs": 18.0,
+    "median_D_A": 1.615637390176658,
+    "median_D_B": 1.5592424695264007,
+    "cliffs_delta": 0.05555555555555555,
+    "abs_cliffs_delta": 0.05555555555555555,
+    "sign_of_gap": 1,
+    "wilcoxon_stat": 78.0,
+    "wilcoxon_p": 0.7660293579101562
+  },
+  "decision": {
+    "checks": {
+      "behavior_equivalence": {
+        "observed_pass_cells": 9,
+        "observed_total_cells": 18,
+        "required_fraction": 0.6666666666666666,
+        "passed": false
+      },
+      "paired_significance": {
+        "p": 0.7337265014648438,
+        "threshold": 0.01,
+        "alternative": "two-sided",
+        "observed_sign": -1,
+        "passed": false
+      },
+      "effect_size": {
+        "cliffs_delta": -0.006172839506172839,
+        "abs_cliffs_delta": 0.006172839506172839,
+        "threshold": 0.5,
+        "passed": false
+      },
+      "markov_null_shrink": {
+        "real_abs_gap": 0.019957326839166428,
+        "null_abs_gap": 0.056107384747743516,
+        "shrink_fraction": -1.8113677347625678,
+        "threshold": 0.5,
+        "passed": false
+      },
+      "ar1_null_nonsig": {
+        "p": 0.7660293579101562,
+        "floor": 0.05,
+        "passed": true
+      }
+    },
+    "headline_supported": false
+  }
+}

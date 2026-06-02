@@ -1,0 +1,28 @@
+ARM: B
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+
+--- TURN 0 USER ---
+Start a short story: a lighthouse keeper finds a sealed letter.
+--- TURN 0 ASSISTANT ---
+Once upon a time, there was a lighthouse keeper named Jack. He lived on a small island surrounded by treacherous waters. He spent his days keeping the lighthouse in good working order and his nights patrolling the waters.
+One stormy night, as Jack was patrolling the waters, he spotted a ship in distress. He quickly called for help and managed to rescue the sailors before they could be lost at sea.
+Over the years, Jack's reputation grew, and he became a legend among the sailors who came to the island for shelter. One day, as he was patrolling the waters, he found a sealed letter in a bottle washed ashore on the island.
+Curious, Jack opened the letter and found a note from a young girl named Sarah. She had been lost at sea and had washed ashore on the island. She had been shipwrecked and had been searching for a place to stay until she could be rescued.
+
+
+--- TURN 1 USER ---
+What does the letter say? Keep it brief.
+--- TURN 1 ASSISTANT ---
+Dear Mr. Jack, I am a young girl named Sarah. I was shipwrecked and washed ashore on your island. I am lost and need a place to stay until I can be rescued. Please help me.
+
+--- TURN 2 USER ---
+Who wrote it, and how long ago?
+--- TURN 2 ASSISTANT ---
+The letter was written by Sarah, who was shipwrecked and washed ashore on the island many years ago.
+
+--- TURN 3 USER ---
+End the story in two sentences.
+--- TURN 3 ASSISTANT ---
+Jack read the letter and knew he had to help Sarah. He decided to build her a shelter and take care of her until she could be rescued. As he finished building the shelter, he realized that he had finally found a true friend.

@@ -1,0 +1,15 @@
+ARM: B
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 42
+
+--- TURN 0 USER ---
+Start a short story: a lighthouse keeper finds a sealed letter.
+--- TURN 0 ASSISTANT ---
+Once upon a time, there was a lighthouse keeper named Jack. He lived on a small island surrounded by treacherous waters. He spent his days keeping the lighthouse in good working order and his nights patrolling the waters.
+One stormy night, as Jack was patrolling the waters, he spotted a ship
+
+--- TURN 1 USER ---
+What does the letter say? Keep it brief.
+--- TURN 1 ASSISTANT ---
+Jack found a sealed letter in the storm. Inside, he discovered a map leading to a hidden treasure. The letter also warned him of the dangers that lay ahead.

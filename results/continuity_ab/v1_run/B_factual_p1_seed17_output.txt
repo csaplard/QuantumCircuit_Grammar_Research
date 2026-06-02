@@ -1,0 +1,24 @@
+ARM: B
+REGIME: factual
+PROMPT_IDX: 1
+SEED: 17
+
+--- TURN 0 USER ---
+Tell me in two sentences how photosynthesis works.
+--- TURN 0 ASSISTANT ---
+Photosynthesis is the process by which plants use sunlight to convert carbon dioxide and water into glucose and oxygen.
+
+--- TURN 1 USER ---
+Which wavelengths of light do plants mostly use?
+--- TURN 1 ASSISTANT ---
+Plants primarily use the wavelengths of light in the blue and red parts of the spectrum for photosynthesis.
+
+--- TURN 2 USER ---
+Why do leaves look green if those wavelengths are absorbed?
+--- TURN 2 ASSISTANT ---
+Leaves appear green because they reflect or transmit most of the wavelengths in the visible light spectrum, which are primarily in the blue and red parts of the spectrum, and absorb the green wavelengths. This characteristic allows them to look green to our eyes.
+
+--- TURN 3 USER ---
+Is there any plant that uses different pigments?
+--- TURN 3 ASSISTANT ---
+Yes, some plants have pigments other than chlorophyll that can absorb light in different parts of the spectrum. For example, certain plants like petunias and some flowers have carotenoids that absorb light in the blue and red parts of the spectrum, making them appear orange or yellow.

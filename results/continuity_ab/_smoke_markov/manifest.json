@@ -1,0 +1,22 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "tokens": 64,
+    "window": 32,
+    "top_p": 0.95,
+    "temperature": 0.8,
+    "turns": 2,
+    "seeds": [
+      42
+    ],
+    "prompts_per_regime": 1,
+    "dtype": "float32",
+    "device": "cpu",
+    "summary_token_budget": 60,
+    "outdir": "results/continuity_ab/_smoke_markov",
+    "conversations_json": "results/continuity_ab/_smoke_markov/markov_conversations.json"
+  },
+  "n_layers": 28,
+  "mid_hook_idx": 14,
+  "timestamp": "2026-06-01T20:10:04"
+}

@@ -1,0 +1,7 @@
+arm,regime,prompt_idx,seed,elapsed_sec,n_steps,boundary_indices
+A,factual,0,42,31.76,85,[20]
+B,factual,0,42,30.73,85,[20]
+A,mathematical,0,42,31.12,85,[20]
+B,mathematical,0,42,24.14,68,[20]
+A,creative,0,42,32.93,90,[25]
+B,creative,0,42,31.87,90,[25]

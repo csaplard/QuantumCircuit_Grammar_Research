@@ -1,0 +1,16 @@
+ARM: B
+REGIME: mathematical
+PROMPT_IDX: 0
+SEED: 42
+
+--- TURN 0 USER ---
+State the Pythagorean theorem in one line.
+--- TURN 0 ASSISTANT ---
+The Pythagorean theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.
+
+--- TURN 1 USER ---
+Give one short proof sketch.
+--- TURN 1 ASSISTANT ---
+To prove the Pythagorean theorem, one can use several geometric approaches. Here's a sketch of a simple proof using rearrangement:
+
+1. Consider a right-angled triangle with sides \(a\), \(b\), and hypotenuse \(c\). Draw a square with side length \(a + b\

@@ -1,0 +1,14 @@
+ARM: A
+REGIME: factual
+PROMPT_IDX: 0
+SEED: 42
+
+--- TURN 0 USER ---
+Briefly: what causes ocean tides?
+--- TURN 0 ASSISTANT ---
+Ocean tides are caused by the gravitational pull of the moon and the sun on the Earth's oceans. The Earth's rotation also plays a role in creating tidal forces. The gravitational force of the moon and sun causes the oceans to bulge out on the side of the Earth facing the moon and the sun, creating high
+
+--- TURN 1 USER ---
+And does the Sun contribute too, or only the Moon?
+--- TURN 1 ASSISTANT ---
+The Sun does contribute to the formation of tides, although its effect is less pronounced than that of the Moon. When the Sun, Moon, and Earth are aligned in a straight line, with the Sun on one side and the Moon on the other, the gravitational forces of both the Sun and the Moon combine to create

@@ -1,0 +1,30 @@
+ARM: A
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 17
+
+--- TURN 0 USER ---
+Start a short story: a lighthouse keeper finds a sealed letter.
+--- TURN 0 ASSISTANT ---
+As the sun began to set on the rocky coast, the lighthouse keeper, Mr. Jenkins, stood at the edge of the cliff, his eyes scanning the horizon for any signs of danger. The waves crashed against the shore, and the night air was filled with the salty tang of the sea. But as he turned to look at the tower in the distance, he noticed something strange. There was a small, unmarked envelope stuck to the windbreak on the wall. Curiosity piqued, he picked it up and unwrapped it.
+
+Inside was a simple letter, its envelope barely big enough to hold any paper. The handwriting was neat and composed, and the sender's name was clearly visible: "To the Keeper of the Lighthouse." 
+
+Mr. Jenkins felt a chill run down his spine as he read the words: "Please find me at the old church on the outskirts of town. I have news that will change your life."
+
+St
+
+--- TURN 1 USER ---
+What does the letter say? Keep it brief.
+--- TURN 1 ASSISTANT ---
+The letter begins with the lighthouse keeper, Mr. Jenkins, standing at the edge of the cliff as the sun sets on the rocky coast. The waves crash against the shore, and the night air is filled with the salty tang of the sea.
+
+--- TURN 2 USER ---
+Who wrote it, and how long ago?
+--- TURN 2 ASSISTANT ---
+Unfortunately, there is no additional information provided in the prompt to determine who wrote the letter or how long ago it was written. The summary does not contain any details about the author or the date of the letter.
+
+--- TURN 3 USER ---
+End the story in two sentences.
+--- TURN 3 ASSISTANT ---
+As Mr. Jenkins continued to watch the horizon, he couldn't help but wonder what dangers the sea might bring. The waves continued to crash against the shore, and the salty air filled his lungs with each breath. He knew that he had to be vigilant, for the dangers of the sea were always there, waiting to strike.

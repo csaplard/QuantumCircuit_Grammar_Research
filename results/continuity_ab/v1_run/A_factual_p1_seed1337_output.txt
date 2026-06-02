@@ -1,0 +1,24 @@
+ARM: A
+REGIME: factual
+PROMPT_IDX: 1
+SEED: 1337
+
+--- TURN 0 USER ---
+Tell me in two sentences how photosynthesis works.
+--- TURN 0 ASSISTANT ---
+Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. This process occurs primarily in the chloroplasts of plant cells, where chlorophyll captures sunlight. The captured energy is used to convert carbon dioxide and water into glucose and oxygen, releasing oxygen as a byproduct.
+
+--- TURN 1 USER ---
+Which wavelengths of light do plants mostly use?
+--- TURN 1 ASSISTANT ---
+Plants mostly use wavelengths of light in the blue and red regions of the electromagnetic spectrum for photosynthesis.
+
+--- TURN 2 USER ---
+Why do leaves look green if those wavelengths are absorbed?
+--- TURN 2 ASSISTANT ---
+Leaves appear green because they contain a green pigment called chlorophyll. Chlorophyll is responsible for absorbing light, particularly in the blue and red regions of the electromagnetic spectrum, which is why plants appear green under visible light. However, chlorophyll is not the only pigment in leaves. Other pigments, such as carotenoids and anthocyanins, also contribute to the color of leaves. In the case of autumn leaves, the reduction of chlorophyll production allows the carotenoids to become more visible, giving leaves their bright yellow and orange colors.
+
+--- TURN 3 USER ---
+Is there any plant that uses different pigments?
+--- TURN 3 ASSISTANT ---
+Yes, plants use different pigments to absorb light. While chlorophyll is the primary pigment responsible for absorbing light in plants, there are other pigments that play a role in photosynthesis. These include carotenoids, which absorb light in the orange and yellow regions of the spectrum, and phycobilins, which absorb light in the red and blue regions of the spectrum. Some plants also have phycobilisomes, which are specialized structures containing phycobilins that capture light energy.

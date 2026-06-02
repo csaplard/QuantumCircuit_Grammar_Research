@@ -1,0 +1,113 @@
+{
+  "turn1_gate": {
+    "passed": true,
+    "cells": [
+      {
+        "key": [
+          "creative",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 64
+      },
+      {
+        "key": [
+          "factual",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 64
+      },
+      {
+        "key": [
+          "mathematical",
+          0,
+          42
+        ],
+        "ok": true,
+        "tok_match": true,
+        "fisher_max_abs_dev": 0.0,
+        "n_tokens_compared": 50
+      }
+    ]
+  },
+  "turn1_jsd_sanity": {
+    "max_over_cells": 0.0,
+    "expected": "~0 (design assumption: identical turn-1 forward pass)",
+    "note": "non-zero values indicate fp non-determinism; above ~1e-3 suggests a state-mismatch bug, not a headline finding"
+  },
+  "paired_real": {
+    "n_pairs": 3.0,
+    "median_D_A": 0.2652473265972025,
+    "median_D_B": 0.31095718448499077,
+    "cliffs_delta": -0.1111111111111111,
+    "abs_cliffs_delta": 0.1111111111111111,
+    "sign_of_gap": -1,
+    "wilcoxon_stat": 1.0,
+    "wilcoxon_p": 0.5
+  },
+  "jsd_pass_cells": 1,
+  "jsd_total_cells": 3,
+  "null_markov": {
+    "n_pairs": 3.0,
+    "median_D_A": 0.12212915343069108,
+    "median_D_B": 0.17732952820189168,
+    "cliffs_delta": -0.3333333333333333,
+    "abs_cliffs_delta": 0.3333333333333333,
+    "sign_of_gap": -1,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_p": 0.25
+  },
+  "null_ar1": {
+    "n_pairs": 3.0,
+    "median_D_A": 0.1834918917408195,
+    "median_D_B": 1.3678635081286976,
+    "cliffs_delta": -1.0,
+    "abs_cliffs_delta": 1.0,
+    "sign_of_gap": -1,
+    "wilcoxon_stat": 0.0,
+    "wilcoxon_p": 0.25
+  },
+  "decision": {
+    "checks": {
+      "behavior_equivalence": {
+        "observed_pass_cells": 1,
+        "observed_total_cells": 3,
+        "required_fraction": 0.6666666666666666,
+        "passed": false
+      },
+      "paired_significance": {
+        "p": 0.5,
+        "threshold": 0.01,
+        "alternative": "two-sided",
+        "observed_sign": -1,
+        "passed": false
+      },
+      "effect_size": {
+        "cliffs_delta": -0.1111111111111111,
+        "abs_cliffs_delta": 0.1111111111111111,
+        "threshold": 0.5,
+        "passed": false
+      },
+      "markov_null_shrink": {
+        "real_abs_gap": 0.04570985788778825,
+        "null_abs_gap": 0.0552003747712006,
+        "shrink_fraction": -0.20762516712938228,
+        "threshold": 0.5,
+        "passed": false
+      },
+      "ar1_null_nonsig": {
+        "p": 0.25,
+        "floor": 0.05,
+        "passed": true
+      }
+    },
+    "headline_supported": false
+  }
+}

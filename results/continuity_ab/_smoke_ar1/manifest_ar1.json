@@ -1,0 +1,70 @@
+{
+  "kind": "ar1_structured_surrogate_v2_session_pooled",
+  "description": "Session-wide pooled AR(1) on gen phase; independent marginal draw at each prefill_end. v2 stabilization (smoke r2): replaces per-turn AR(1) fit, which over-fit on a 15-event segment (a=0.93) and inflated synthesized null D, raising the suspicion that the observed per-arm null asymmetry was a fit artifact. The pre-reg AR(1) headline check is NOT modified by this change; only the null model is stabilized. Whether the per-arm pattern survives this stabilization is the next-checked question, not assumed.",
+  "source": "results\\continuity_ab\\_smoke",
+  "seed": 1729,
+  "n_traces_written": 6,
+  "n_skipped": 0,
+  "fits": [
+    {
+      "trace": "A_creative_p0_seed42_trace.csv",
+      "n_gen_total": 79,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.4314662863428325,
+      "gen_marginal_std": 0.194419400902869,
+      "ar1_a": 0.2529478126671666,
+      "ar1_b": 1.0876781727633353,
+      "ar1_sigma": 0.09605726488742707
+    },
+    {
+      "trace": "A_factual_p0_seed42_trace.csv",
+      "n_gen_total": 128,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.658101243815321,
+      "gen_marginal_std": 0.21472326391866828,
+      "ar1_a": 0.2365930447579924,
+      "ar1_b": 1.2785421640231738,
+      "ar1_sigma": 0.14853469094936572
+    },
+    {
+      "trace": "A_mathematical_p0_seed42_trace.csv",
+      "n_gen_total": 114,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.5513405803020808,
+      "gen_marginal_std": 0.20267008190988914,
+      "ar1_a": 0.62070469423801,
+      "ar1_b": 0.6017175298330477,
+      "ar1_sigma": 0.06330794534285604
+    },
+    {
+      "trace": "B_creative_p0_seed42_trace.csv",
+      "n_gen_total": 98,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.4384045848003497,
+      "gen_marginal_std": 0.17691472870502858,
+      "ar1_a": 0.2692926275743486,
+      "ar1_b": 1.065850603825056,
+      "ar1_sigma": 0.08819618747725709
+    },
+    {
+      "trace": "B_factual_p0_seed42_trace.csv",
+      "n_gen_total": 128,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.6513285852679944,
+      "gen_marginal_std": 0.22102775157750676,
+      "ar1_a": 0.27985244846588114,
+      "ar1_b": 1.2016554458668112,
+      "ar1_sigma": 0.15420600467674428
+    },
+    {
+      "trace": "B_mathematical_p0_seed42_trace.csv",
+      "n_gen_total": 114,
+      "fit_scope": "session_wide_pooled_v2",
+      "gen_marginal_mean": 1.544392266677385,
+      "gen_marginal_std": 0.20281592996487666,
+      "ar1_a": 0.6244828129095991,
+      "ar1_b": 0.5929087690722097,
+      "ar1_sigma": 0.06385222577816599
+    }
+  ]
+}

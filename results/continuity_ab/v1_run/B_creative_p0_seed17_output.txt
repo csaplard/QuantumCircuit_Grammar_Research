@@ -1,0 +1,30 @@
+ARM: B
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 17
+
+--- TURN 0 USER ---
+Start a short story: a lighthouse keeper finds a sealed letter.
+--- TURN 0 ASSISTANT ---
+As the sun began to set on the rocky coast, the lighthouse keeper, Mr. Jenkins, stood at the edge of the cliff, his eyes scanning the horizon for any signs of danger. The waves crashed against the shore, and the night air was filled with the salty tang of the sea. But as he turned to look at the tower in the distance, he noticed something strange. There was a small, unmarked envelope stuck to the windbreak on the wall. Curiosity piqued, he picked it up and unwrapped it.
+
+Inside was a simple letter, its envelope barely big enough to hold any paper. The handwriting was neat and composed, and the sender's name was clearly visible: "To the Keeper of the Lighthouse." 
+
+Mr. Jenkins felt a chill run down his spine as he read the words: "Please find me at the old church on the outskirts of town. I have news that will change your life."
+
+St
+
+--- TURN 1 USER ---
+What does the letter say? Keep it brief.
+--- TURN 1 ASSISTANT ---
+The letter, addressed to the Keeper of the Lighthouse, mentions a meeting at the old church. It reveals that the sender has hidden knowledge or information that could be dangerous if in the wrong hands.
+
+--- TURN 2 USER ---
+Who wrote it, and how long ago?
+--- TURN 2 ASSISTANT ---
+The letter was written by someone who escaped from a prison ship in the middle of the Atlantic Ocean. The person was sent to work as a lighthouse keeper, but soon realized that their secret was about to be discovered. The letter was written just days before the ship was to be attacked by pirates, and it included a map of the ship and a plan to save the crew.
+
+--- TURN 3 USER ---
+End the story in two sentences.
+--- TURN 3 ASSISTANT ---
+As the night turned to day, Mr. Jenkins gathered his things and left the lighthouse, his heart heavy with the weight of the secret he had just learned. Years later, he shared the story of the letter and the escape with his grandchildren, passing down the knowledge that sometimes, even in the darkest of times, there is a glimmer of hope.

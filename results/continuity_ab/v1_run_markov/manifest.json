@@ -1,0 +1,24 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "tokens": 192,
+    "window": 32,
+    "top_p": 0.95,
+    "temperature": 0.8,
+    "turns": 4,
+    "seeds": [
+      17,
+      42,
+      1337
+    ],
+    "prompts_per_regime": 2,
+    "dtype": "float32",
+    "device": "cpu",
+    "summary_token_budget": 60,
+    "outdir": "results/continuity_ab/v1_run_markov",
+    "conversations_json": "results/continuity_ab/v1_run_markov/markov_conversations.json"
+  },
+  "n_layers": 28,
+  "mid_hook_idx": 14,
+  "timestamp": "2026-06-02T16:08:40"
+}

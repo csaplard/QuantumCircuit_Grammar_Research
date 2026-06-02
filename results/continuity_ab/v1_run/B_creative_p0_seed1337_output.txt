@@ -1,0 +1,30 @@
+ARM: B
+REGIME: creative
+PROMPT_IDX: 0
+SEED: 1337
+
+--- TURN 0 USER ---
+Start a short story: a lighthouse keeper finds a sealed letter.
+--- TURN 0 ASSISTANT ---
+Once upon a time, in a small coastal town, there was a lighthouse keeper named Jack. Jack had been tending to the lighthouse for years, and he knew the waters of the nearby bay like the back of his hand. He had seen countless ships pass by, but he had never expected to find a sealed letter.
+
+One stormy night, as Jack was adjusting the lights, he heard a strange creaking sound coming from the old, weathered wooden box that sat near the entrance of the lighthouse. He approached it cautiously, and to his surprise, he discovered a small, leather-bound envelope inside.
+
+Jack had never opened a letter before, but he couldn't resist the urge to read it. As he unfolded the envelope, he found a single sheet of paper, folded neatly. The words on the paper were in a language he didn't recognize, but as he read, a strange feeling washed over him.
+
+He realized that the
+
+--- TURN 1 USER ---
+What does the letter say? Keep it brief.
+--- TURN 1 ASSISTANT ---
+The letter was written in an ancient language that Jack couldn't understand. The sender was warning him of a terrible storm that was brewing in the distance. The letter also instructed Jack to keep the letter safe and deliver it to a certain person, who was meant to receive it before the storm struck.
+
+--- TURN 2 USER ---
+Who wrote it, and how long ago?
+--- TURN 2 ASSISTANT ---
+Unfortunately, the letter does not provide any additional information about who wrote it or when it was written.
+
+--- TURN 3 USER ---
+End the story in two sentences.
+--- TURN 3 ASSISTANT ---
+Jack carefully folded the letter and tucked it back into the wooden box. He knew that he would need to find a way to deliver the letter before the storm struck, or risk losing it forever. As he returned to his duties at the lighthouse, he couldn't help but wonder what the sender intended for him to do with the warning and the letter itself.
